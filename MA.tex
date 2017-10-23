@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[german]{babel}
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\usepackage{hyphenat, lscape, array, longtable, blindtext, graphicx, geometry}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm}
+
+
+\title{Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG}
+
+\author{Michèle Schoch}
+\date{21. August 2016}
+
+\begin{document}\selectlanguage{german}
+
+%Titelseite
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+%Inhaltsverzeichnis
+\tableofcontents
+
+%Beginn des Dockuments
+\newpage
+\printnomenclature
+
+\nomenclature{DB1}{Deckungsbeitrag}
+\nomenclature{Bud}{Budget}
+\nomenclature{Act}{Actual}
+
+
+%http://strobelstefan.org/?p=153
+
+\input{Kapitel1}
+\input{Kapitel2}
+\input{Kapitel3}
+\input{Kapitel4}
+\input{Kapitel5}
+
+
+
+\end{document}
+
+pdflatex MA.tex
+
+

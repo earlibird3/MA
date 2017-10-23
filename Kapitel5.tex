@@ -1,0 +1,111 @@
+% !TEX root = MA.tex
+
+\section{Fazit}
+\section*{Annex: Databereinigung}
+\newpage\begin{landscape}
+\begin{center}
+\begin{longtable}{p{6cm}|p{4cm}|p{6cm}|p{3cm}}
+	\caption{Variablenschlüssel}\\\hline
+	\textbf{Variablename} & \textbf{Variable Code} & {\textbf{Berechnungsformel}} & {\textbf{Masseinheit}} \\\hline\endhead
+		Customer Number & CuNo  &       &  \\
+		Equipment Location & EquLoc &       &  \\
+		Project Manager Number & PMNo  &       &  \\
+		Project Manager Change & PMChange &       & \multicolumn{1}{l}{{YES,NO}} \\
+		Business Area & BA    &       &  \\
+		Business Unit & BU    &       &  \\
+		Market Segments & MS    &       &  \\
+		Lead SAS Project & LeadSASPr &       &  \\
+		Lead SAS Fullifllment is different than Lead SAS Project & LeadSAS.PrFF &       & \multicolumn{1}{l}{{NO,YES}} \\
+		Consortial Part & ConPart &       & \multicolumn{1}{l}{{TRUE,FALSE}} \\
+		Project Start Date & PrStartDate &       & \multicolumn{1}{l}{DD-MM-YYYY} \\
+		Turnover Budget & TOBud &       & \multicolumn{1}{l}{TCHF} \\
+		Cost Budget Mechancial Supply & BudMSTot & $\frac{Cost Bud_{MS}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Budget Mechanical Engineering & BudMETot & $\frac{Cost Bud_{ME}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Budget Plant \& Automation & BudPATot & $\frac{Cost Bud_{PA}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Budget Installation  & BudISTot & $\frac{Cost Bud_{IS}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Deckungsbeitrag 1 Budget & DB1Bud &  $\frac{(TOBud - DB1Bud)}{TOBud}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Deckungsbeitrag 1 Actual & DB1Act & $\frac{(TOAct - DB1Act)}{TOAct}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Deckungsbeitrag Deviation Actual - Budget & DB1BudDev &  $\frac{(DB1 Act-DB1 Bud)}{DB1 Bud}$     & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget Mechnical Supply & CostActBudMSabs & $((-CostAct_{MS})-(-CostBud_{MS})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
+		Cost Deviation between Actual and Budget Mechnical Engineering & CostActBudMEabs & $((-CostAct_{ME})-(-CostBud_{ME})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
+		Cost Deviation between Actual and Budget Plant Automation & CostActBudPAabs & $((-CostAct_{PA})-(-CostBud_{PA})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
+		Cost Deviation between Actual and Budget Installation & CostActBudISabs & $((-CostAct_{IS})-(-CostBud_{IS})$ & \multicolumn{1}{l}{TCHF} \\
+		Subsequent Delivery in Relation to TO & SUCostTO & $\frac{(-SUAct)}{TOAct}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget relative for the whole project & CostActBudRel & $\frac{((-CostAct_{Total}) - (-CostBud_{Total})}{(-CostBud_{Total})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget relative Mechnical Supply & CostActBudMSRel &  $\frac{((-CostAct_{MS}) - (-CostBud_{MS})}{(-CostBud_{MS})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget relative Mechnical Engineering & CostActBudMERel & $\frac{((-CostAct_{ME}) - (-CostBud_{ME})}{(-CostBud_{ME})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget relative Plant Automation & CostActBudPARel & $\frac{((-CostAct_{PA}) - (-CostBud_{PA})}{(-CostBud_{PA})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Deviation between Actual and Budget relative Installation & CostActBudISRel & $\frac{((-CostAct_{IS}) - (-CostBud_{IS})}{(-CostBud_{IS})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
+		Cost Forecast adjustment Project & CostFCadj &       & \multicolumn{1}{l}{{0,1}} \\
+		Cost Forecast adjustment Mechnical Supply & CostFCadjMS &       & \multicolumn{1}{l}{{0,1,2}} \\
+		Cost Forecast adjustment Mechnical Engineering & CostFCadjME &       & \multicolumn{1}{l}{{0,1,2}} \\
+		Cost Forecast adjustment Plant \& Automation & CostFCadjPA &       & \multicolumn{1}{l}{{0,1,2}} \\
+		Cost Forecast adjustment Installation & CostFCadjIS &       & \multicolumn{1}{l}{{0,1,2}} \\
+		Months between most negative Forecast adjustment Mechnical Supply and Project Closure & CostMostnegFCadjMS & $(Date(Project Closure))-(Date(most negative FC adj.)_{MS})$ & \multicolumn{1}{l}{Monate} \\ [3mm]
+		Months between most negative Forecast adjustment Mechnical Engineerring and Project Closure & CostMostnegFCadjME & $(Date(Project Closure))-(Date(most negative FC adj.)_{ME})$ & \multicolumn{1}{l}{Monate} \\ [3mm]
+		Months between Hand-over-Meeting and first Yellow Status Cost & HOMYellCost &$\frac{(Date(first Yellow Status)_{Cost} - (Date(HOM))}{Project baseline}$& \multicolumn{1}{l}{Monate} \\ [3mm]
+		Months between Hand-over-Meeting and fist Yellow Status Quality & HOMYellQual & $\frac{(Date(first Yellow Status)_{Quality} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\ [3mm]
+		Months between Hand-over-Meeting and first Yellow Status Time & HOMYellTime &$\frac{(Date(first Yellow Status)_{Time} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\ [3mm]
+		Months between Hand-over-Meeting first Red Status Cost & HOMRedCost & $\frac{(Date(first Red Status)_{Cost} - (Date(HOM))}{Project baseline}$ &\multicolumn{1}{l}{Monate} \\
+		Months between Hand-over-Meeting and first Red Status Quality & HOMRedQual & $\frac{(Date(first Red Status)_{Quality} - (Date(HOM))}{Project baseline}$& \multicolumn{1}{l}{Monate} \\
+		Months between Hand-over-Meeting and first Red Status Time & HOMRedTime & $\frac{(Date(first Red Status)_{Cost} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\
+		Delta between last Forecast and actual  & DeltaLastFCAct & $Last Cost FC-Cost Act$ & \multicolumn{1}{l}{TCHF} \\
+		Delta between last Forecast and actual Mechnical Supply & DeltaLastFCActMS & $Last Cost FC_{MS}-Cost Act_{MS}$ & \multicolumn{1}{l}{TCHF} \\
+		Delta between last Forecast and actual Mechnical Engineering & DeltaLastFCActME & $Last Cost FC_{ME}-Cost Act_{ME}$& \multicolumn{1}{l}{TCHF} \\
+		Delta between last Forecast and actual Plant Automation & DeltaLastFCActPA & $Last Cost FC_{PA}-Cost Act_{PA}$ & \multicolumn{1}{l}{TCHF} \\
+		Delta between last Forecast and actual Installtion & DeltaLastFCActIS & $Last Cost FC_{IS}-Cost Act_{IS}$ & \multicolumn{1}{l}{TCHF} \\
+		Business Area Importance of Project & BAImportPr & $\frac{TOBud_{BA}}{Median (TOBud_{BA})}$ & \multicolumn{1}{l}{\%} \\
+		Business Unit Importance Project & BUImportPr & $\frac{TOBud_{BU}}{Median (TOBud_{BU})}$ & \multicolumn{1}{l}{\%} \\
+		Market Segement Importance  of Project & MSImportPr & $\frac{TOBud_{MS}}{Median (TOBud_{MS})}$ & \multicolumn{1}{l}{\%} \\
+		Business Unit Orders Released Budget Gap absolute & BUORBudGapAbs & $OR Act_{BU}-OR Bud_{BU}$ & \multicolumn{1}{l}{TCHF} \\
+		Business Unit Orders Released Budget Gap relative & BUORBudGapRel & $\frac{(ORAct_{BU}-ORBud_{BU})}{ORBud_{BU}}$ & \multicolumn{1}{l}{\%} \\
+		Region Orders Released Budget Gap absolute & RegiORBudGapAbs & $OR Act_{Region}-OR Bud_{Region}$ & \multicolumn{1}{l}{TCHF} \\
+		Region Orders Released Budget Gap relative & RegiORBudGapRel & $\frac{(ORAct_{Region}-ORBud_{Region})}{ORBud_{Region}}$ & \multicolumn{1}{l}{\%} \\
+		Project Time Base & PrTimeBase & $Baseline_{MS11}-Baseline_{MS1}$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Actual & PrTimeAct & $Act_{MS10}-Act_{MS1}$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Delay & PrTimeDelay & $Baseline-Act$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Delay for MS2 & PrTimeDelayMS2 & $Baseline_{MS2}-Act_{MS2}$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Delay for MS8 & PrTimeDelayMS8 & $Baseline_{MS8}-Act_{MS8}$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Delay for MS10 & PrTimeDelayMS10 & $Baseline_{MS10}-Act_{MS10}$ & \multicolumn{1}{l}{Monate} \\
+		Project Time Delay for MS11 & PrTimeDelayMS11 & $Baseline_{MS11}-Act_{MS11}$ & \multicolumn{1}{l}{Monate} \\
+		Number Project Manager during project life time & NoPM  &       & \multicolumn{1}{l}{Anzahl} \\
+		Area Manager Age & AMAge & $Date_{HOM}-Date_{Geburt}$ & \multicolumn{1}{l}{Jahre} \\
+		Area Manager Tenure & AMTen & $Date_{HOM}-Date_{Eintritt}$ & \multicolumn{1}{l}{Jahre} \\
+		Project Manager Age & PMAge & $Date_{HOM}-(Date_{Geburt}$ & \multicolumn{1}{l}{Jahre} \\
+		Project Manager Tenure & PMTen & $Date_{HOM}-Date_{Eintritt}$ & \multicolumn{1}{l}{Jahre} \\
+		Number of Lead SAS Fulfillment & NoLeadSASFF &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Supplying SAS & NoSupplSAS &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Supplying SAS Mechnical Supply & NoSupplSASMS &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Supplying SAS Mechnical Engineering & NoSupplSASME &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Supplying SAS Plant \& Automation & NoSupplSASPA &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Supplying SAS Installation & NoSupplSASIS &       & \multicolumn{1}{l}{Anzahl} \\
+		Number of Contracts & NoContr &       & \multicolumn{1}{l}{Anzahl} \\
+		Turnover Actual & TOAct &       & \multicolumn{1}{l}{TCHF} \\
+		Deckungsbeitrag 1 Budget absolut & DB1Budabs & $TOBud-CostBud$ & \multicolumn{1}{l}{TCHF} \\
+		Deckungsbeitrag 1 Actual Absolut & DB1Actabs & $TOAct-CostAct$ & \multicolumn{1}{l}{TCHF} \\
+		Region & Region &       &  \\
+		Success & success &       & {YES,NO} \\
+		On Time & onTime &       & {YES,NO} \\
+		MMS\_FCadj\_PrAct & MMS\_FCadj\_PrAct & $\frac{CostMostnegFCadjMS}{PrTimeAct}$ & \\
+		MME\_FCadj\_PrAct & MME\_FCadj\_PrAct & $\frac{CostMostnegFCadjME}{PrTimeAct}$ &  \\
+		Deviation TO Bud from TO Act & TOBudDevabs & $TOAct-TOBud$ & TCHF \\
+		Deviation DB1 Bud from DB1 Act & DB1BudDevabs & $DB1Act-DB1Bud$ & TCHF \\
+		Cost Budget & CostBud &       & TCHF \\
+		Cost Actual & CostAct &       & TCHF \\
+		Jahr des Projektstartdatum & PrStartDateY &       & YYYY \\
+		Monat des Projektstartdatum & PrStartDatem &       & MM \\
+		Tag des Projektstartdatum & PrStartDateD &       & DD \\
+		Datum des Projektende & PrEndDate &       & DD-MM-YYY \\
+		TO Bud Kategorien & TOBud\_cat &       & {1:70} \\
+		Erfolgskriterium gemäss dem Ampelsystem & DB1Dev\_ampel &       & {green, yellow, red} \\
+		DB1 Abweichung Kategorien & DB1Dev\_cat &       & {1:6} \\
+		Zeiteinhaltung Kategorien & PrTimeDelay\_cat &       & {1:15} \\
+		Zeiteinhaltung gemäss Ampelsystem & PrTimeDelay\_ampel &       & {green, yellow, red} \\
+		
+	\label{tab:addlabel}%
+\end{longtable}%
+\end{center}
+\end{landscape}
+\subsection*{Data Collection}
+\subsection*{Measures}
+\subsection*{Analysis}
