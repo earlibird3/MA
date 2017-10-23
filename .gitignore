@@ -30,3 +30,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+##pdf and jpg files:
+*.pdf
+*.jpg
