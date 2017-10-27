@@ -63,9 +63,10 @@ Die Bestimmung von extremen Werten ist stichprobenabhängig und je nach Zweck de
 \newline\newline
  $N = 883 $ und die Anzahl Variablen $ x = 70$.
 \subsection{Ergebnisse und Interpretation}
-Im ersten Schritt wurde versucht, der finanzielle Verlust nicht erfolgreicher Projekte zu evaluieren und sukzessive weitere Kriterien in die Analyse einfliessen zu lassen um dadurch Hinweise zu möglichen Einflussfaktoren zu erhalten. Da bei der folgende Analyse nur deskriptive statistische Methoden angewandt werden respektive die post-Analyse des finanziellen Einfluss 
+Im ersten Schritt wurde versucht, der finanzielle Verlust nicht erfolgreicher Projekte zu evaluieren und sukzessive weitere Kriterien in die Analyse einfliessen zu lassen um dadurch Hinweise zu möglichen Einflussfaktoren zu erhalten. Bei der nachfolgenden Analyse handelt es sich um eine post-Analyse der Projekt, deren Kostperformance in Abhängigkeit der identifizieren Erfolgsfaktoren. Es werden einige statistische Methoden zur Analyse hinzugezogen. Es sind Rückschlüsse auf die zugrundeliegende Stichprobe mögliche, jedoch keine Generalisierungen auf zukünftige oder laufende Projekte. Allerdings können Hinweise auf mögliche Erfolgsfaktoren gewonnen werden, deren Relevanz jedoch in einem weiteren Schritt untersucht werden müsste. Die Analyse erfolgt anhand der in Kapitel 2.2 definierten Kategorien. Wobei sich die mögliche Anzahl zu evaluierenden Faktoren aufgrund Plausibilitätkriterien und fehlender Daten verkürzt hat.
+\newline Modell mit Faktoren einfügen\newline
 \subsubsection{Finanzielle Analyse}
-Ausgangspunkt der Analyse bildet das binäre Erfolgskriterium, die prozentuale Abweichung der realisierten von der budgetierten Projektmarge.
+Die Finanzielle Analyse basiert auf dem binären Erfolgskriterium, die prozentuale Abweichung der realisierten von der budgetierten Projektmarge. 
 \newline\newline
 $Success = (DB1Act-DB1Bud)/DB1Bud \geq 0$\newline\newline
 $Fail = (DB1Act-DB1Bud)/DB1Bud < 0$
@@ -74,9 +75,47 @@ Als Vergleich wurde der Erfolgsschlüssel des BPM-Cockpits der Bühler AG hinzug
 $ green = (DB1Act-DB1Bud)/DB1Bud > -4\%$\newline\newline
 $ yellow = -4\% \leq (DB1Act-DB1Bud)/DB1Bud > -10\%$\newline\newline
 $ red = (DB1Act-DB1Bud)/DB1Bud  \leq -10\%$\newline\newline
-Während des Projektverlaufs wird dieser Schlüssel angewandt, um die Abweichung zwischen dem FC und dem Budget der Projektmarge zu evaluieren. In vorliegenden Fall wurde exakt der gleiche Schlüssel angewandt, um die realisierten und die budgetierten Projektmargen zu klassifizieren. Dieser Verlgeich der Häufigkeiten soll den Erfolgsspiegel gemäss internen Richtlinien aufzeigen.  Projekte mit dem Status grün sind als erfolgreich zu werten wohingegen yellow und red als gescheiterte Projekte zu qualifizieren. Erwartungsgemäss sind mehr Projekte als erfolgreich zu qualifizieren, da der Wertebereich grösser ist. Insbesondere ist dieser Vergleich interessant, um zu sehen wie sich der quantifizierte Margenverlust aufgrund des breiteren Erfolgskriterium verändert. Dieser Vergleich wurde lediglich für die Häufigkeit über die gesamte Stichprobe und der zusammengefasste finanzielle Margenverlust gemacht. Die restliche Analysen stützen sich auf das binäre Erfolgskriterium. 
-Ergebnisse!!!! zwei Tables: Beschreibung:was bringt das, was sagt uns dass! 
-1. Overview Datensatz: wieviel Success / FAIL und Success_Ampel / Fail
+Das Ampelsystem wird während des Projektverlaufs angewandt, um die Abweichung zwischen dem FC und dem Budget der Projektmarge zu evaluieren. Der gleiche Schlüssel wurde für die Abweichung zwischen dem DB1 Act und Bud angewandt, um zu evaluieren wie sich die Performance in monetärer Hinsicht und in Bezug auf die Häufigkeit von erfolgreichen und nicht erfolgreichen Projekten verändert. Erfolgreiche Projekte haben demzufolge den Status grün wohingegen gescheiterte Projektee die Status yellow und red haben. Die Anzahl erfolgreicher Projekte wird zwangsläufig ansteigen sowie auch die finanzielle Performance beeinflussen. Insbesondere ist die Veränderung des Margenverlust zwischen erfolgreichen und gescheiterten Projekten ein Interessenspunkt.\newline
+Die Stichprobe setzt sich wie folgt zusammen:
+\begin{table}[htbp]
+	\centering
+	\caption{Übersicht Stichprobe}
+	\begin{tabular} {l|r|r}
+		\textbf{Stichprobe} & \textbf{absolut} & \textbf{relativ} \\
+		\textbf{Total} & 928 & 100\% \\
+		\textbf{Success} & 624 & 67\% \\
+		\textbf{Fail} & 304 & 33\% \\
+	\end{tabular}
+\end{table}
+\newline
+Die Erfolgsquote $Anzahl Projekte (Success)/Anzahl Projekte(Fail)$ beträgt 2.05. Daraus folgt, dass jedes dritte Projekte ein Erfolg wird. Gemäss subjektiver Einschätzung ist diese Erfolgsquote relativ gut. Auf Basis dieser Daten wurde nachfolgend der Verlust über diese Projekte berechnet. 
+2 Table einfügen mit TO Bud, Cost Bud DB1 Bud, DB1Bud, DB1 Act, Cost Act, TOBudabs, DB1Budabs, CostBudDevabs.
+\begin{table}[htbp]
+	\centering
+	\caption{Finanzieller Verlust: Binäres Erfolgskriterium }
+	\begin{tabular}{lrrrrrrrrrrrr}
+		\textbf{Erfolgskriterium} & \multicolumn{1}{l}{\textbf{TO Bud}} & \multicolumn{1}{l}{\textbf{Cost Bud}} & \multicolumn{1}{l}{\textbf{DB1 Bud}} & \multicolumn{1}{l}{\textbf{DB1 Bud [\%]}} & \multicolumn{1}{l}{\textbf{TO Act}} & \multicolumn{1}{l}{\textbf{Cost Act}} & \multicolumn{1}{l}{\textbf{DB1 Act}} & \multicolumn{1}{l}{\textbf{DB1 Act [\%]}} & \multicolumn{1}{l}{\textbf{TO Dev}} & \multicolumn{1}{l}{\textbf{Cost Dev.}} & \multicolumn{1}{l}{\textbf{DB1 Dev.}} & \multicolumn{1}{l}{\textbf{DB1 Dev. [\%]}} \\
+		SUCCESS & 1'515'433 & -1'129'938 & 385'494 & 25.4\% & 1'522'924 & -1'018'031 & 504'893 & 33.2\% & 7'491 & 111'908 & 119'399 & 7.7\% \\
+		FAIL  & 615'509 & -463'513 & 151'996 & 24.7\% & 629'118 & -525'333 & 103'785 & 16.5\% & 13'609 & -61'820 & -48'211 & -8.2\% \\
+		Grand Total & 2'130'942 & -1'593'451 & 537'490 & 25.2\% & 2'152'042 & -1'543'364 & 608'679 & 28.3\% & 21'101 & 50'088 & 71'188 & 13.2\% \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newline
+\begin{table}[htbp]
+	\centering
+	\caption{Finanzieller Verlust: Erfolgskriterium ist Erfolg gemäss Ampel}
+	\begin{tabular}{lrrrrrrrrrrrr}
+		\textbf{Erfolgskrit} & \multicolumn{1}{l}{\textbf{TO Bud}} & \multicolumn{1}{l}{\textbf{Cost Bud}} & \multicolumn{1}{l}{\textbf{DB1 Bud}} & \multicolumn{1}{l}{\textbf{DB1 Bud [\%]}} & \multicolumn{1}{l}{\textbf{TO Act}} & \multicolumn{1}{l}{\textbf{Cost Act}} & \multicolumn{1}{l}{\textbf{DB1 Act}} & \multicolumn{1}{l}{\textbf{DB1 Act [\%]}} & \multicolumn{1}{l}{\textbf{TO Dev}} & \multicolumn{1}{l}{\textbf{Cost Dev.}} & \multicolumn{1}{l}{\textbf{DB1 Dev.}} & \multicolumn{1}{l}{\textbf{DB1 Dev. [\%]}} \\
+		green & 1'796'310 & -1'344'946 & 451'364 & 25.1\% & 1'808'320 & -1'241'767 & 566'553 & 31.3\% & 12'010 & 103'179 & 115'189 & 6.2\% \\
+		red   & 175'002 & -131'684 & 43'318 & 24.8\% & 183'152 & -172'966 & 10'185 & 5.6\% & 8'149.862 & -41'283 & -33'133 & -19.2\% \\
+		yellow & 159'630 & -116'821 & 42'809 & 26.8\% & 160'571 & -128'630 & 31'941 & 19.9\% & 941   & -11'809 & -10'868 & -6.9\% \\
+		Grand Total & 2'130'942 & -1'593'451 & 537'490 & 25.2\% & 2'152'042 & -1'543'364 & 608'679 & 28.3\% & 21'101 & 50'088 & 71'188 & 3.1\% \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newline\newline
+
 
 \subsubsection{Erfolgsfaktoren}
 \subsection{Kritische Würdigung der Ergebnisse}
