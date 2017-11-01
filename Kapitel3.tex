@@ -1,73 +1,39 @@
 % !TEX root = MA.tex
 \section{Analye der Erfolgsfaktoren des Bühler Projektmanagements}\label{drei}
-In diesem Kapitel wird zuerst das analytische Vorgehen erläutert und anschliessend die Ergebnisse präsentiert sowie kritisch gewürdigt. Die Literaturrecherche zeigt, dass die Erfolgsfaktoren des Projektmanagement mehrfach erforscht wurden, wobei mehrheitlich sich überschneidende Resultat in Abhängigkeit unterschiedlicher Erfolgskriterien und Projektmanagementmethoden ergründet wurden. Das gewählte Forschungsdesign basierte für eine Vielzahl von Studien auf Einschätzungen der Wichtigkeit für den Projekterfolg pro Attribut mittels einer Likert-Skale. Die befragten Personen waren entweder direkt im Projektmanagement oder in der entsprechenden Industrie tätig. Die Attribute wurde aus früheren Studien extrahiert. Die gewählte Methode führte dazu, dass eine numerische Datenbasis, welche die Kriterien für lineare statistische Modelle, zu Analysezwecken vorhanden war. Da sich die Ergebnisse zu einem Teil überschneiden, kann postuliert werden, dass unabhängig vom gewählten Performancekriterium ein gewisser Konsens bezüglich der Erfolgsfaktoren existiert. Diese Aussage ist mit Vorsicht zu geniessen, da die Studien nicht direktr miteinander verglichen werden können, weshalb sie als Annahme formuliert wurde. Die nachfolgende Analyse unterscheidet sich insofern, da die zugrundeliegende Stichprobe unternehmensspezifische Daten sind. Daraus folgt, dass keine Rückschlüsse auf Projekterfolg und Projektmanagementerfolg im Allgemeinen möglich sind.\newline 
-\subsection{Daten und statistische Methoden}
-Dieses Kapitel dient dazu, das Forschungsdesign, die Datengrundlage und das Vorgehen genauer zu erläutern. Die Datenerhebung erfolgte mittels einer extra programmierten Query im Bühler System. Trotz mehrfacher Prüfung der Datenplausibilität konnte nach Beendigung der Programmierarbeiten die Korrektheit einiger berechneter Indikatoren nicht gewährleistet werden. Somit war es denkbar, dass einige Faktoren aufgrund mangelnder Plausibilität oder fehlender Daten von der Analyse ausgeschlossen werden mussten.
-\newline
-Die untersuchten Projekte kurz die Stichprobe enthält alle im Zeitraum zwischen 2013 und 2105 abgeschlossenen Projekte. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als 'nicht abgeschlossen'.
-\newline Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Daten hatten geringe bis keine Korrelation mit der abhängigen Variable. Die lineare Variablentransformationen und andere Methoden um eine Verteilungskurve zu simulieren führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und legt mehr Fokus auf die Analyse der finanziellen Einbussen von sogenannten nicht erfolgreichen Projekten. Die Aussagekraft der Ergebnisse wird eingeschränkt, so dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können. Es kann jedoch Aussagen über die untersuchte Stichprobe gemacht und neue Hypothesen abgeleitet werden. Diese müssten mittels anderer, geeigneter statistischer Methoden analysiert werden. Da die Auswertung der Projektdaten eine erstmalige Analyse darstellt, können wertvolle Hinweise zu möglichen Problemfeldern aufgedeckt werden.
-\newline Das Erfolgskriterium (DB1BudDev)ist die prozentuale Abweichung der realisierten Projektmarge vom Budget. Die Projektmarge errechnet sich aus Umsatz minus Kosten und wird in Relation zum Umsatz gestellt. Die Differenz zur budgetierten Projektmarge wurde in Prozenten gemessen. Dieses Erfolgskriterium wurde in Zusammenarbeit mit der Bühler AG festgelegt. Der DB1 ist Erfolgskriterium der Projekte und Managementziel der Geschäftsbereiche und Projektmanager zugleich. Dies unterstützt die Wahl dieses Kriteriums, da durch die Incentivierung, sämtliche Parteien ein Interesse an einer überdurchschnittlichen DB1-Performance haben. Der DB1BudDev wurde zu Analysezwecken in eine binäre Variable transformiert. Daraus folgt, dass alle positiven (negativen) Differenzen als erfolgreiche (nicht-erfolgreiche) Projekte betrachtet werden. Im Folgenden werden erfolgreiche Projekte und Success-Projekte sowie erfolgreiche Projekte und Fail-Projekte als Synonyme verwendet. Aus finanzieller Sicht kann das Projekt bei nicht Erreichung des Budgets als gescheitert (failed) betrachtet werden. Dabei werden retrospektive Erkenntnisse und Erfahrungen aufgrund des Projekts nicht berücksichtigt, obwohl diese ein Gewinn für das Unternehmen darstellen können und somit das Projekt nicht als gescheitert betrachtet werden könnte.
-\newline\newline\textbf{Rohdaten}
-\newline Die Rohdatensatz enthält sämtliche Daten zu den Faktoren der untersuchten Projekte (Stichprobe). Er setzt sich aus drei Datensätzen zusammen, die separat aus den Bühler-System extrahiert wurden. Das Alter und die Betriebszugehörigkeit der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
+In diesem Kapitel wird zuerst das analytische Vorgehen erläutert und anschliessend die Ergebnisse präsentiert sowie kritisch gewürdigt. In vergangene Studien wurden die Erfolgsfaktoren von Projekten mittels der statistischen Auswertung von Einschätzungen zu deren Relevanz für den Projekterfolg erhoben. Die nachfolgende Analyse unterscheidet sich insofern, da versucht wird auf Basis der unternehmensspezifische Daten  Charakteristiken nicht-erfolgreicher Projekte zu ergründen.
+\subsection{Analytisches Vorgehen}
+Die untersuchte Stichprobe enthält alle Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als 'nicht abgeschlossen'.
+\newline Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Daten hatten geringe bis keine Korrelation mit der abhängigen Variable sprich dem Erfolgskriterium. Die lineare Variablentransformationen und andere Methoden, um eine Verteilungskurve zu simulieren führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und hat ausserdem das Ziel, die finanziellen Einbussen von sogenannten nicht erfolgreichen Projekten zu untersuchen. Die Aussagekraft der Ergebnisse wird dadurch so eingeschränkt, dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können.  Die Ergebnisse haben nur in Bezug auf die die untersuchte Stichprobe Gültigkeit. Es ist jedoch denkbar, auf Basis der Ergebnisse neue Hypothesen zu formulieren, welche mittels anderer, geeigneter statistischer Methoden geprüft werden können. Die erstmalige Auswertung der Projektdaten kann zudem Erkenntnisse zu möglichen Charakteristiken nicht-erfolgreicher Projekte liefern.
+\newline Das Erfolgskriterium (DB1BudDev) wurde in Zusammenarbeit mit der Bühler AG festgelegt. Aus finanzieller und interne Perspektive ist die Abweichung der relativen Projektmarge (DB1Act) vom Budget (DB1Bud) von zentraler Bedeutung. Denn sowohl die Finanzziele wie auch die Incentivierung der Projekt- und Verkaufsmanager sowie der Geschäftsbereichsleitung basieren auf DB1 und den entsprechenden Budgetvorgaben. Die relative Projektmarge errechnet sich aus Umsatz minus Kosten in Relation zum Umsatz. Anhand der Differenz zwischen Act und Bud wird der Erfolg ($Differenz \geq 0$) respektive Nicht-Erfolg ($Differenz < 0$) von Projekten gemessen. Der DB1BudDev wurde zu Analysezwecken in eine binäre Variable (Success) transformiert. Daraus folgt, dass alle positiven (negativen) Differenzen als erfolgreiche (nicht-erfolgreiche) Projekte betrachtet werden. Im Folgenden werden erfolgreiche Projekte und Success-Projekte sowie nicht-erfolgreiche Projekte und Fail-Projekte als Synonyme verwendet. Obwohl retrospektive Erkenntnisse und Erfahrungen aufgrund des Projekts einen Gewinn für das Unternehmen darstellen können, wird diesem Aspekt in dieser Analyse nicht Rechnung getragen. 
+\newline\newline\textbf{Datenaufbereitung:} Der Rohdatensatz enthält sämtliche Daten zu den Faktoren der untersuchten Projekte (Stichprobe). Er setzt sich aus drei Datensätzen zusammen, die separat aus den Bühler-System extrahiert wurden. Das Alter und die Betriebszugehörigkeit der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
 \newline\newline $Stichprobenumfang N = 1471$ und $Anzahl Faktoren i = 93$.
 \newline\newline
-Nach der Elimination doppelt vorhandener Faktoren und Berechnungsfaktoren, wurden sämtliche Determinanten mit fehlenden Werten von über 200 von der Analyse ausgeschlossen. Dazu wurde die Anzahl NA's pro Faktor ausgewertet anstatt pro Projekt. Dieser Schritt war notwendig, da auf diese Weise die Mehrheit der Datensätze erhalten blieb. Die nachfolgende Tabelle zeigt die Anzahl fehlender Daten pro Faktor. Zusätzlich wurde die Variablen AMNo, da einerseits wenig Informationsgehalt erwartet wurde und anderseits durch den Ausschluss der verbundenen Variablen (AMTen und AMAge)  AMNo an Relevanz verlor. Ausserdem mussten alle Variablen, welche die Zeitdifferenz zwischen dem letzten Kostenforecast und dem Projektende messen, aufgrund fragwürdiger Plausibilität und Korrektheit der Daten von der Analyse ausgeschlossen werden. Dieses Vorgehen reduzierte einerseits den Stichprobenumfang und die Anzahl zu untersuchender Faktoren. 
-\newline\newline $Stichprobenumfang N = 1076$ und $Anzahl Faktoren i = 71$
-\newline\newline
-\begin{table}[h]
+Es wurden alle vorhandenen, unplausiblen und Berechnungsfaktoren vom Datensatz entfernt. Anschliessend wurde die Anzahl fehlender Daten pro Faktor ausgewertet und zusätzlich alle Determinanten mit mehr als 300 fehlender Datensätze von der weiteren Analyse ausgeschlossen. Zusätzlich bleibt die Variablen AMNo unberücksichtigt, da durch den Ausschluss der verbundenen Variablen (AMTen und AMAge) wenig Informationsgewinn erwartet wird. Ausserdem mussten alle Variablen, welche die Zeitdifferenz zwischen dem letzten Kostenforecast und dem Projektende messen, aufgrund fragwürdiger Plausibilität und Korrektheit der Daten von der Analyse ausgeschlossen werden. Mittels diesem Vorgehen kann der Datenverlust aufgrund fehlender Daten in Grenzen gehalten werden. Der neue Stichprobenumfang beträgt $N = 1076$ und die Anzahl Faktoren $i = 71$
+\begin{table}[htbp]
 	\centering
-	\caption{Anzahl NA's per variable}
-	\begin{tabular} {| l| l | p{6cm} |}
-		\textbf{Variable Code} & \textbf{Anz. NA} & \textbf{Handhabung} \\\hline
-		CostMostnegFCadjPA & 749   & von der Analyse ausgeschlossen \\
-		PrTimeDelayMS5 & 538   & von der Analyse ausgeschlossen \\
-		CostMostnegFCadjIS & 537   & von der Analyse ausgeschlossen \\
-		AMAge2 & 444   & von der Analyse ausgeschlossen \\
-		AMTen2 & 444   & von der Analyse ausgeschlossen \\
-		PrTimeDelay & 254   &  \\
-		PrTimeDelayMS11 & 227   &  \\
-		PrTimeDelayMS10 & 214   &  \\
-		PrTimeAct & 192   &  \\
-		CostMostnegFCadj & 177   & von der Analyse ausgeschlossen \\
-		PrTimeDelayMS2 & 156   &  \\
-		PrTimeDelayMS8 & 139   &  \\
-		AMNo  & 132   & von der Analyse ausgeschlossen \\
-		PrTimeBase & 118   &  \\
-		PMAge2 & 98    &  \\
-		PMTen2 & 98    &  \\
-		CostFirstadj & 61    &  \\
-		PrStartDate & 13    &  \\
-		PMNo  & 6     &  \\
-		BA    & 6     &  \\
-		BU    & 6     &  \\
-		TOAct & 6     &  \\
-		DB1Budabs & 6     &  \\
-		DB1Actabs & 6     &  \\
-		EquLoc & 2     &  \\	
-	\end{tabular}
-\end{table}
-\newline
-\newline\textbf{Plausibilität:} Die Plausibilitätsüberlegungen basieren auf der logischen Interpretation und Herleitung der Indikatoren. Die Tabelle im Anhang enthält die Begründung der unplausiblen Werte. Dies hatte zur Folge, dass die Stichprobe auf $N = $ sank. (Tabelle im Anhang EINFÜGEN).
-\newline Im Anschluss wurden die Daten auf mögliche Aussreisser hin untersucht. Bei dieser Untersuchung wurde das Augenmerk auch auf den Erhalt möglichst vieler Datensätze gelegt. Allerdings ist die Entfernung der Ausreisser auch in der deskreptiven Statistik von grosser Bedeutung, da die Aussagekraft der Ergebnisse beeinträchtgt werden kann. Die Ausreisser wurden anhand Boxplots, Histogramme und der 'Interquartile Ranges' der numerischen Variablen identifiziert. Vorab muss erläutert werden, dass der Wert $1'111'111$ bei den CostMostnegFCajd-Variablen keinen Ausreisser darstellt sondern angibt, dass das Projekt nur positive FC-Anpassungen gehabt hat. Dies impliziert, dass der Forecast für die Kosten gesunken sind und somit weniger Kosten erwartet wurden, wobei der Umsatz konstant geblieben oder gestiegen ist. Bei den HOM-YellowStatus und die HOM-RedStatus drückt der Wert $1'111'111$ aus, dass der entsprechende Status nicht als erstes oder gar nicht aufgetreten ist. Die Interpretation wäre somit, dass bei den HOMYellow-Status Variablen der Status immer grün war oder zuerst respektive direkt den roten Status hatte. Eine ähnliche Interpretation gilt für HOMRedStatus-Variablen, somit hätte dieses Projekt, den roten Status gar nicht erst erreicht. Da diese Interpretationen valide sind und somit keine fehlende Werte darstellen, verbleiben sie im Datensatz. 
-\newline
-Die Bestimmung von extremen Werten ist stichprobenabhängig und je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Ziel der nachfolgenden Analyse ist es, sämtliche Projekte der Bühler AG auf ihre Erfolgsfaktoren und finanzielle Performance untersuchen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Da aufgrund der unterschiedlichen Anlagen, kein direkter Vergleich zwischen den Daten gemacht werden kann, sind Ausreisser schwierig zu bestimmen. Methodisch wurde der einfache und doppelte Interquartile Range für alle numerischen Variablen berechnet und das folgende Entscheidungskalkül zur Bestimmung von Extremalwerten herangezogen. Anschliessend wurde pro Variable ausgewertet, ob Werte ausserhalb der Grenzwerte des doppelten IQR liegen. In einem solchen Fall wurde je Variable entschieden, ob eine Korrektur um die Ausreisser sinnvoll erscheint. Die argumentative Erklärung pro Variable befindet sich im Anhang. Einzig die realisierte Marge, DB1Act, wurde auf die Werte des doppelten IQR berichtigt, da extreme negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren. Extrem positive DB1 sind bei einer durchschnittlichen Projektmarge von ca. 30\% relativ unwahrscheinlich und lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den  relativen Kostenabweichungen für PA und IS wurden jeweils diejenigen Daten entfernt, welche extrem hoch waren und kein entsprechendes Budget geplant wurde. Hierbei wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Entscheidungskalküls lagen. Die Erklärung pro Faktor sowie die Tabelle mit den IQR befindet sich im Anhang. Die Stichprobengrösse hat sich auf $N = $ veringert. Die Anzahl Faktoren entspricht $ i = $. Im Anschluss folgt die finanzielle Analyse und Untersuchung der Erfolgsfaktoren. 
+	\caption{Anzahl NA's pro Variable (Ausschnitt)}
+	\begin{tabular}{lr}
+		\textbf{Variale} & \multicolumn{1}{l}{\textbf{Anzahl NA}} \\
+		PrTimeDelayMS5 & 538 \\
+		AMAge2 & 444 \\
+		AMTen2 & 444 \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newpage
+Im Anschluss wurden die Datensätze auf ihre Plausibilität getestet und Ausreisser entfernt. Die Plausibilitätsüberlegungen basieren auf der logischen Interpretation und Herleitung der Indikatoren. Die Tabellen mit den Begründungen der unplausiblen Werte und Ausreisser befinden sich im Anhang. Die Outliers wurden mit Hilfe von Boxplots, Histogramme und der 'Interquartile Ranges' (IQR) der numerischen Variablen identifiziert. Zur quantitativen Bestimmung der Ausreisser wurde folgendes Entscheidungskalkül angewendet:
 \newline\newline
 \begin{centering}
-		$ all avlues \leq Q1 - 1.5 * IQR$
-		\newline
-		$ all values \geq Q3 + 1-5 * IQR$
-\end{centering}
-\newline
-\newline
-\begin{centering}
-		$ all avlues \leq Q1 - 3 * IQR$
-		\newline
-		$ all values \geq Q3 + 3 * IQR$
+	$ Werte < Q1 - 1.5 * IQR$ und $ Werte > Q3 + 1-5 * IQR$
 \end{centering}
 \newline\newline
- $N = 883 $ und die Anzahl Variablen $ x = 70$.
-\newline
-Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken zusätzliche Variablen hinzugefügt. Die nachfolgende Tabelle zeigt sämtliche verbleibende (s. Kapitel 2 für alle Faktoren) inklusive der hinzugefügten Faktoren gemäss ihre Kategorie strukturiert. Im Bereich der finanziellen Analyse wurde versucht mittels der Rahmenbedingungen den Verlust der Projektmarge zu lokalisieren. Es wurde vorerst darauf verzichtet, diesem Szenario weitere vor allem kategoriale Variablen hinzuzufügen. Anschliessend wurde für jeden Faktor ein Histogram erstellt, um zu prüfen, ob die Verteilung zwischen Success- und Fail-Projekten auffallende Unterschiede aufweist. Mittels Häufigkeitstabellen, Mittelwerten wurde beabsichtigt die Charakteristiken der erfolgreichen und nicht-erfolgreichen Projekte zu beschreiben und deren numerischen Ausprägung zu unterscheiden. Basierend auf diese Ergebnissen wurde versucht entweder neue oder weiterführende Hypothesen zu formulieren. Zur Evaluation von kategorialen Variablen wurde ein weiteres Kriterium die Erfolgsquote hinzugezogen, um beispielsweise Geschäftsbereiche oder Region untereinander vergleichen zu können. 
+\begin{centering}
+	$ Werte < Q1 - 3 * IQR$ und $ Werte > Q3 + 3 * IQR$
+\end{centering}
+\newline\newline
+Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extreme negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extreme positive DB1Act sind bei einer durchschnittlichen Projektmarge von ca. 30\% relativ unwahrscheinlich und lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen für PA und IS wurden jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn es wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Entscheidungskalküls lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und die Anzahl verfügbarer Faktoren entspricht $ i = 71$. 
+\newline\newline
+\textbf{Zusätzliche Variablen:}Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken zusätzliche Variablen hinzugefügt. Die nachfolgende Tabelle zeigt sämtliche verbleibende (s. Kapitel 2 für alle Faktoren) inklusive der hinzugefügten Faktoren gemäss ihre Kategorie strukturiert. Im Bereich der finanziellen Analyse wurde versucht mittels der Rahmenbedingungen den Verlust der Projektmarge zu lokalisieren. Es wurde vorerst darauf verzichtet, diesem Szenario weitere vor allem kategoriale Variablen hinzuzufügen. Anschliessend wurde für jeden Faktor ein Histogram erstellt, um zu prüfen, ob die Verteilung zwischen Success- und Fail-Projekten auffallende Unterschiede aufweist. Mittels Häufigkeitstabellen, Mittelwerten wurde beabsichtigt die Charakteristiken der erfolgreichen und nicht-erfolgreichen Projekte zu beschreiben und deren numerischen Ausprägung zu unterscheiden. Basierend auf diese Ergebnissen wurde versucht entweder neue oder weiterführende Hypothesen zu formulieren. Zur Evaluation von kategorialen Variablen wurde ein weiteres Kriterium die Erfolgsquote hinzugezogen, um beispielsweise Geschäftsbereiche oder Region untereinander vergleichen zu können. 
 \newline\newline $Erfolgsquote = Anzahl erfolgreicher Projekte/Anzahl nicht-erfolgreicher Projekte$
 \newline\newline
 \subsection{Ergebnisse und Interpretation}
@@ -352,12 +318,89 @@ Die durchschnittliche budgetierte Projektlaufzeit unterscheidet sich zwischen er
 	\end{tabular}%
 	\label{tab:addlabel}%
 \end{table}%
-Die Mehrheit der untersuchten Projekte konnte die Zeitvereinbarungen im MS2 einhalten. Dieses Verhältnis ändert sich bei Erreichung des MS8 und steigt bei MS10 so an, dass letztendlich der Grossteil der Projekte zeitverzögert abgeschlossen wird (783 Projekte respektive 86\%). Mittels Dummyvariablen pro Milestone wurde ausgewertet, ob sich ein anfängliche Verspätung sich durch die Projektlaufzeit durchzieht. auch in einer Verspätung beim letzten MS gemündet hat. Die meisten Projekte hatten die Eigenschaft, bei einer Verspätung im MS8 ebenso auch im MS11 verspätet zu sein. Die zweithäufigste Gruppe war diejenige, die erst bei MS10 den Liefertermin nicht mehr einhalten konnten, allerdings dann auch den finalen Liefertermin nicht mehr einhalten konnte. Auf Basis der Tabellen lassen sich jedoch keine Aussagen machen, ob bei einer Nichteinhaltung des vereinbarten Termin, das Projekt zwangsläufig unter Budget abschliessen wird. 
-\newline\newline\textbf{SQ:} Die Incentivierung der Area Manager erfolgt über das Auftragsvolumen. Ausserdem muss jeder Geschäftsbereich die Budgetvorgaben für das Auftragsvolumen pro Monat erfüllen.  Es konnte einzig ausgewertet werden, ob die Geschäftsbereiche bei Projektabschluss einen finanziellen Druck hatte, da sie hinter dem Auftragsvolumenbudget lagen. Hierbei wird unterstellt, dass Projekte unvorsichtiger geprüft werden, da der Geschäftsbereich respektive die Region auf das Projektvolumen angewiesen ist, um die Budgetvorgaben zu erreichen. Folglich wird erwartet, dass die durchschnittlichen werte für die Differenz zwischen dem Act und Bud absolut und relativ bei Fail-Projekten höher liegt als bei Succes-Projekten. Die Untersuchung der beiden Stichproben bestätigt die Vermutung, dass Fail-Projekte tendenziell einem grösseren Budgetdruck ausgesetzt sind als Success-Projekte sowohl in relativen als auch in absoluten Grössen.
-\newline\newline\textbf{Komplexität:} Da es kein Komplexitätsfaktor gibt, wurden sogenannte Proxyvariablen erhoben, um die Komplexität abzubilden. Es wurde die Anzahl involvierter Parteien bei der Herstellung der Maschine als Komplexitätsfaktor identifiziert sowie die Anzahl Aufträge. Es wird unterstellt, dass das Management einer hohen Anzahl Schnittstellen und Aufträge komplexer wird, da der Aufwand alle Parteien uf einander abzustimmen höher ist. Gewisse Projekte werden in einem Konsortium abgewickelt, was bedeutete, dass das Projekt zusammen mit einem Dritt-Unternehmen (keine Bühler-Gesellschaft) durchgeführt wird. Die Zusammenarbeit mit einem anderen Unternehmen wird ebenso als Komplexitätsindikator gewertet. Ca. 79 Projekte der Stichprobe wurden in einem Konsortium abgewickelt, davon waren 48 (61\%) erfolgreich und 31 (39\%) gescheitert. Das sind verhältnismässig wenig Projekte.\newline
-Für die Anzahl Aufträge zeigt sich, dass die Mehrheit aller Projekte in der Stichprobe genau einen Vertrag hat. 90\% aller Projekte hat entweder 1 oder 2 Verträge. Vergleicht man die Erfolgsquote pro Anzahl Aufträge, ist diejenige mit zwei Aufträgen höher als diejenigen mit einem oder drei Aufträge. Es könnte damit zusammenhängen, dass ein grosser Auftrag weniger Übersichtlich ist als zwei kleinere separate. Zu viele Aufträge könnten dann wieder für Verwirrungen sorgen.\newline
-Die Anzahl involvierte SAS hat einen Datenbereich von 0 bis 10. 0 bedeutet, dass die Zulieferung für die Maschine aus Eigenproduktion oder von Drittlieferanten stammt.  Allerdings zeigen sämtliche Histogramme keine Auffäligkeiten, welche darauf schliessen lassen, dass Fail-Projekte andere Eigenschaften aufweisen als Success-Projekte. Die Erfolgsquote pro Ausprägung zeigt, dass wenn die Zulieferung durch eine andere Gesellschaft erfolgt, höher ist als wenn eine Eigenproduktion oder ein Drittlieferung stattfindet. Bei der Anzahl Supplying SAS MS zeigt sich dasselbe Bild. Hingegen zeigt sich bei den Supplying ME, PA und IS, dass wenn keine weitere Bühler GEsellschaft involviert war, die Erfolgsquote höher ist.
-
+Die Mehrheit der untersuchten Projekte konnte die Zeitvereinbarungen im MS2 einhalten. Dieses Verhältnis ändert sich bei Erreichung des MS8 und steigt bei MS10 so an, dass letztendlich der Grossteil der Projekte zeitverzögert abgeschlossen wird (783 Projekte respektive 86\%). Mittels Dummyvariablen pro Milestone wurde ausgewertet, ob sich ein anfängliche Verspätung sich durch die Projektlaufzeit durchzieht. Die meisten Projekte hatten die Eigenschaft, bei einer Verspätung im MS8 ebenso auch im MS11 verspätet zu sein. Die zweithäufigste Gruppe war diejenige, die erstmalig ab dem MS10 den Liefertermin bis zum Projektabschluss nicht mehr einhalten konnte. Auf Basis der Tabellen lassen sich jedoch keine Aussagen machen, ob bei einer Nichteinhaltung des vereinbarten Termin, das Projekt zwangsläufig unter Budget abschliessen wird. 
+\newline\newline\textbf{SQ:} Die Einflussdeterminante des SQ-Prozess sind einerseits der Stand im Bezug auf das OR-Budget und die Erfahrung sowie Betriebszugehörigkeit des Verkaufsmanager in Jahren. Allerdings konnten letztere aufgrund fehlender Datensätze nicht ausgewertet werden. Grundsätzlich wird vermutete, dass ein Budgetdruck im Zeitpunkt des Verkaufsabschlusses, den Verkauf von risikoreicheren Projekten begünstigt. Die mittlere Abweichung des OR vom Budget des Geschäftseinheit und der Region war für Fail-Projekte in absoluten und relativen Grössen höher als für Success Projekte.  
+\newline\newline\textbf{Komplexität:} Die Komplexität drückt den Schwierigkeitsgrad eines Projekts aus. Die vorherrschende Auffassung lautete, dass komplexere Projekte weniger erfolgreich abschliessen. Da die Komplexität nicht direkt gemessen werde kann, wurden die Anzahl Aufträge sowie involvierter Parteien bei den unterschiedlichen Projektphasen und Konsortien als Proxyvariablen festgelegt. Die Anzahl Projekte in der Stichprobe, die in einem Konsortium abgewickelt wurden, beträgt 78 , wovon 47 erfolgreich und 31 unter Budget abgeschlossen wurden. Die nachfolgende Tabelle zeigt die Verteilung der Konsortium-Projekte pro Region und BA. In EU und SAS\_BCHi werden 51 Projekte im Konsortium abgewickelt. In Europa konnte bei den GL- und VN-Projekten gerade einmal 50\% der Projekte oder weniger erfolgreich abgeschlossen werden. In China und MEA hingegen sind es die GM-Projekte, welche unter Budget abgeschlossen haben. 
+\begin{table}[htbp]
+	\centering
+	\caption{Add caption}
+	\begin{tabular}{lrrrrr}
+		& \multicolumn{1}{l}{Region} & \multicolumn{1}{l}{BA} & \multicolumn{1}{l}{Success} & \multicolumn{1}{l}{Fail} & \multicolumn{1}{l}{Total} \\
+		& \multicolumn{1}{l}{East\_Asia} & \multicolumn{1}{l}{GL} & 1     & 0     & 1 \\
+		&       &       &       &       &  \\
+		& \multicolumn{1}{l}{EU} & \multicolumn{1}{l}{CF} & 5     & 0     & 5 \\
+		& \multicolumn{1}{l}{EU} & \multicolumn{1}{l}{DC} & 0     & 1     & 1 \\
+		& \multicolumn{1}{l}{EU} & \multicolumn{1}{l}{GL} & 6     & 5     & 11 \\
+		& \multicolumn{1}{l}{EU} & \multicolumn{1}{l}{GM} & 1     & 3     & 4 \\
+		& \multicolumn{1}{l}{EU} & \multicolumn{1}{l}{VN} & 1     & 5     & 6 \\
+		\textbf{Total EU} &       &       & \textbf{13} & \textbf{14} & \textbf{27} \\
+		& \multicolumn{1}{l}{MEA\_Afr} & \multicolumn{1}{l}{GL} & 2     & 2     & 4 \\
+		& \multicolumn{1}{l}{MEA\_Afr} & \multicolumn{1}{l}{GM} & 6     & 5     & 11 \\
+		& \multicolumn{1}{l}{MEA\_Afr} & \multicolumn{1}{l}{VN} & 1     & 0     & 1 \\
+		\textbf{Total MEA} &       &       & \textbf{9} & \textbf{7} & \textbf{16} \\
+		& \multicolumn{1}{l}{North\_Ame} & \multicolumn{1}{l}{CF} & 1     & 0     & 1 \\
+		& \multicolumn{1}{l}{North\_Ame} & \multicolumn{1}{l}{GM} & 1     & 1     & 2 \\
+		\textbf{Total NAM} &       &       & \textbf{2} & \textbf{1} & \textbf{3} \\
+		& \multicolumn{1}{l}{SAS\_BCHI} & \multicolumn{1}{l}{CF} & 2     & 0     & 2 \\
+		& \multicolumn{1}{l}{SAS\_BCHI} & \multicolumn{1}{l}{DC} & 11    & 1     & 12 \\
+		& \multicolumn{1}{l}{SAS\_BCHI} & \multicolumn{1}{l}{GM} & 4     & 6     & 10 \\
+		\textbf{Total SAS\_BCHI} &       &       & \textbf{17} & \textbf{7} & \textbf{24} \\
+		& \multicolumn{1}{l}{South\_Ame} & \multicolumn{1}{l}{GM} & 3     & 1     & 4 \\
+		& \multicolumn{1}{l}{South\_Ame} & \multicolumn{1}{l}{VN} & 1     & 1     & 2 \\
+		\textbf{Total SAM} &       &       & \textbf{4} & \textbf{2} & \textbf{6} \\
+		& \multicolumn{1}{l}{South\_Asia} & \multicolumn{1}{l}{CF} & 1     & 0     & 1 \\
+		\textbf{Grant Total} &       &       & \textbf{47} & \textbf{31} & \textbf{78} \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newline Die Anzahl Aufträge pro Projekt variiert zwischen eins und 10 wobei die Mehrheit aller Projekte arbeitet auf Basis von einem Auftrag, von 312 nicht-erfolgreichen Projekten hatten 70\% einen Auftrag. Zudem sind von allen Projekte mit mehr als einem Auftrag 2 von 3 Projekten gut gelaufen. Mögliche Erklärungsansätze könnte sein, dass bei mehr Aufträgen die Übersichtlichkeit verloren gehen kann.
+\begin{table}[htbp]
+	\centering
+	\caption{Add caption}
+	\begin{tabular}{lrr}
+		& \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} \\
+		\textbf{1 Vertrag} & 449   & 228 \\
+		\textbf{> 1 Vertrag} & 205   & 84 \\
+		\textbf{Total} & 654   & 312 \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+Die Anzahl involvierte SAS bei der Zulieferung liegt im Bereich null und zehn, wobei null mit Eigenproduktion oder Zulieferung durch Dritte gleichzusetzen ist. In den übrigen Projektphasen sind maximal drei andere Bühler-Gesellschaften involviert. Eine Einzelauswertung pro Projektphase ergibt relativ wenig Aufschluss, weshalb die Häufigkeit der Kombinationen untersucht wurde. Die nachfolgende Tabelle zeigt, dass die Eigenproduktion respektive die Arbeit mit Drittlieferanten während allen Projektphasen das häufigste Charakteristika ist. Es fällt auf, dass sich die Hälfte der Datenpunkte in einem Bereich von maximal zwei involvierten SAS-Gesellschaften befindet. Der Vergleich der Erfolgsquoten der Kombinaten wäre für Projekte die bei der Zulieferung mit zwei weiteren SAS arbeiten jedoch bei den anderen Projektphasen keine weitere Parteien miteinbeziehen am höchsten. Die Zusammenarbeit mit einer anderen Bühler-Partei während der gesamten Projektlaufzeit scheint weniger erfolgreich zu sein.
+\begin{table}[htbp]
+	\centering
+	\caption{Anzahl involvierter Parteien}
+	\begin{tabular}{rrrrrrrr}
+		\multicolumn{1}{l}{NoSupplSAS} & \multicolumn{1}{l}{NoSupplSASMS} & \multicolumn{1}{l}{NoSupplSASME} & \multicolumn{1}{l}{NoSupplSASPA} & \multicolumn{1}{l}{NoSupplSASIS} & \multicolumn{1}{l}{Dummy\_Success} & \multicolumn{1}{l}{Dummy\_Fail} & \multicolumn{1}{l}{total} \\
+		0     & 0     & 0     & 0     & 0     & 180   & 89    & 269 \\
+		1     & 1     & 0     & 0     & 0     & 73    & 26    & 99 \\
+		2     & 2     & 0     & 0     & 0     & 38    & 13    & 51 \\
+		2     & 2     & 1     & 0     & 0     & 23    & 13    & 36 \\
+		1     & 1     & 1     & 0     & 0     & 17    & 11    & 28 \\
+		1     & 1     & 1     & 1     & 1     & 15    & 12    & 27 \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newline Die Analyse der Anzahl Aufträge in Verbindung mit der involvierten Parteien zeigt, dass ein Drittel der Projekte basierend auf einem ein Produktionsauftrag arbeiten und die Herstellung (MS) mittels Eigenproduktion oder in Zusammenarbeit mit einer anderen Bühler Gesellschaft erfolgte.
+\begin{table}[htbp]
+	\centering
+	\caption{Add caption}
+	\begin{tabular}{rrrrrrrrr}
+		\multicolumn{1}{l}{NoSupplSAS} & \multicolumn{1}{l}{NoSupplSASMS} & \multicolumn{1}{l}{NoSupplSASME} & \multicolumn{1}{l}{NoSupplSASPA} & \multicolumn{1}{l}{NoSupplSASIS} & \multicolumn{1}{l}{NoContr} & \multicolumn{1}{l}{Dummy\_Success} & \multicolumn{1}{l}{Dummy\_Fail} & \multicolumn{1}{l}{Total} \\
+		0     & 0     & 0     & 0     & 0     & 1     & 161   & 83    & 244 \\
+		1     & 1     & 0     & 0     & 0     & 1     & 47    & 20    & 67 \\
+		2     & 2     & 0     & 0     & 0     & 1     & 28    & 7     & 35 \\
+		2     & 2     & 1     & 0     & 0     & 1     & 16    & 10    & 26 \\
+		1     & 1     & 1     & 0     & 0     & 1     & 14    & 11    & 25 \\
+		1     & 1     & 1     & 1     & 1     & 1     & 14    & 9     & 23 \\
+		1     & 1     & 0     & 0     & 0     & 2     & 15    & 5     & 20 \\
+		0     & 0     & 0     & 0     & 0     & 2     & 14    & 5     & 19 \\
+		1     & 0     & 0     & 0     & 0     & 1     & 18    & 1     & 19 \\
+		1     & 1     & 1     & 0     & 1     & 2     & 16    & 2     & 18 \\
+		1     & 1     & 0     & 1     & 0     & 1     & 14    & 1     & 15 \\
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+\newpage
 \subsection{Kritische Würdigung der Ergebnisse}
 \newpage	
 	
