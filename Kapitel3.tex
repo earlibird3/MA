@@ -1,6 +1,6 @@
 % !TEX root = MA.tex
 \section{Analye der Erfolgsfaktoren des Bühler Projektmanagements}\label{drei}
-In diesem Kapitel wird zuerst das analytische Vorgehen erläutert und anschliessend die Ergebnisse präsentiert sowie kritisch gewürdigt. In vergangene Studien wurden die Erfolgsfaktoren von Projekten mittels der statistischen Auswertung von Einschätzungen zu deren Relevanz für den Projekterfolg erhoben. Die nachfolgende Analyse unterscheidet sich insofern, da versucht wird auf Basis der unternehmensspezifische Daten  Charakteristiken nicht-erfolgreicher Projekte zu ergründen.
+In diesem Kapitel wird zuerst das analytische Vorgehen erläutert und anschliessend die Ergebnisse präsentiert sowie kritisch gewürdigt. In vergangenen Studien wurden die Erfolgsfaktoren von Projekten mittels der statistischen Auswertung von Einschätzungen ausgewählter Attribute zu deren Relevanz für den Projekterfolg erhoben. Die nachfolgende Analyse unterscheidet sich insofern, da für die Ergründung der Charakteristiken nicht-erfolgreicher Projekte unternehmensspezifische Projektinformationen verwendet wurden.
 \subsection{Analytisches Vorgehen}
 Die untersuchte Stichprobe enthält alle Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als 'nicht abgeschlossen'.
 \newline Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Daten hatten geringe bis keine Korrelation mit der abhängigen Variable sprich dem Erfolgskriterium. Die lineare Variablentransformationen und andere Methoden, um eine Verteilungskurve zu simulieren führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und hat ausserdem das Ziel, die finanziellen Einbussen von sogenannten nicht erfolgreichen Projekten zu untersuchen. Die Aussagekraft der Ergebnisse wird dadurch so eingeschränkt, dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können.  Die Ergebnisse haben nur in Bezug auf die die untersuchte Stichprobe Gültigkeit. Es ist jedoch denkbar, auf Basis der Ergebnisse neue Hypothesen zu formulieren, welche mittels anderer, geeigneter statistischer Methoden geprüft werden können. Die erstmalige Auswertung der Projektdaten kann zudem Erkenntnisse zu möglichen Charakteristiken nicht-erfolgreicher Projekte liefern.
@@ -10,17 +10,17 @@ Die untersuchte Stichprobe enthält alle Projekte, die im Zeitraum zwischen 2013
 \newline\newline $Stichprobenumfang N = 1471$ und $Anzahl Faktoren i = 93$.
 \newline\newline
 Es wurden alle vorhandenen, unplausiblen und Berechnungsfaktoren vom Datensatz entfernt. Anschliessend wurde die Anzahl fehlender Daten pro Faktor ausgewertet und zusätzlich alle Determinanten mit mehr als 300 fehlender Datensätze von der weiteren Analyse ausgeschlossen. Zusätzlich bleibt die Variablen AMNo unberücksichtigt, da durch den Ausschluss der verbundenen Variablen (AMTen und AMAge) wenig Informationsgewinn erwartet wird. Ausserdem mussten alle Variablen, welche die Zeitdifferenz zwischen dem letzten Kostenforecast und dem Projektende messen, aufgrund fragwürdiger Plausibilität und Korrektheit der Daten von der Analyse ausgeschlossen werden. Mittels diesem Vorgehen kann der Datenverlust aufgrund fehlender Daten in Grenzen gehalten werden. Der neue Stichprobenumfang beträgt $N = 1076$ und die Anzahl Faktoren $i = 71$
-%Taelle zu Übersicht der Stichprobe
+%Taelle zu Übersicht der Stichprobe NA
 \begin{table}[htbp]
 	\centering
 	\caption{Anzahl NA's pro Variable (Ausschnitt)}
 	\begin{tabular}{lr}
-		\textbf{Variale} & \multicolumn{1}{l}{\textbf{Anzahl NA}} \\
+		\textbf{Variale} & \multicolumn{1}{l}{\textbf{Anzahl NA}} \\\hline
 		PrTimeDelayMS5 & 538 \\
 		AMAge2 & 444 \\
 		AMTen2 & 444 \\
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{tab:na}%
 \end{table}%
 Im Anschluss wurden die Datensätze auf ihre Plausibilität getestet und Ausreisser entfernt. Die Plausibilitätsüberlegungen basieren auf der logischen Interpretation und Herleitung der Indikatoren. Die Tabellen mit den Begründungen der unplausiblen Werte und Ausreisser befinden sich im Anhang. Die Outliers wurden mit Hilfe von Boxplots, Histogramme und der 'Interquartile Ranges' (IQR) der numerischen Variablen identifiziert. Zur quantitativen Bestimmung der Ausreisser wurde folgendes Entscheidungskalkül angewendet:
 \newline\newline
@@ -34,15 +34,18 @@ Im Anschluss wurden die Datensätze auf ihre Plausibilität getestet und Ausreis
 \newline\newline
 Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extreme negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extreme positive DB1Act sind bei einer durchschnittlichen Projektmarge von ca. 30\% relativ unwahrscheinlich und lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen für PA und IS wurden jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn es wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Entscheidungskalküls lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und die Anzahl verfügbarer Faktoren entspricht $ i = 71$. 
 \newline\newline
-\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurden zu analytischen Zwecken kategoriale Variablen auf Basis der vorhandene Daten erhoben. Die nachfolgende Tabelle zeigt sämtliche verbleibende (s. Kapitel 2 für alle Faktoren) inklusive der hinzugefügten Faktoren nach ihrer Kategorie strukturiert. Sämtliche Berechnungsformeln sowie die Interpretationen der Faktoren sind im Anhang enthalten.
+%%
+%%Zusätliche Variablen
+%%
+\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurden zu analytischen Zwecken vor allem kategoriale Variablen auf Basis der vorhandene Daten erhoben (mit * gekennzeichnet). Die nachfolgende Tabelle zeigt sämtliche verbleibende (s. Kapitel 2 für alle Faktoren) inklusive der hinzugefügten Faktoren nach ihrer Kategorie strukturiert. Sämtliche Berechnungsformeln sowie die Interpretationen der Faktoren sind im Anhang enthalten.
 \begin{table}[htbp]
 	\centering
 	\caption{Übersicht der Faktoren}
-	\begin{tabular}{lrrr}
-		\textbf{Erfolgskriterium} &       &       &  \\
-		DB1BudDev &       &       &  \\
-		Success &       &       &  \\
-		\textbf{Rahmenbedingungen} & \multicolumn{1}{l}{\textbf{Zeitmanagement}} & \multicolumn{1}{l}{\textbf{Sales \& Quoatation}} & \multicolumn{1}{l}{\textbf{Komplexität}} \\
+	\begin{tabular}{llll}
+		\textbf{Erfolgskriterium} &       &       &  \\\hline
+		DB1BudDev &   Dummy\_Success *    &       &  \\
+		Success * &     Dummy\_Fail * &       &  \\
+		\textbf{Rahmenbedingungen} & \multicolumn{1}{l}{\textbf{Zeitmanagement}} & \multicolumn{1}{l}{\textbf{Sales \& Quoatation}} & \multicolumn{1}{l}{\textbf{Komplexität}} \\\hline
 		CuNo  & \multicolumn{1}{l}{PrTimeBase} & \multicolumn{1}{l}{BUORBudGapAbs} & \multicolumn{1}{l}{ConPart} \\
 		EquLoc & \multicolumn{1}{l}{PrTimeAct} & \multicolumn{1}{l}{BUORBudGapRel} & \multicolumn{1}{l}{NoSupplSAS} \\
 		BA    & \multicolumn{1}{l}{PrTimeDelay} & \multicolumn{1}{l}{RegiORBudGapAbs} & \multicolumn{1}{l}{NoSupplSASMS} \\
@@ -50,8 +53,8 @@ Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedl
 		MS    & \multicolumn{1}{l}{PrTimeDelayMS8} &       & \multicolumn{1}{l}{NoSupplSASPA} \\
 		Region & \multicolumn{1}{l}{PrTimeDelayMS10} &       & \multicolumn{1}{l}{NoSupplSASIS} \\
 		& \multicolumn{1}{l}{PrTimeDelayMS11} &       & \multicolumn{1}{l}{NoContr} \\
-		& \multicolumn{1}{l}{Delay} &       &  \\
-		\textbf{Kostenmanagement} &       & \multicolumn{1}{l}{\textbf{Fulfillment}} &  \\
+		& \multicolumn{1}{l}{Delay * } &       &  \\
+		\textbf{Kostenmanagement} &       & \multicolumn{1}{l}{\textbf{Fulfillment}} &  \\\hline
 		TOBud & \multicolumn{1}{l}{CostActBudISRel} & \multicolumn{1}{l}{PMNo} & \multicolumn{1}{l}{CostFCadjPA} \\
 		BudMSTot & \multicolumn{1}{l}{DeltaLastFCAct} & \multicolumn{1}{l}{PMAge2} & \multicolumn{1}{l}{CostFCadjIS} \\
 		BudMETot & \multicolumn{1}{l}{DeltaLastFCActMS} & \multicolumn{1}{l}{PMTen2} & \multicolumn{1}{l}{HOMYellCost} \\
@@ -59,17 +62,17 @@ Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedl
 		BudISTot & \multicolumn{1}{l}{DeltaLastFCActPA} & \multicolumn{1}{l}{NoPM} & \multicolumn{1}{l}{HOMYellTime} \\
 		DB1Bud & \multicolumn{1}{l}{DeltaLastFCActIS} & \multicolumn{1}{l}{LeadSASPr} & \multicolumn{1}{l}{HOMRedCost} \\
 		DB1Act & \multicolumn{1}{l}{TOAct} & \multicolumn{1}{l}{LeadSAS.PrFF} & \multicolumn{1}{l}{HOMRedQual} \\
-		CostActBudMSabs & \multicolumn{1}{l}{TOBudDevabs} & \multicolumn{1}{l}{NoLeadSASFF} & \multicolumn{1}{l}{HOMRedTime} \\
-		CostActBudMEabs & \multicolumn{1}{l}{CostBud} & \multicolumn{1}{l}{CostFCadj} & \multicolumn{1}{l}{PrStartDate} \\
-		CostActBudPAabs & \multicolumn{1}{l}{CostAct} & \multicolumn{1}{l}{CostFCadjMS} & \multicolumn{1}{l}{Cat\_age} \\
-		CostActBudISabs & \multicolumn{1}{l}{CostBudDevabs} & \multicolumn{1}{l}{CostFCadjME} &  \\
+		CostActBudMSabs & \multicolumn{1}{l}{TOBudDevabs *} & \multicolumn{1}{l}{NoLeadSASFF} & \multicolumn{1}{l}{HOMRedTime} \\
+		CostActBudMEabs & \multicolumn{1}{l}{CostBud *} & \multicolumn{1}{l}{CostFCadj} & \multicolumn{1}{l}{PrStartDate} \\
+		CostActBudPAabs & \multicolumn{1}{l}{CostAct *} & \multicolumn{1}{l}{CostFCadjMS} & \multicolumn{1}{l}{Cat\_age * } \\
+		CostActBudISabs & \multicolumn{1}{l}{CostBudDevabs *} & \multicolumn{1}{l}{CostFCadjME} &  \\
 		SUCostTO & \multicolumn{1}{l}{DB1Budabs} &       &  \\
 		CostActBudRel & \multicolumn{1}{l}{DB1Actabs} &       &  \\
-		CostActBudMSRel & \multicolumn{1}{l}{DB1BudDevabs} &       &  \\
-		CostActBudMERel & \multicolumn{1}{l}{TOBudCat} &       &  \\
+		CostActBudMSRel & \multicolumn{1}{l}{DB1BudDevabs *} &       &  \\
+		CostActBudMERel & \multicolumn{1}{l}{TOBudCat *} &       &  \\
 		CostActBudPARel &       &       &  \\
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{tab:ovvar}%
 \end{table}%
 \subsection{Ergebnisse und Interpretation}
 Die Ergebnisse der finanziellen Analyse und der Untersuchung der Einflussfaktoren werden getrennt dargestellt. Die untersuchte Stichprobe enthält 966 Projekte, wovon 654 erfolgreich abgeschlossen wurden.
@@ -133,7 +136,7 @@ Die Aufschlüsselung der Kostenabweichung zeigt, dass die Installationsphase sow
 		FAIL  & -61'534 & -20'253 & -12'721 & -7'220 & -22'053 & -62'247 \\
 		Grand Total & 53'336 & 27'363 & -14'880 & -8'128 & -29'167 & -24'812 \\
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{stocostdb1dev}%
 \end{table}%
 Als Ergänzung wurde versucht zu eruieren, von welchem Projekttyp die Margeneinbusse der Fail-Projekte stammt. Dazu wurde die Häufigkeit und die absolute DB1 Abweichung pro Umsatzkategorie berechnet.
 %Tabelle zu Häufigkeit und Verlust pro TOBUDCAT
@@ -244,19 +247,26 @@ Bei der Auswertung der Geschäftseinheiten (s. Tabelle \ref{fbabu}) für GL, GM 
 		North\_Ame & SR    & 1.0   & 1     & 1     & 50.0\% & 2 \\
 		North\_Ame & \textbf{VN}  & 1.0   & 12    & 12    & 50.0\% & 24 \\
 	\end{tabular}%
-	\label{fregba}%
+	\label{tab:fregba}%
 \end{table}%
-Im Regionen-BA Split der Tabelle \ref{fregba} sind für diejenigen Regionen mit den niedrigsten Erfolgsquoten, EU und NAM, sind jene BA's mit den niedrigsten Erfolgsquoten zu finden. Die Kombination EU-GM, EU-GL, EU-VN mit den tiefen Erfolgsquoten machen knapp 30\% ($(50+23+26)/312$) aller Fail-Projekte aus. Die niedrige Erfolgsquote von NAM stammt vor allem aus VN- und GM-Projekten, wobei VN noch vor GM weniger gut abschneidet.
+Im Regionen-BA Split der Tabelle \ref{tab:fregba} sind für diejenigen Regionen mit den niedrigsten Erfolgsquoten, EU und NAM, sind jene BA's mit den niedrigsten Erfolgsquoten zu finden. Die Kombination EU-GM, EU-GL, EU-VN mit den tiefen Erfolgsquoten machen knapp 30\% ($(50+23+26)/312$) aller Fail-Projekte aus. Die niedrige Erfolgsquote von NAM stammt vor allem aus VN- und GM-Projekten, wobei VN noch vor GM weniger gut abschneidet.
 \newline
 Zusammenfassend lässt sich aussagen, dass ungefähr 60\% ($(122+68)/312$ respektive $(145+38)/312$) der Fail-Projekte entweder in den Geschäftsbereichen VN und GM respektive in den Regionen EU und NAM liegen. Zudem wird die Erfolgsquote aller Projekte zu 30\% durch europäische Projekte in den Geschäftsbereichen GM, GL und VN bestimmt wird.
 %
 %Analyse der Kosten
 %
-\newline\newline\textbf{Kosten} Das Umsatzvolumen soll Aufschluss über die Grösse und Wichtigkeit eines Projekts geben. Die zugrundeliegende Prämisse postuliert, dass Projekte mit höherem Umsatzvolumen risikoreicher sind und deshalb eher unter Budget beendet werden. Die Gegenhypothese unterstellt, dass grössere Projekte (hoher TOBud) relativ mehr Beachtung erhalten, da sie den Erfolg eines Geschäftsbereich respektive einer Region mehr beeinflussten als kleinere Projekte, und deshalb erfolgreicher abschliessen.
-\newline\textbf{Einfügung Histogram TOBud\_cat - SWEAVE}
-\newline
+\newline\newline\textbf{Kosten} Das Umsatzvolumen soll Aufschluss über die Grösse und Wichtigkeit eines Projekts geben. Die zugrundeliegende Prämisse postuliert, dass Projekte mit höherem Umsatzvolumen risikoreicher sind und deshalb eher unter Budget beendet werden. Die Gegenhypothese unterstellt, dass grössere Projekte (hoher TOBud) relativ mehr Beachtung erhalten, da sie den Erfolg eines Geschäftsbereich respektive einer Region mehr beeinflussen als kleinere Projekte. Deshalb liege der Fokus auf der Einhaltung der Budgetvorgaben.
+%
+%include histogram of TOBud_cat
+%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{test.pdf}
+	\caption{Histogram Umsatzkategorie}
+	\label{fig: htobudcat}
+\end{figure}
 Die Verteilung des Umsatzvolumen ist linksschief und zeigt dass der Grossteil der Projekte ein Umsatzvolumen von weniger als 10 Mio. CHF haben.
-\newline\textbf{Histogram}Das Histogramm für die TOBud\_Cat zeigt, dass ca. zwei Drittel aller untersuchten Projekte ein Umsatzvolumen von bis und mit 2 Mio. CHF hat. Die Anzahl Fail-Projekte konzentriert sich folglich in den vier untersten Kategorien.
+\newline\textbf{Histogram} Das Histogramm für die TOBud\_Cat zeigt, dass ca. zwei Drittel aller untersuchten Projekte ein Umsatzvolumen von bis und mit 2 Mio. CHF hat. Die Anzahl Fail-Projekte konzentriert sich folglich in den vier untersten Kategorien.
 \newline\newline Die absoluten und relativen Abweichungen zwischen den aktuellen und den budgetierten Kosten sind direkt mit dem Erfolgskriterium korreliert und sind erwartungsgemäss für Fail-Projekte höher. 
 % Mean absolute Kostenabweichungen
 \begin{table}[H]
@@ -382,7 +392,26 @@ Insgesamt wurden 43 Projekte mit einem Wechsel des Projektmanagers über die let
 	\end{tabular}%
 	\label{ageten}%
 \end{table}%
-Die Durchschnittswerte des Alter und der Dienstjahre in der Tabelle \ref{ageten} sind für Fail-Projekte ein wenige höher als für Success-Projekte. \textbf{Verteilung Alter, plot alt,ten, plot agecat}
+Die Durchschnittswerte des Alter und der Dienstjahre in der Tabelle \ref{ageten} sind für Fail-Projekte ein wenige höher als für Success-Projekte.
+% Table generated by Excel2LaTeX from sheet 'fagecat'
+\begin{table}[htbp]
+	\centering
+	\caption{Erfolgsquote pro Alterskategorie}
+	\begin{tabular}{lrrrrrr}
+		\textbf{Cat\_age} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
+		20-25 & 2.5   & 15    & 6     & 28.6\% & 21    & 2.2\% \\
+		26-30 & 2.3   & 130   & 57    & 30.5\% & 187   & 19.4\% \\
+		31-35 & 3.0   & 130   & 44    & 25.3\% & 174   & 18.0\% \\
+		36-40 & 2.3   & 97    & 43    & 30.7\% & 140   & 14.5\% \\
+		41-45 & \textbf{1.8} & 105   & 57    & 35.2\% & 162   & 16.8\% \\
+		46-50 & 2.3   & 65    & 28    & 30.1\% & 93    & 9.6\% \\
+		51-55 & \textbf{1.3} & 69    & 52    & 43.0\% & 121   & 12.5\% \\
+		56-60 & \textbf{1.4} & 26    & 19    & 42.2\% & 45    & 4.7\% \\
+		61-63 & 2.8   & 17    & 6     & 26.1\% & 23    & 2.4\% \\\hline
+		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fagecat}%
+\end{table}%
 \newline\newline
 %
 % Auswertung Lead SAS
@@ -490,7 +519,7 @@ Die Tabelle \ref{fdelayms} zeigt, dass die Mehrheit der Projekte bei MS2 noch im
 		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 1     & 0     & 1     & 7 \\
 		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 0     & 1     & 1     & 5 \\
 		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 0     & 0     & 0     & 1 \\
-		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\\hline
 		\textbf{Total} &       &       &       &       &       & \textbf{268} \\
 		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 1     & 1     & 1     & 290 \\
 		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 0     & 1     & 1     & 126 \\
@@ -501,10 +530,10 @@ Die Tabelle \ref{fdelayms} zeigt, dass die Mehrheit der Projekte bei MS2 noch im
 		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 1     & 0     & 1     & 2 \\
 		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 0     & 1     & 0     & 1 \\
 		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 0     & 1 \\
-		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\\hline
 		\textbf{Total} &       &       &       &       &       & \textbf{515} \\
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{fdleay}%
 \end{table}%
 Die meisten Projekte hatten die Eigenschaft, bei einer Verspätung im MS8 ebenso auch im MS11 verspätet zu sein. Die zweithäufigste Gruppe war diejenige, die erstmalig ab dem MS10 den Liefertermin bis zum Projektabschluss nicht mehr einhalten konnte. Erst an dritter Stelle folgt die Gruppe, die bereits ab MS2 bis MS11 hinter dem Zeitplan lag. Auf Basis der Tabellen lassen sich jedoch keine Aussagen machen, ob bei einer Nichteinhaltung des vereinbarten Termin, das Projekt zwangsläufig unter Budget abschliessen wird. 
 %%
@@ -613,7 +642,7 @@ Die Anzahl involvierte SAS (NoSupplSAS) bei der Zulieferung liegt im Bereich nul
 \begin{table}[H]
 	\centering
 	\caption{Häufigkeit NoSAS-Kombinationen Ausschnitt (eigene Darstellung)}
-	\begin{tabular}{lrrrrrrr}
+	\begin{tabular}{lrrrrrrrr}
 		\textbf{NoSupplSAS} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\ \hline
 		\multicolumn{1}{r}{0} & 0     & 0     & 0     & 0     & 180   & 89    & 269 & 2.0 \\
 		\multicolumn{1}{r}{1} & 1     & 0     & 0     & 0     & 73    & 26    & 99  & 2.8 \\
