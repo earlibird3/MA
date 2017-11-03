@@ -1,7 +1,7 @@
 % !TEX root = MA.tex
 
 \section{Fazit}
-\section*{Annex: Datentabellen}
+\section*{Annex: Datentabellen}\label{sec:annex}
 Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gekennzeichnete Variablen wurden für die Auswertung zusätzlich erhoben, liefern allerdings keinen neuen Informationsgehalt.
 %%
 %%Übersicht verwendeter Varialen
@@ -368,8 +368,9 @@ Nachfolgend werden sämtliche Variablen mit fehlenden Werten tabellarisch darges
 		DB1Actabs & 6 \\
 		EquLoc & 2 \\
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{tab:na}%
 \end{table}%
+
 Tabelle 2: Plausibilität
 Vorab muss erläutert werden, dass der Wert $1'111'111$ bei den CostMostnegFCajd-Variablen keinen Ausreisser darstellt sondern angibt, dass das Projekt nur positive FC-Anpassungen gehabt hat. Dies impliziert, dass der Forecast für die Kosten gesunken sind und somit weniger Kosten erwartet wurden, wobei der Umsatz konstant geblieben oder gestiegen ist. Bei den HOM-YellowStatus und die HOM-RedStatus drückt der Wert $1'111'111$ aus, dass der entsprechende Status nicht als erstes oder gar nicht aufgetreten ist. Die Interpretation wäre somit, dass bei den HOMYellow-Status Variablen der Status immer grün war oder zuerst respektive direkt den roten Status hatte. Eine ähnliche Interpretation gilt für HOMRedStatus-Variablen, somit hätte dieses Projekt, den roten Status gar nicht erst erreicht. Da diese Interpretationen valide sind und somit keine fehlende Werte darstellen, verbleiben sie im Datensatz. 
 Tabelle 3: Ausreisser
@@ -377,7 +378,20 @@ Diagramme: Boxplots Histogramme aller numerischen Variablen
 Tabelle 4: Zusätzliche Variablen: faktisch Übersicht aller Variablen 
 Tabelle 5: Berechnungsformeln
 Tabelle 6: Interpretation
-
+%%
+%%Weitere Tabellen, die nicht im Text erhalten sind
+%%
+%Tabelle PMAge2 und PMTen Projektmanager
+\begin{table}[H]
+	\centering
+	\caption{Durchschnittswerte PMAge und PMTen in Jahren}
+	\begin{tabular}{lrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Age}} & \multicolumn{1}{l}{\textbf{Ten}} \\\hline
+		FALSE & 41.1 & 12.4 \\
+		TRUE  & 39.5 & 11.7 \\
+	\end{tabular}%
+	\label{ageten}%
+\end{table}%
 \subsection*{Data Collection}
 \subsection*{Measures}
 \subsection*{Analysis}
