@@ -2,7 +2,7 @@
 
 \section{Fazit}
 \section*{Annex: Datentabellen}\label{sec:annex}
-Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gekennzeichnete Variablen wurden für die Auswertung zusätzlich erhoben, liefern allerdings keinen neuen Informationsgehalt.
+Die nachfolgenden Tabellen enthalten sämtliche Informationen zu den Variablen, ihrer Berechnung und Interpretation. Mit einem * gekennzeichnete Variablen wurden für die Auswertung zu Berechnungszwecken zusätzlich erhoben, liefern allerdings keinen neuen Informationsgehalt. 
 %%
 %%Übersicht verwendeter Varialen
 %%
@@ -158,7 +158,7 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 	14    & BudMETot & Kosten & \% \\
 	13    & BudMSTot & Kosten & \% \\
 	15    & BudPATot & Kosten & \% \\
-	79    & CostAct & Kosten & TCHF \\
+	79    & CostAct * & Kosten & TCHF \\
 	23    & CostActBudISabs & Kosten & TCHF \\
 	29    & CostActBudISRel & Kosten & \% \\
 	21    & CostActBudMEabs & Kosten & TCHF \\
@@ -168,13 +168,13 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 	22    & CostActBudPAabs & Kosten & TCHF \\
 	28    & CostActBudPARel & Kosten & \% \\
 	25    & CostActBudRel & Kosten & \% \\
-	80    & CostBud & Kosten & TCHF \\
-	78    & CostBudDevabs & Kosten & TCHF \\
+	80    & CostBud *& Kosten & TCHF \\
+	78    & CostBudDevabs * & Kosten & TCHF \\
 	18    & DB1Act & Kosten & \% \\
 	68    & DB1Actabs & Kosten & TCHF \\
 	17    & DB1Bud & Kosten & \% \\
 	67    & DB1Budabs & Kosten & TCHF \\
-	77    & DB1BudDevabs & Kosten & TCHF \\
+	77    & DB1BudDevabs * & Kosten & TCHF \\
 	41    & DeltaLastFCAct & Kosten & TCHF \\
 	45    & DeltaLastFCActIS & Kosten & TCHF \\
 	43    & DeltaLastFCActME & Kosten & TCHF \\
@@ -183,30 +183,30 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 	24    & SUCostTO & Kosten & \% \\
 	66    & TOAct & Kosten & TCHF \\
 	12    & TOBud & Kosten & TCHF \\
-	75    & TOBud\_Cat & Kosten &  \\
-	76    & TOBudDevabs & Kosten & TCHF \\
-	81    & Cat\_age & Fulfillment &  \\
-	30    & CostFCadj & Fulfillment & {0,1} \\
-	34    & CostFCadjIS & Fulfillment & {0,1,2} \\
-	32    & CostFCadjME & Fulfillment & {0,1,2} \\
-	31    & CostFCadjMS & Fulfillment & {0,1,2} \\
-	33    & CostFCadjPA & Fulfillment & {0,1,2} \\
+	75    & TOBud\_Cat * & Kosten &  \\
+	76    & TOBudDevabs * & Kosten & TCHF \\
+	81    & Cat\_age * & Fulfillment &  \\
+	30    & CostFCadj & Fulfillment & \{0,1\} \\
+	34    & CostFCadjIS & Fulfillment & \{0,1,2\} \\
+	32    & CostFCadjME & Fulfillment & \{0,1,2\}\\
+	31    & CostFCadjMS & Fulfillment & \{0,1,2\} \\
+	33    & CostFCadjPA & Fulfillment & \{0,1,2\} \\
 	38    & HOMRedCost & Fulfillment & Monate \\
 	39    & HOMRedQual & Fulfillment & Monate \\
 	40    & HOMRedTime & Fulfillment & Monate \\
 	35    & HOMYellCost & Fulfillment & Monate \\
 	36    & HOMYellQual & Fulfillment & Monate \\
 	37    & HOMYellTime & Fulfillment & Monate \\
-	9     & LeadSAS.PrFF & Fulfillment & {NO,YES} \\
+	9     & LeadSAS.PrFF & Fulfillment & \{NO,YES\} \\
 	8     & LeadSASPr & Fulfillment &  \\
-	58    & NoLeadSASFF & Fulfillment & Anzahl \\
+	58    & NoLeadSASFF & Fulfillment & Anzahl\\
 	57    & NoPM  & Fulfillment & Anzahl \\
 	69    & PMAge2 & Fulfillment & Monate \\
-	4     & PMChange & Fulfillment & {YES,NO} \\
+	4     & PMChange & Fulfillment & \{YES,NO\} \\
 	3     & PMNo  & Fulfillment &  \\
 	70    & PMTen2 & Fulfillment & Monate \\
 	11    & PrStartDate & Fulfillment & DD-MM-YYYY \\
-	74    & Delay & Zeit  & {TRUE,FALSE} \\
+	74    & Delay * & Zeit  & \{TRUE,FALSE\} \\
 	51    & PrTimeAct & Zeit  & Monate \\
 	50    & PrTimeBase & Zeit  & Monate \\
 	52    & PrTimeDelay & Zeit  & Monate \\
@@ -214,7 +214,7 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 	56    & PrTimeDelayMS11 & Zeit  & Monate \\
 	53    & PrTimeDelayMS2 & Zeit  & Monate \\
 	54    & PrTimeDelayMS8 & Zeit  & Monate \\
-	10    & ConPart & Komplexität & {TRUE,FALSE} \\
+	10    & ConPart & Komplexität & \{TRUE,FALSE\} \\
 	64    & NoContr & Komplexität & Anzahl \\
 	59    & NoSupplSAS & Komplexität & Anzahl \\
 	63    & NoSupplSASIS & Komplexität & Anzahl \\
@@ -222,9 +222,9 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 	60    & NoSupplSASMS & Komplexität & Anzahl \\
 	62    & NoSupplSASPA & Komplexität & Anzahl \\
 	19    & DB1BudDev & Erfolgskriterium & \% \\
-	73    & Dummy\_Fail & Erfolgskriterium & {0,1} \\
-	72    & Dummy\_Success & Erfolgskriterium & {0,1} \\
-	71    & Success & Erfolgskriterium & {YES,NO} \\
+	73    & Dummy\_Fail * & Erfolgskriterium & \{0,1\} \\
+	72    & Dummy\_Success * & Erfolgskriterium & \{0,1\} \\
+	71    & Success * & Erfolgskriterium & \{YES,NO\} \\
 	46    & BUORBudGapAbs & Sales \& Qotation & TCHF \\
 	47    & BUORBudGapRel & Sales \& Qotation & \% \\
 	48    & RegiORBudGapAbs & Sales \& Qotation & TCHF \\
@@ -233,115 +233,109 @@ Dieser Anhang enthält sämtliche Informationen zu den Faktoren. Mit einem * gek
 %%
 %%Variablen mit Formel
 %%
-\newpage\begin{landscape}
-	\begin{center}
-		\begin{longtable}{p{6cm}|p{4cm}|p{6cm}|p{3cm}}
-			\caption{Variablenschlüssel}\\\hline
-			\textbf{Variablename} & \textbf{Variable Code} & {\textbf{Berechnungsformel}} & {\textbf{Masseinheit}} \\\hline\endhead
-			Customer Number & CuNo  &       &  \\
-			Equipment Location & EquLoc &       &  \\
-			Project Manager Number & PMNo  &       &  \\
-			Project Manager Change & PMChange &       & \multicolumn{1}{l}{{YES,NO}} \\
-			Business Area & BA    &       &  \\
-			Business Unit & BU    &       &  \\
-			Market Segments & MS    &       &  \\
-			Lead SAS Project & LeadSASPr &       &  \\
-			Lead SAS Fullifllment is different than Lead SAS Project & LeadSAS.PrFF &       & \multicolumn{1}{l}{{NO,YES}} \\
-			Consortial Part & ConPart &       & \multicolumn{1}{l}{{TRUE,FALSE}} \\
-			Project Start Date & PrStartDate &       & \multicolumn{1}{l}{DD-MM-YYYY} \\
-			Turnover Budget & TOBud &       & \multicolumn{1}{l}{TCHF} \\
-			Cost Budget Mechancial Supply & BudMSTot & $\frac{Cost Bud_{MS}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Budget Mechanical Engineering & BudMETot & $\frac{Cost Bud_{ME}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Budget Plant \& Automation & BudPATot & $\frac{Cost Bud_{PA}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Budget Installation  & BudISTot & $\frac{Cost Bud_{IS}}{Cost Bud_{Total}}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Deckungsbeitrag 1 Budget & DB1Bud &  $\frac{(TOBud - DB1Bud)}{TOBud}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Deckungsbeitrag 1 Actual & DB1Act & $\frac{(TOAct - DB1Act)}{TOAct}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Deckungsbeitrag Deviation Actual - Budget & DB1BudDev &  $\frac{(DB1 Act-DB1 Bud)}{DB1 Bud}$     & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget Mechnical Supply & CostActBudMSabs & $((-CostAct_{MS})-(-CostBud_{MS})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
-			Cost Deviation between Actual and Budget Mechnical Engineering & CostActBudMEabs & $((-CostAct_{ME})-(-CostBud_{ME})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
-			Cost Deviation between Actual and Budget Plant Automation & CostActBudPAabs & $((-CostAct_{PA})-(-CostBud_{PA})$ & \multicolumn{1}{l}{TCHF} \\ [3mm]
-			Cost Deviation between Actual and Budget Installation & CostActBudISabs & $((-CostAct_{IS})-(-CostBud_{IS})$ & \multicolumn{1}{l}{TCHF} \\
-			Subsequent Delivery in Relation to TO & SUCostTO & $\frac{(-SUAct)}{TOAct}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget relative for the whole project & CostActBudRel & $\frac{((-CostAct_{Total}) - (-CostBud_{Total})}{(-CostBud_{Total})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget relative Mechnical Supply & CostActBudMSRel &  $\frac{((-CostAct_{MS}) - (-CostBud_{MS})}{(-CostBud_{MS})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget relative Mechnical Engineering & CostActBudMERel & $\frac{((-CostAct_{ME}) - (-CostBud_{ME})}{(-CostBud_{ME})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget relative Plant Automation & CostActBudPARel & $\frac{((-CostAct_{PA}) - (-CostBud_{PA})}{(-CostBud_{PA})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Deviation between Actual and Budget relative Installation & CostActBudISRel & $\frac{((-CostAct_{IS}) - (-CostBud_{IS})}{(-CostBud_{IS})}$ & \multicolumn{1}{l}{\%} \\ [3mm]
-			Cost Forecast adjustment Project & CostFCadj &       & \multicolumn{1}{l}{{0,1}} \\
-			Cost Forecast adjustment Mechnical Supply & CostFCadjMS &       & \multicolumn{1}{l}{{0,1,2}} \\
-			Cost Forecast adjustment Mechnical Engineering & CostFCadjME &       & \multicolumn{1}{l}{{0,1,2}} \\
-			Cost Forecast adjustment Plant \& Automation & CostFCadjPA &       & \multicolumn{1}{l}{{0,1,2}} \\
-			Cost Forecast adjustment Installation & CostFCadjIS &       & \multicolumn{1}{l}{{0,1,2}} \\
-			Months between most negative Forecast adjustment Mechnical Supply and Project Closure & CostMostnegFCadjMS & $(Date(Project Closure))-(Date(most negative FC adj.)_{MS})$ & \multicolumn{1}{l}{Monate} \\ [3mm]
-			Months between most negative Forecast adjustment Mechnical Engineerring and Project Closure & CostMostnegFCadjME & $(Date(Project Closure))-(Date(most negative FC adj.)_{ME})$ & \multicolumn{1}{l}{Monate} \\ [3mm]
-			Months between Hand-over-Meeting and first Yellow Status Cost & HOMYellCost &$\frac{(Date(first Yellow Status)_{Cost} - (Date(HOM))}{Project baseline}$& \multicolumn{1}{l}{Monate} \\ [3mm]
-			Months between Hand-over-Meeting and fist Yellow Status Quality & HOMYellQual & $\frac{(Date(first Yellow Status)_{Quality} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\ [3mm]
-			Months between Hand-over-Meeting and first Yellow Status Time & HOMYellTime &$\frac{(Date(first Yellow Status)_{Time} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\ [3mm]
-			Months between Hand-over-Meeting first Red Status Cost & HOMRedCost & $\frac{(Date(first Red Status)_{Cost} - (Date(HOM))}{Project baseline}$ &\multicolumn{1}{l}{Monate} \\
-			Months between Hand-over-Meeting and first Red Status Quality & HOMRedQual & $\frac{(Date(first Red Status)_{Quality} - (Date(HOM))}{Project baseline}$& \multicolumn{1}{l}{Monate} \\
-			Months between Hand-over-Meeting and first Red Status Time & HOMRedTime & $\frac{(Date(first Red Status)_{Cost} - (Date(HOM))}{Project baseline}$ & \multicolumn{1}{l}{Monate} \\
-			Delta between last Forecast and actual  & DeltaLastFCAct & $Last Cost FC-Cost Act$ & \multicolumn{1}{l}{TCHF} \\
-			Delta between last Forecast and actual Mechnical Supply & DeltaLastFCActMS & $Last Cost FC_{MS}-Cost Act_{MS}$ & \multicolumn{1}{l}{TCHF} \\
-			Delta between last Forecast and actual Mechnical Engineering & DeltaLastFCActME & $Last Cost FC_{ME}-Cost Act_{ME}$& \multicolumn{1}{l}{TCHF} \\
-			Delta between last Forecast and actual Plant Automation & DeltaLastFCActPA & $Last Cost FC_{PA}-Cost Act_{PA}$ & \multicolumn{1}{l}{TCHF} \\
-			Delta between last Forecast and actual Installtion & DeltaLastFCActIS & $Last Cost FC_{IS}-Cost Act_{IS}$ & \multicolumn{1}{l}{TCHF} \\
-			Business Area Importance of Project & BAImportPr & $\frac{TOBud_{BA}}{Median (TOBud_{BA})}$ & \multicolumn{1}{l}{\%} \\
-			Business Unit Importance Project & BUImportPr & $\frac{TOBud_{BU}}{Median (TOBud_{BU})}$ & \multicolumn{1}{l}{\%} \\
-			Market Segement Importance  of Project & MSImportPr & $\frac{TOBud_{MS}}{Median (TOBud_{MS})}$ & \multicolumn{1}{l}{\%} \\
-			Business Unit Orders Released Budget Gap absolute & BUORBudGapAbs & $OR Act_{BU}-OR Bud_{BU}$ & \multicolumn{1}{l}{TCHF} \\
-			Business Unit Orders Released Budget Gap relative & BUORBudGapRel & $\frac{(ORAct_{BU}-ORBud_{BU})}{ORBud_{BU}}$ & \multicolumn{1}{l}{\%} \\
-			Region Orders Released Budget Gap absolute & RegiORBudGapAbs & $OR Act_{Region}-OR Bud_{Region}$ & \multicolumn{1}{l}{TCHF} \\
-			Region Orders Released Budget Gap relative & RegiORBudGapRel & $\frac{(ORAct_{Region}-ORBud_{Region})}{ORBud_{Region}}$ & \multicolumn{1}{l}{\%} \\
-			Project Time Base & PrTimeBase & $Baseline_{MS11}-Baseline_{MS1}$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Actual & PrTimeAct & $Act_{MS10}-Act_{MS1}$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Delay & PrTimeDelay & $Baseline-Act$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Delay for MS2 & PrTimeDelayMS2 & $Baseline_{MS2}-Act_{MS2}$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Delay for MS8 & PrTimeDelayMS8 & $Baseline_{MS8}-Act_{MS8}$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Delay for MS10 & PrTimeDelayMS10 & $Baseline_{MS10}-Act_{MS10}$ & \multicolumn{1}{l}{Monate} \\
-			Project Time Delay for MS11 & PrTimeDelayMS11 & $Baseline_{MS11}-Act_{MS11}$ & \multicolumn{1}{l}{Monate} \\
-			Number Project Manager during project life time & NoPM  &       & \multicolumn{1}{l}{Anzahl} \\
-			Area Manager Age & AMAge & $Date_{HOM}-Date_{Geburt}$ & \multicolumn{1}{l}{Jahre} \\
-			Area Manager Tenure & AMTen & $Date_{HOM}-Date_{Eintritt}$ & \multicolumn{1}{l}{Jahre} \\
-			Project Manager Age & PMAge & $Date_{HOM}-(Date_{Geburt}$ & \multicolumn{1}{l}{Jahre} \\
-			Project Manager Tenure & PMTen & $Date_{HOM}-Date_{Eintritt}$ & \multicolumn{1}{l}{Jahre} \\
-			Number of Lead SAS Fulfillment & NoLeadSASFF &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Supplying SAS & NoSupplSAS &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Supplying SAS Mechnical Supply & NoSupplSASMS &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Supplying SAS Mechnical Engineering & NoSupplSASME &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Supplying SAS Plant \& Automation & NoSupplSASPA &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Supplying SAS Installation & NoSupplSASIS &       & \multicolumn{1}{l}{Anzahl} \\
-			Number of Contracts & NoContr &       & \multicolumn{1}{l}{Anzahl} \\
-			Turnover Actual & TOAct &       & \multicolumn{1}{l}{TCHF} \\
-			Deckungsbeitrag 1 Budget absolut & DB1Budabs & $TOBud-CostBud$ & \multicolumn{1}{l}{TCHF} \\
-			Deckungsbeitrag 1 Actual Absolut & DB1Actabs & $TOAct-CostAct$ & \multicolumn{1}{l}{TCHF} \\
-			Region & Region &       &  \\
-			Success & success &       & {YES,NO} \\
-			On Time & onTime &       & {YES,NO} \\
-			MMS\_FCadj\_PrAct & MMS\_FCadj\_PrAct & $\frac{CostMostnegFCadjMS}{PrTimeAct}$ & \\
-			MME\_FCadj\_PrAct & MME\_FCadj\_PrAct & $\frac{CostMostnegFCadjME}{PrTimeAct}$ &  \\
-			Deviation TO Bud from TO Act & TOBudDevabs & $TOAct-TOBud$ & TCHF \\
-			Deviation DB1 Bud from DB1 Act & DB1BudDevabs & $DB1Act-DB1Bud$ & TCHF \\
-			Cost Budget & CostBud &       & TCHF \\
-			Cost Actual & CostAct &       & TCHF \\
-			Jahr des Projektstartdatum & PrStartDateY &       & YYYY \\
-			Monat des Projektstartdatum & PrStartDatem &       & MM \\
-			Tag des Projektstartdatum & PrStartDateD &       & DD \\
-			Datum des Projektende & PrEndDate &       & DD-MM-YYY \\
-			TO Bud Kategorien & TOBud\_cat &       & {1:70} \\
-			Erfolgskriterium gemäss dem Ampelsystem & DB1Dev\_ampel &       & {green, yellow, red} \\
-			DB1 Abweichung Kategorien & DB1Dev\_cat &       & {1:6} \\
-			Zeiteinhaltung Kategorien & PrTimeDelay\_cat &       & {1:15} \\
-			Zeiteinhaltung gemäss Ampelsystem & PrTimeDelay\_ampel &       & {green, yellow, red} \\		
-			\label{tab:addlabel}%
-		\end{longtable}%
-	\end{center}
-\end{landscape}
+\newpage
+\begin{longtable}{p{0.5cm}|p{4cm}|p{3.5cm}|p{6cm}}
+	\caption{Berechnungsformel der verwendeten Variablen}\\
+	\textbf{No.} & \textbf{Kategorie} & {\textbf{Variablencode}} & {\textbf{Berechnungsformel}} \\\hline\endhead
+	19    & Erfolgskriterium & DB1BudDev & $DB1Act - DB1Bud$ \\
+	71    & Erfolgskriterium & Success *& $DB1Act \geq 0 = TRUE$ \\
+	72    & Erfolgskriterium & Dummy\_Success *& $DB1Act \geq 0 = 1$\\
+	73    & Erfolgskriterium & Dummy\_Fail *& $DB1Act < 0 = 1$\\\hline
+	1     & Rahmenbedingungen & CuNo & \\
+	2     & Rahmenbedingungen & EquLoc & \\
+	5     & Rahmenbedingungen & BA & \\
+	6     & Rahmenbedingungen & BU & \\
+	7     & Rahmenbedingungen & MS  &\\
+	65    & Rahmenbedingungen & Region & \\\hline
+	12    & Kosten & TOBud &\\
+	13    & Kosten & BudMSTot & $\frac{Cost Bud_{MS}}{Cost Bud_{Total}}$\\ [3mm]
+	14    & Kosten & BudMETot & $\frac{Cost Bud_{ME}}{Cost Bud_{Total}}$ \\[3mm] 
+	15    & Kosten & BudPATot & $\frac{Cost Bud_{PA}}{Cost Bud_{Total}}$\\ [3mm]
+	16    & Kosten & BudISTot & $\frac{Cost Bud_{IS}}{Cost Bud_{Total}}$\\ [3mm]
+	17    & Kosten & DB1Bud & $\frac{(TOBud - DB1Bud)}{TOBud}$ \\ [3mm]
+	18    & Kosten & DB1Act & $\frac{(TOAct - DB1Act)}{TOAct}$ \\ [3mm]
+	20    & Kosten & CostActBudMSabs & $(-CostAct_{MS})-(-CostBud_{MS})$ \\ 
+	21    & Kosten & CostActBudMEabs & $(-CostAct_{ME})-(-CostBud_{ME})$ \\
+	22    & Kosten & CostActBudPAabs & $(-CostAct_{PA})-(-CostBud_{PA})$ \\
+	23    & Kosten & CostActBudISabs & $(-CostAct_{IS})-(-CostBud_{IS})$ \\
+	24    & Kosten & SUCostTO & $\frac{(-SUAct)}{TOAct}$ \\ [3mm]
+	25    & Kosten & CostActBudRel & $\frac{(-CostAct_{Total}) - (-CostBud_{Total})}{(-CostBud_{Total})}$ \\ [3mm]
+	26    & Kosten & CostActBudMSRel & $\frac{(-CostAct_{MS}) - (-CostBud_{MS})}{(-CostBud_{MS})}$ \\ [3mm]
+	27    & Kosten & CostActBudMERel & $\frac{(-CostAct_{ME}) - (-CostBud_{MS})}{(-CostBud_{ME})}$ \\ [3mm]
+	28    & Kosten & CostActBudPARel & $\frac{(-CostAct_{PA}) - (-CostBud_{MS})}{(-CostBud_{PA})}$ \\ [3mm]
+	29    & Kosten & CostActBudISRel & $\frac{(-CostAct_{IS}) - (-CostBud_{MS})}{(-CostBud_{IS})}$ \\ [3mm]
+	41    & Kosten & DeltaLastFCAct & $Last Cost FC-Cost Act$ \\
+	42    & Kosten & DeltaLastFCActMS & $Last Cost FC_{MS}-Cost Act_{MS}$ \\
+	43    & Kosten & DeltaLastFCActME & $Last Cost FC_{ME}-Cost Act_{ME}$ \\
+	44    & Kosten & DeltaLastFCActPA & $Last Cost FC_{PA}-Cost Act_{PA}$\\
+	45    & Kosten & DeltaLastFCActIS & $Last Cost FC_{IS}-Cost Act_{IS}$\\
+	66    & Kosten & TOAct &\\
+	67    & Kosten & DB1Budabs & $TOBud-CostBud$\\
+	68    & Kosten & DB1Actabs & $TOAct-CostAct$\\
+	75    & Kosten & TOBud\_Cat * &
+\small Klasse 1: $13.2 \geq TOBud < 500$ \newline Klassen 2 bis 10: \newline $500 \geq TOBud < 5'000$\newline Klassenbreite = 500 \newline Klasse 11: $5000 \geq TOBud < 10'000$\newline Klasse 12: $ TOBud \geq 10'000$\\
+	76    & Kosten & TOBudDevabs * & $TOAct-TOBud$\\
+	77    & Kosten & DB1BudDevabs * & $DB1Actabs-DB1Budabs$\\
+	78    & Kosten & CostBudDevabs * & $(-CostAct)-(-CostBud)$ \\
+	79    & Kosten & CostAct *& $TOAct-DB1Actabs$\\
+	80    & Kosten & CostBud * & $TOBud-DB1Budabs$\\\hline
+	3     & Fulfillment & PMNo & \\
+	4     & Fulfillment & PMChange & YES = Wechsel des Projektmanager \\
+	8     & Fulfillment & LeadSASPr & \\
+	9     & Fulfillment & LeadSAS.PrFF & NO = LeadSASPr verschieden von LeadSASFF  \\
+	11    & Fulfillment & PrStartDate & \\
+	30    & Fulfillment & CostFCadj & 
+\small0 = keine FC-Anpassung oder Umsatz und Kosten wurden angepasst\newline 1 = FC-Anpassung\\ [3mm]
+	31    & Fulfillment & CostFCadjMS &
+\small 0 = keine FC-Anpassung\newline 1 = FC-Anpassung für weniger Kosten\newline2 = FC-Anpassung für mehr Kosten  \\[3mm]
+	32    & Fulfillment & CostFCadjME & 
+\small 0 = keine FC-Anpassung\newline 1 = FC-Anpassung für weniger Kosten\newline2 = FC-Anpassung für mehr Kosten
+\\[3mm]
+	33    & Fulfillment & CostFCadjPA &
+\small 0 = keine FC-Anpassung\newline 1 = FC-Anpassung für weniger Kosten\newline2 = FC-Anpassung für mehr Kosten
+\\[3mm]
+	34    & Fulfillment & CostFCadjIS &
+\small 0 = keine FC-Anpassung\newline 1 = FC-Anpassung für weniger Kosten\newline2 = FC-Anpassung für mehr Kosten
+\\[3mm]
+	35    & Fulfillment & HOMYellCost & $\frac{(Date(first Yellow Status)_{Cost} - (Date(HOM))}{Project baseline}$ \\ [3mm]
+	36    & Fulfillment & HOMYellQual & $\frac{(Date(first Yellow Status)_{Quality} - (Date(HOM))}{Project baseline}$ \\ [3mm]
+	37    & Fulfillment & HOMYellTime & $\frac{(Date(first Yellow Status)_{Time} - (Date(HOM))}{Project baseline}$ \\ [3mm]
+	38    & Fulfillment & HOMRedCost & $\frac{(Date(first Red Status)_{Cost} - (Date(HOM))}{Project baseline}$ \\ [3mm]
+	39    & Fulfillment & HOMRedQual & $\frac{(Date(first Red Status)_{Quality} - (Date(HOM))}{Project baseline}$ \\ [3mm]
+	40    & Fulfillment & HOMRedTime & $\frac{(Date(first Red Status)_{Time} - (Date(HOM))}{Project baseline}$ \\
+	57    & Fulfillment & NoPM & \\
+	58    & Fulfillment & NoLeadSASFF & \\
+	69    & Fulfillment & PMAge2 & \\
+	70    & Fulfillment & PMTen2 & \\
+	81    & Fulfillment & Cat\_age * & \small min = 20, max = 63, Klassenbreite = 5\\\hline
+	46    & Sales \& Qotation & BUORBudGapAbs & $OR Act_{BU}-OR Bud_{BU}$ \\
+	47    & Sales \& Qotation & BUORBudGapRel & $\frac{(ORAct_{BU}-ORBud_{BU})}{ORBud_{BU}}$\\
+	48    & Sales \& Qotation & RegiORBudGapAbs & $OR Act_{Region}-OR Bud_{Region}$\\
+	49    & Sales \& Qotation & RegiORBudGapRel & $\frac{(ORAct_{Region}-ORBud_{Region})}{ORBud_{Region}}$\\\hline
+	50    & Zeit  & PrTimeBase & $Baseline_{MS11}-Baseline_{MS1}$ \\
+	51    & Zeit  & PrTimeAct & $Act_{MS10}-Act_{MS1}$ \\
+	52    & Zeit  & PrTimeDelay & $PrTimeBase - PrTimeAct$\\
+	53    & Zeit  & PrTimeDelayMS2 & $Baseline_{MS2}-Act_{MS2}$\\
+	54    & Zeit  & PrTimeDelayMS8 & $Baseline_{MS8}-Act_{MS8}$\\
+	55    & Zeit  & PrTimeDelayMS10 & $Baseline_{MS10}-Act_{MS10}$\\
+	56    & Zeit  & PrTimeDelayMS11 & $Baseline_{MS11}-Act_{MS11}$\\
+	74    & Zeit  & Delay * & $PrTimeDelay \geq 0 = TRUE$\\\hline
+	10    & Komplexität & ConPart & \\
+	59    & Komplexität & NoSupplSAS & \\
+	60    & Komplexität & NoSupplSASMS & \\
+	61    & Komplexität & NoSupplSASME & \\
+	62    & Komplexität & NoSupplSASPA & \\
+	63    & Komplexität & NoSupplSASIS & \\
+	64    & Komplexität & NoContr & \\	
+\end{longtable}
 %%
 %%%Tabelle mit Anzahl NA's
 %%
+\newpage
+Nachfolgend werden die Tabellen von Auswertungen, welche nicht im Kapitel 3 enthalten sind aufgeführt.
 % Table generated by Excel2LaTeX from sheet 'routput'
-Nachfolgend werden sämtliche Variablen mit fehlenden Werten tabellarisch dargestellt.
 \begin{table}[htbp]
+	
 	\centering
 	\caption{Anzahl NA's pro Variable}
 	\begin{tabular}{lr}
@@ -370,21 +364,338 @@ Nachfolgend werden sämtliche Variablen mit fehlenden Werten tabellarisch darges
 	\end{tabular}%
 	\label{tab:na}%
 \end{table}%
-
-Tabelle 2: Plausibilität
-Vorab muss erläutert werden, dass der Wert $1'111'111$ bei den CostMostnegFCajd-Variablen keinen Ausreisser darstellt sondern angibt, dass das Projekt nur positive FC-Anpassungen gehabt hat. Dies impliziert, dass der Forecast für die Kosten gesunken sind und somit weniger Kosten erwartet wurden, wobei der Umsatz konstant geblieben oder gestiegen ist. Bei den HOM-YellowStatus und die HOM-RedStatus drückt der Wert $1'111'111$ aus, dass der entsprechende Status nicht als erstes oder gar nicht aufgetreten ist. Die Interpretation wäre somit, dass bei den HOMYellow-Status Variablen der Status immer grün war oder zuerst respektive direkt den roten Status hatte. Eine ähnliche Interpretation gilt für HOMRedStatus-Variablen, somit hätte dieses Projekt, den roten Status gar nicht erst erreicht. Da diese Interpretationen valide sind und somit keine fehlende Werte darstellen, verbleiben sie im Datensatz. 
-Tabelle 3: Ausreisser
-Diagramme: Boxplots Histogramme aller numerischen Variablen
-Tabelle 4: Zusätzliche Variablen: faktisch Übersicht aller Variablen 
-Tabelle 5: Berechnungsformeln
-Tabelle 6: Interpretation
+\newpage
+%Tabelle 2: Plausibilität
+%Vorab muss erläutert werden, dass der Wert $1'111'111$ bei den CostMostnegFCajd-Variablen keinen Ausreisser darstellt sondern angibt, dass das Projekt nur positive FC-Anpassungen gehabt hat. Dies impliziert, dass der Forecast für die Kosten gesunken sind und somit weniger Kosten erwartet wurden, wobei der Umsatz konstant geblieben oder gestiegen ist. Bei den HOM-YellowStatus und die HOM-RedStatus drückt der Wert $1'111'111$ aus, dass der entsprechende Status nicht als erstes oder gar nicht aufgetreten ist. Die Interpretation wäre somit, dass bei den HOMYellow-Status Variablen der Status immer grün war oder zuerst respektive direkt den roten Status hatte. Eine ähnliche Interpretation gilt für HOMRedStatus-Variablen, somit hätte dieses Projekt, den roten Status gar nicht erst erreicht. Da diese Interpretationen valide sind und somit keine fehlende Werte darstellen, verbleiben sie im Datensatz. 
+%Tabelle 3: Ausreisser
+%Diagramme: Boxplots Histogramme aller numerischen Variablen
+%Tabelle 4: Zusätzliche Variablen: faktisch Übersicht aller Variablen 
+%Tabelle 5: Berechnungsformeln
+%Tabelle 6: Interpretation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %%Weitere Tabellen, die nicht im Text erhalten sind
 %%
+%%Rahmenbedingungen
+%%Kosten
+\textbf{Fulfillment}
+%Erfolgsquote und Häufigkeitsverteilung der Projektmanager
+\begin{longtable}{lrrrrr}
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Projektmanager}\\
+	\textbf{PMNo} & \multicolumn{1}{c}{\textbf{Erfolgsquote}} & {\textbf{Success}} &
+	\textbf{Fail} & \textbf{Fail [\%]} & \textbf{Total} \\\hline\endhead
+	        \multicolumn{1}{r}{712067} & 0.6   & 8     & 14    & 63.6\% & 22 \\
+	    \multicolumn{1}{r}{616048} & 0.7   & 4     & 6     & 60.0\% & 10 \\
+	    \multicolumn{1}{r}{7110189} & 0.7   & 4     & 6     & 60.0\% & 10 \\
+	    \multicolumn{1}{r}{1110883} & 0.8   & 4     & 5     & 55.6\% & 9 \\
+	    \multicolumn{1}{r}{1515253} & 0.2   & 1     & 5     & 83.3\% & 6 \\
+	    \multicolumn{1}{r}{21747} & 4.0   & 20    & 5     & 20.0\% & 25 \\
+	    \multicolumn{1}{r}{28160} & 4.0   & 20    & 5     & 20.0\% & 25 \\
+	    \multicolumn{1}{r}{618240} & 0.4   & 2     & 5     & 71.4\% & 7 \\
+	    \multicolumn{1}{r}{1110920} & 0.3   & 1     & 4     & 80.0\% & 5 \\
+	    \multicolumn{1}{r}{1910333} & 1.5   & 6     & 4     & 40.0\% & 10 \\
+	    \multicolumn{1}{r}{20071} & 0.8   & 3     & 4     & 57.1\% & 7 \\
+	    \multicolumn{1}{r}{20405} & 0.8   & 3     & 4     & 57.1\% & 7 \\
+	    \multicolumn{1}{r}{25005} & 0.5   & 2     & 4     & 66.7\% & 6 \\
+	    \multicolumn{1}{r}{5116088} & 1.5   & 6     & 4     & 40.0\% & 10 \\
+	    \multicolumn{1}{r}{616291} & 1.8   & 7     & 4     & 36.4\% & 11 \\
+	    \multicolumn{1}{r}{618787} & 0.0   & 0     & 4     & 100.0\% & 4 \\
+	    \multicolumn{1}{r}{712066} & 2.5   & 10    & 4     & 28.6\% & 14 \\
+	    \multicolumn{1}{r}{1519603} & 2.3   & 7     & 3     & 30.0\% & 10 \\
+	    \multicolumn{1}{r}{2119231} & 1.0   & 3     & 3     & 50.0\% & 6 \\
+	    \multicolumn{1}{r}{2119285} & 0.0   & 0     & 3     & 100.0\% & 3 \\
+	    \multicolumn{1}{r}{22784} & 0.7   & 2     & 3     & 60.0\% & 5 \\
+	    \multicolumn{1}{r}{27135} & 1.7   & 5     & 3     & 37.5\% & 8 \\
+	    \multicolumn{1}{r}{28371} & 0.0   & 0     & 3     & 100.0\% & 3 \\
+	    \multicolumn{1}{r}{4610121} & 0.0   & 0     & 3     & 100.0\% & 3 \\
+	    \multicolumn{1}{r}{510134} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{510204} & 0.0   & 0     & 3     & 100.0\% & 3 \\
+	    \multicolumn{1}{r}{510288} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{5116453} & 0.7   & 2     & 3     & 60.0\% & 5 \\
+	    \multicolumn{1}{r}{616174} & 1.0   & 3     & 3     & 50.0\% & 6 \\
+	    \multicolumn{1}{r}{617096} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{617861} & 0.7   & 2     & 3     & 60.0\% & 5 \\
+	    \multicolumn{1}{r}{618270} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{7110014} & 1.3   & 4     & 3     & 42.9\% & 7 \\
+	    \multicolumn{1}{r}{7110287} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{811918} & 0.3   & 1     & 3     & 75.0\% & 4 \\
+	    \multicolumn{1}{r}{1110966} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{1210380} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{1512545} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{1512802} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{1513083} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{1514618} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{1517859} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{15508} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{17670} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{1910417} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{1910439} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{1910485} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{19148} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{2112169} & 2.0   & 4     & 2     & 33.3\% & 6 \\
+	    \multicolumn{1}{r}{2112187} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{2119240} & 2.0   & 4     & 2     & 33.3\% & 6 \\
+	    \multicolumn{1}{r}{2119306} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{2210237} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{25339} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{25432} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{25445} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{26360} & 3.0   & 6     & 2     & 25.0\% & 8 \\
+	    \multicolumn{1}{r}{27080} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{3611931} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{4510504} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{4510613} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{4533123} & 1.5   & 3     & 2     & 40.0\% & 5 \\
+	    \multicolumn{1}{r}{4610078} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{4610118} & 2.5   & 5     & 2     & 28.6\% & 7 \\
+	    \multicolumn{1}{r}{510038} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{510232} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{510254} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{5116095} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{5116518} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{5116583} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{616193} & 2.0   & 4     & 2     & 33.3\% & 6 \\
+	    \multicolumn{1}{r}{617531} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{617709} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{618107} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{618392} & 2.5   & 5     & 2     & 28.6\% & 7 \\
+	    \multicolumn{1}{r}{618499} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{619070} & 0.5   & 1     & 2     & 66.7\% & 3 \\
+	    \multicolumn{1}{r}{7110678} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{7110792} & 1.0   & 2     & 2     & 50.0\% & 4 \\
+	    \multicolumn{1}{r}{712069} & 0.0   & 0     & 2     & 100.0\% & 2 \\
+	    \multicolumn{1}{r}{811738} & 2.0   & 4     & 2     & 33.3\% & 6 \\
+	    \multicolumn{1}{r}{1110986} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{1110988} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{11910} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{1211259} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{1211260} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{12266} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{13591} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{13718} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{13889} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{1512883} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{1513753} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{1515461} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{1517857} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{17819} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{18570} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{18918} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{1910272} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{1910335} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{1910509} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{19350} & 4.0   & 4     & 1     & 20.0\% & 5 \\
+	    \multicolumn{1}{r}{19401} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{19815} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{20108} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{20562} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{20810} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{2111889} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{2112077} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{2112154} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{2112322} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{2119305} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{21611} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{22029} & 8.0   & 8     & 1     & 11.1\% & 9 \\
+	    \multicolumn{1}{r}{23236} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{23489} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{24090} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{24994} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{25000} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{25159} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{25561} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{25687} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{25964} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{26036} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{26921} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{27016} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{27034} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{310266} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{410316} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{4512231} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{4512234} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{4513192} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{4523184} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{4533116} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{4533138} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{4543141} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{4553178} & 8.0   & 8     & 1     & 11.1\% & 9 \\
+	    \multicolumn{1}{r}{4563170} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{4610177} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{510166} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{510187} & 3.0   & 3     & 1     & 25.0\% & 4 \\
+	    \multicolumn{1}{r}{617097} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{617408} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{617628} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{617767} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{617823} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{617949} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{618323} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{710120} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{7110106} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{7110109} & 2.0   & 2     & 1     & 33.3\% & 3 \\
+	    \multicolumn{1}{r}{7110186} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{7110289} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{7110299} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{7110609} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{712312} & 10.0  & 10    & 1     & 9.1\% & 11 \\
+	    \multicolumn{1}{r}{811974} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{9910051} & 0.0   & 0     & 1     & 100.0\% & 1 \\
+	    \multicolumn{1}{r}{9910221} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{9910250} & 1.0   & 1     & 1     & 50.0\% & 2 \\
+	    \multicolumn{1}{r}{9910375} & 5.0   & 5     & 1     & 16.7\% & 6 \\
+	    \multicolumn{1}{r}{1110867} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{11890} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{1211275} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1211289} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{1211314} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{12340} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{12349} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{13392} & NA    & 8     & 0     & 0.0\% & 8 \\
+	    \multicolumn{1}{r}{13497} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{13563} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{15064} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{1511240} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1512077} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1512612} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1513595} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1516955} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{1517907} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1518993} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{15803} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{16046} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{17397} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{17638} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{17667} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{17675} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{17678} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{18119} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{18194} & NA    & 6     & 0     & 0.0\% & 6 \\
+	    \multicolumn{1}{r}{18231} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{18299} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{18511} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{18628} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{18938} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1910240} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{1910503} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{1910517} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{19405} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{19421} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{19982} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{19984} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{19985} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{20006} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{20022} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{20028} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{20585} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{20770} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{2111985} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{2112002} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{2112146} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{2112175} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{2119270} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{21207} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{21223} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{21508} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{21623} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{21633} & NA    & 6     & 0     & 0.0\% & 6 \\
+	    \multicolumn{1}{r}{21828} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{21893} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{21939} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{2210239} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{2210241} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{2210258} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{2210261} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{22321} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{22499} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{22686} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{22780} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{22854} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{23221} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{23244} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{23875} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{23950} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{24297} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{24411} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{24636} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{25130} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{25175} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{25342} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{25355} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{25356} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{25476} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{25645} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{25914} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{25952} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{26949} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{27038} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{27104} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{27163} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{27698} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{29228} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{310261} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{4025} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{410051} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{410315} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{410341} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{410366} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{4510521} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{4512235} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{4513162} & NA    & 7     & 0     & 0.0\% & 7 \\
+	    \multicolumn{1}{r}{4513184} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{4523134} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{4523135} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{4523177} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{4533130} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{4533142} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{4543128} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{4553190} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{4563187} & NA    & 5     & 0     & 0.0\% & 5 \\
+	    \multicolumn{1}{r}{4573142} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{4583153} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{510029} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{510206} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{510394} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{616217} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{617616} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{618213} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{618512} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{618625} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{619245} & NA    & 13    & 0     & 0.0\% & 13 \\
+	    \multicolumn{1}{r}{7110026} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110066} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110074} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{7110090} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110093} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110110} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110261} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{7110630} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{7110757} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{712065} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{712248} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{811849} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{811896} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{811929} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{811976} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910123} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{9910135} & NA    & 4     & 0     & 0.0\% & 4 \\
+	    \multicolumn{1}{r}{9910153} & NA    & 3     & 0     & 0.0\% & 3 \\
+	    \multicolumn{1}{r}{9910183} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910210} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910212} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910222} & NA    & 8     & 0     & 0.0\% & 8 \\
+	    \multicolumn{1}{r}{9910229} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910274} & NA    & 2     & 0     & 0.0\% & 2 \\
+	    \multicolumn{1}{r}{9910292} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910294} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \multicolumn{1}{r}{9910816} & NA    & 1     & 0     & 0.0\% & 1 \\
+	    \textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} \\
+	    \label{tab:pmno}
+\end{longtable}
 %Tabelle PMAge2 und PMTen Projektmanager
 \begin{table}[H]
 	\centering
-	\caption{Durchschnittswerte PMAge und PMTen in Jahren}
+	\caption{Arithmetisches Mittel PMAge und PMTen [Jahre]}
 	\begin{tabular}{lrr}
 		\textbf{Success} & \multicolumn{1}{l}{\textbf{Age}} & \multicolumn{1}{l}{\textbf{Ten}} \\\hline
 		FALSE & 41.1 & 12.4 \\
@@ -392,6 +703,7 @@ Tabelle 6: Interpretation
 	\end{tabular}%
 	\label{ageten}%
 \end{table}%
-\subsection*{Data Collection}
-\subsection*{Measures}
-\subsection*{Analysis}
+
+%%
+%%Zeit
+%%Komplexität
