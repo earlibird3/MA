@@ -1,10 +1,11 @@
 \documentclass[11pt]{article}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage[titletoc,toc,title]{appendix}
 \usepackage{textcomp}
 \usepackage[onehalfspacing]{setspace}
-\usepackage[german]{babel}
+
 \usepackage{nomencl}
 \makenomenclature
 \renewcommand{\nomname}{Abkürzungsverzeichnis}
@@ -13,11 +14,12 @@
 \geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm}
 \setlength{\parindent}{0pt}
 %\renewcommand{\rmdefault}{ptm}
-
+%Titel
 \title{Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG}
-
+%Autor
 \author{Michèle Schoch}
 \date{21. August 2016}
+
 
 \begin{document}\selectlanguage{german}
 
@@ -28,7 +30,6 @@
 
 %Inhaltsverzeichnis
 \tableofcontents
-
 %Beginn des Dockuments
 \newpage
 \printnomenclature
@@ -49,6 +50,14 @@
 \input{Kapitel4}
 \newpage
 \input{Kapitel5}
+\newpage
+\input{Literaturverzeichnis}
+\newpage
+%Anhang
+\renewcommand\appendixtocname{Anhang}
+\begin{appendices}
+	\input{Anhang}...
+\end{appendices}
 
 
 
