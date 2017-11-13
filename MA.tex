@@ -1,68 +1,88 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc} % Codierung der Eingabe
 \usepackage[T1]{fontenc}
-\usepackage[german]{babel}
-\usepackage[titletoc,toc,title]{appendix}
-\usepackage{textcomp}
-\usepackage[onehalfspacing]{setspace}
+\usepackage[german]{babel} %Spracheinstellung Deutsch
 
-\usepackage{nomencl}
-\makenomenclature
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\usepackage[titletoc,toc,title]{appendix} %Inkludiere Anhang
+%Abkürzungsverzeichnis ermöglichen
+\usepackage[toc, acronym = true]{glossaries} 
+\makeglossaries % 
+%Erklärung Abkürzungsverzeichnis nomencl http://strobelstefan.org/?p=153
+\newacronym{abk:db1}{DB1}{Deckungsbeitrag 1}
+\newacronym{abk:ME}{ME}{Mechnical Engineering}
+\newacronym{abk:PA}{PA}{Plant Automation}
+\newacronym{abk:IS}{IS}{Installation}
+\newacronym{abk:MS}{MS}{Mechanical Supply}
+%%
+\usepackage{textcomp} %Blocksatz einrichten
+\usepackage[onehalfspacing]{setspace} %Zeilenabstand auf 1.5 setzten
 \usepackage{hyphenat, lscape, array, longtable, blindtext, graphicx, geometry, float, amsmath, varioref}
-\usepackage{wrapfig}
-\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm}
+\usepackage{wrapfig} % Text umschliessende Tabellen
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm} %Seiten einrichten
 \setlength{\parindent}{0pt}
-%\renewcommand{\rmdefault}{ptm}
+%Package für Literaturverzeichnis
+\usepackage{apacite}
+\usepackage[nottoc]{tocbibind}
+\renewcommand{\listoffigures}{\begingroup
+	\tocchapter
+	\tocfile{\listfigurename}{lof}
+	\endgroup}
+\renewcommand{\listoftables}{\begingroup
+	\tocchapter
+	\tocfile{\listtablename}{lot}
+	\endgroup}
+
+
 %Titel
 \title{Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG}
 %Autor
 \author{Michèle Schoch}
 \date{21. August 2016}
 
-
+%Beginn des Dockuments
 \begin{document}\selectlanguage{german}
-
 %Titelseite
+\pagenumbering{Roman}
 \begin{titlepage}
 \maketitle
 \end{titlepage}
-
 %Inhaltsverzeichnis
-\tableofcontents
-%Beginn des Dockuments
-\newpage
-\printnomenclature
+\tableofcontents\newpage
 
-\nomenclature{DB1}{Deckungsbeitrag}
-\nomenclature{Bud}{Budget}
-\nomenclature{Act}{Actual}
+%Abkürzungsverzeichnis
 
 
-%http://strobelstefan.org/?p=153
+\printglossary[title=Kick Ass Abkürzungsverzeichnis]
 
-\input{Kapitel1}
-\newpage
-\input{Kapitel2}
-\newpage
-\input{Kapitel3}
-\newpage
-\input{Kapitel4}
-\newpage
-\input{Kapitel5}
-\newpage
-\input{Literaturverzeichnis}
+%Abbildungsverzeichnis
+\listoffigures\newpage
+%Tabellenverzeichnis
+\listoftables\newpage
+%Einleitung
+\pagenumbering{arabic}
+\input{Kapitel1}\newpage
+%Theorieteil
+\input{Kapitel2}\newpage
+%Methodneteil
+\input{Kapitel3}\newpage
+%Theorie und Konzeptteil
+\input{Kapitel4}\newpage
+%Fazi
+\input{Kapitel5}\newpage
+%Literaturverzeichnis
+\bibliographystyle{apa}
+\bibliography{Literaturverzeichnis}
+%\addbibresource{C:/Users/Michèle/Dropbox/Master/MA\06\_MA\_Files/MA\_Latex/Literaturverzeichnis.bib}
 \newpage
 %Anhang
 \renewcommand\appendixtocname{Anhang}
 \begin{appendices}
-	\input{Anhang}...
+	\input{Anhang}
 \end{appendices}
-
-
 
 \end{document}
 
 pdflatex MA.tex
 
 
+kpsewhich lit.bib
