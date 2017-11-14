@@ -1,37 +1,57 @@
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc} % Codierung der Eingabe
-\usepackage[T1]{fontenc}
+%%Allgemeine Formatierung
+\documentclass[11pt]{report} %Einstellung Design des Dokuments und Schriftgrösse 11
+\usepackage[T1]{fontenc} %Ausgabe der Umlaute erlauben
+\usepackage[utf8]{inputenc} %Eingabe der Umlaute erlauben
 \usepackage[german]{babel} %Spracheinstellung Deutsch
+\usepackage{hyphenat} %Ermögliche Trennung der Wörter im Blocksatz
 
-\usepackage[titletoc,toc,title]{appendix} %Inkludiere Anhang
-%Abkürzungsverzeichnis ermöglichen
-\usepackage[toc, acronym = true]{glossaries} 
-\makeglossaries % 
-%Erklärung Abkürzungsverzeichnis nomencl http://strobelstefan.org/?p=153
+
+%%Seiteneinstellung
+\usepackage{lscape} %Erlaube Landschaft-Seiteneinstellung
+\usepackage{geometry} %Erlaube Veränderung der Seiteneinstellungen
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm} %Seiten einrichten
+\usepackage{textcomp} %Blocksatz einrichten
+\usepackage[onehalfspacing]{setspace} %Zeilenabstand setzen
+
+%%Grafiken
+\usepackage{graphicx,%Ermögliche Einbindung von Grafiken
+	wrapfig} %Grafiken mit umschliessendem Text
+
+%%Tabellen
+\usepackage{longtable,%Tabellen über mehrere Seiten ermöglichen
+float}  %Forcierung der Tabelle an der Stelle ermöglichen
+\usepackage{array} %Erweiterung der Array und Tabellenumgebung
+
+%%Mathematik
+\usepackage{amsmath} %Mathematische Eingaben ermöglichen
+
+%Inhaltsverzeichnis - inkludiere Abkürzungs-, Abbildungs- und Tabellenverzeichnis 
+\usepackage[nottoc]{tocbibind}
+\usepackage{tocloft} %Ermögliche Punkte 
+\renewcommand{\cftchapfont}{\normalfont\bfseries}% titles in bold
+\renewcommand{\cftchappagefont}{\normalfont\bfseries}% page numbers in bold
+\renewcommand{\cftdotsep}{1}
+\renewcommand{\cftchapleader}{\bfseries\cftdotfill{\cftsecdotsep}}% dot leaders in bold
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+
+%%Abkürzungsverzeichnis / Erklärung Abkürzungsverzeichnis nomencl http://strobelstefan.org/?p=153
+\usepackage[acronym,nomain,nopostdot,nonumberlist,toc]{glossaries} 
+\makeglossaries % Erstelle Abkürzungsverzeichnis, d.h. .gls Datei
+%Einträge des Abkürzungsverzeichnis
 \newacronym{abk:db1}{DB1}{Deckungsbeitrag 1}
 \newacronym{abk:ME}{ME}{Mechnical Engineering}
 \newacronym{abk:PA}{PA}{Plant Automation}
 \newacronym{abk:IS}{IS}{Installation}
 \newacronym{abk:MS}{MS}{Mechanical Supply}
-%%
-\usepackage{textcomp} %Blocksatz einrichten
-\usepackage[onehalfspacing]{setspace} %Zeilenabstand auf 1.5 setzten
-\usepackage{hyphenat, lscape, array, longtable, blindtext, graphicx, geometry, float, amsmath, varioref}
-\usepackage{wrapfig} % Text umschliessende Tabellen
-\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm} %Seiten einrichten
-\setlength{\parindent}{0pt}
-%Package für Literaturverzeichnis
-\usepackage{apacite}
-\usepackage[nottoc]{tocbibind}
-\renewcommand{\listoffigures}{\begingroup
-	\tocchapter
-	\tocfile{\listfigurename}{lof}
-	\endgroup}
-\renewcommand{\listoftables}{\begingroup
-	\tocchapter
-	\tocfile{\listtablename}{lot}
-	\endgroup}
 
+%%Literaturverzeichnis
+\usepackage[natbibapa]{apacite} %Setze APA Zietierungsstandard
+\usepackage{hyperref} %Ermögliche Einstellungen für Hyperlinks
+\hypersetup{hidelinks = true}
+
+%%Anhang
+\usepackage[titletoc,toc,title]{appendix} %Inkludiere Anhang
 
 %Titel
 \title{Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG}
@@ -39,20 +59,23 @@
 \author{Michèle Schoch}
 \date{21. August 2016}
 
-%Beginn des Dockuments
+%%Beginn des Dockuments
 \begin{document}\selectlanguage{german}
-%Titelseite
-\pagenumbering{Roman}
+	
+%%Titelseite
+\pagenumbering{roman}%römische Nummerierung für Seiten vor Einleitung
 \begin{titlepage}
 \maketitle
 \end{titlepage}
-%Inhaltsverzeichnis
+
+
+%%Inhaltsverzeichnis
+\setlength{\parindent}{0pt}
 \tableofcontents\newpage
 
 %Abkürzungsverzeichnis
-
-
-\printglossary[title=Kick Ass Abkürzungsverzeichnis]
+\printglossary[style = super, title=Abkürzungsverzeichnis, toctitle = Abkürzungsverzeichnis]
+\newpage
 
 %Abbildungsverzeichnis
 \listoffigures\newpage
@@ -70,7 +93,7 @@
 %Fazi
 \input{Kapitel5}\newpage
 %Literaturverzeichnis
-\bibliographystyle{apa}
+\bibliographystyle{apacite} %Wähle Zitierstandard
 \bibliography{Literaturverzeichnis}
 %\addbibresource{C:/Users/Michèle/Dropbox/Master/MA\06\_MA\_Files/MA\_Latex/Literaturverzeichnis.bib}
 \newpage
