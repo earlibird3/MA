@@ -47,8 +47,10 @@ float}  %Forcierung der Tabelle an der Stelle ermöglichen
 
 %%Literaturverzeichnis
 \usepackage[natbibapa]{apacite} %Setze APA Zietierungsstandard
+\usepackage{natbib}
 \usepackage{hyperref} %Ermögliche Einstellungen für Hyperlinks
 \hypersetup{hidelinks = true}
+\usepackage{url}
 
 %%Anhang
 \usepackage[titletoc,toc,title]{appendix} %Inkludiere Anhang
@@ -56,8 +58,8 @@ float}  %Forcierung der Tabelle an der Stelle ermöglichen
 %Titel
 \title{Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG}
 %Autor
-\author{Michèle Schoch}
-\date{21. August 2016}
+%\author{Michèle Schoch}
+%\date{21. August 2016}
 
 %%Beginn des Dockuments
 \begin{document}\selectlanguage{german}
@@ -65,7 +67,26 @@ float}  %Forcierung der Tabelle an der Stelle ermöglichen
 %%Titelseite
 \pagenumbering{roman}%römische Nummerierung für Seiten vor Einleitung
 \begin{titlepage}
-\maketitle
+\vspace*{4cm}
+\begin{center}
+%Titel
+{\LARGE Einflussfaktoren und Frühwarnsystem im Projektmanagement der Bühler AG\par}
+\vspace{4cm}
+%Autor
+{\Large Universität St. Gallen \par}
+{\Large Michèle Schoch (10-607-448)\par}
+\vspace{2cm}
+%Degree
+{\Large Masterarbeit\par}
+{\Large Institut für Accounting, Controlling und Auditing\par}
+\vspace{1cm}
+%Referent
+{\Large Referent Dr. Simon Pfister\par}
+\vspace{1cm}
+%Date
+{\Large 20. November 2017\par}
+\end{center}
+\clearpage
 \end{titlepage}
 
 
@@ -86,12 +107,14 @@ float}  %Forcierung der Tabelle an der Stelle ermöglichen
 \input{Kapitel1}\newpage
 %Theorieteil
 \input{Kapitel2}\newpage
-%Methodneteil
+%Methodenteil
 \input{Kapitel3}\newpage
-%Theorie und Konzeptteil
+%Ergebnisse
 \input{Kapitel4}\newpage
-%Fazi
+%Diskussion
 \input{Kapitel5}\newpage
+%Fazit
+\input{Kapitel6}\newpage
 %Literaturverzeichnis
 \bibliographystyle{apacite} %Wähle Zitierstandard
 \bibliography{Literaturverzeichnis}

@@ -1,56 +1,621 @@
-% !TEX root = MA.tex
-\chapter{Frühwarnsysteme und Frühwarnindikatoren im Projektmanagement}\label{sec:vier}
-Die Notwendigkeit von Früherkennung im Projektmanagement lässt mit dem Auftauchen neuer Herausforderungen während der Projektlaufzeit sowie der sich kontinuierlich verändernden Projektumwelt begründen. Die Anforderungen an die Flexibilität im Projektmanagement und die Fähigkeit zukünftige Ereignisse "vorauszusehen" sind gestiegen. Früherkennung hat zum Ziel aufkommende Gefahren und Chancen frühzeitig zu identifizieren, so dass rechtzeitig entsprechende Massnahmen eingeleitet werden können. In gegenwärtigen Managementsystem der Bühler AG wird ein sich verschlechternder Projektstatus erst bei fortgeschrittener Projektlaufzeit ersichtlich, weshalb beabsichtigt wird mittels der Implementierung eines Frühwarnsystems, dieser Situation entgegenzuwirken. Dadurch sollen mehr Projekte erfolgreich abgeschlossen und das die Marge des Anlagegeschäfts verbessert werden. Anschliessend folgt die Erläuterung der drei Generationen von Frühwarnsystem und sowie deren die Anforderungen. Danach werden Ideen und Ansätze für Früherkennung bei der Bühler AG diskutiert.
-\subsection{Frühwarnsysteme und Frühwarnindikatoren}\label{viereins}
-Die Voraussetzungen zur Anwendung eines Frühwarnsystems sind gemäss Jacobs, Riegler \& Matter (2012, S. 23), die Möglichkeit ambivalenter Ausgänge, die Gefährdung dominanter Ziele sowie der prozessuale Ablauf einer drohenden "Krise". Obwohl diese Kriterien im Zusammenhang mit Unternehmenskrisen ausgearbeitet wurden, können sie für das Projektmanagement ebenso angewendet werden. Grundsätzlich werden folgende drei Generationen unterschieden.
-\begin{description}
-	\item[1. Generation:] Die erste Generation orientiert sich an traditionellen Kennzahlen- und Hochrechnungen. Vergleiche der Prognosen mit Sollwerten werden dann als Frühwarnsignale verwendet.
-	\item[2. Generation:] Die zweite Generation basiert auf der Anwendung von Indikatoren und Prognosen auf Basis von Faktorenmodelle, die statistisch signifikante Zusammenhänge aufweisen mit dem gewählten Indikator haben.
-	\item[3. Generation:] Die dritte Generation stützt sich auf die Theorie der schwachen Signale, die intuitiver und unstrukturierter Natur sind. 
-\end{description}
-Die erste und zweite Generation haben den Nachteil, dass die Aussagekraft der vergangenheits- und gegenwartsorientierten Datengrundlage relativ beschränkt ist und anderseits durch die Selektion relevante Faktoren unbeachtet bleiben. Aus diesen Gründen sind Diskontinuitäten aus Basis der Hochrechnungen nur schwer erkennbar und an die zugrunde liegenden mathematischen respektive statistischen Modelle gebunden   (Jacobs, Riniger \& Matter, 2012, S. 26- 28). Die dritte Generation versucht die Schwächen der vorangehenden Frühwarnsystem zu kompensieren. Gemäss Ansoff (1967, S.129ff), kündigen sich Diskontinuitäten nicht plötzlich sonder relativ früh durch sogenannte schwache Signale, die als frühe Hinweise zu bevorstehenden einflussreichen Ereignisse zu verstehen sind (Ansoff in Haji-Kazemi \& Anderson, 2013). Diesem Ansatz liegt die Prämisse zugrunde, dass Unternehmen die wahrscheinlichsten Faktoren, welche das Scheitern des Projekts begünstigen sowie die Anzeichen eines bevorstehenden Scheiterns, bereits kennen. Allerdings wird erst in nachgelagerten Projekt Assessments dieses Bewusstsein gefördert. Unter diesem Aspekt erscheint es relativ unverständlich, weshalb diese ignoriert wurden.
-\newline
-Die Ansätze, wie Projektmanager solche Signale erkennen und zu ihren Gunsten interpretieren können sind vielfältig, wie die Tabelle \ref{tab:Ans} aufzeigt.
-%Tabelle mit möglichen Ansätzen
+\chapter{Ergebnisse}\label{sec: Ergeb}
+Die Ergebnisse der finanziellen Analyse und der Untersuchung der Einflussfaktoren werden getrennt dargestellt. Die untersuchte Stichprobe enthält 966 Projekte, wovon 654 erfolgreich abgeschlossen wurden.
+%%Ergenbnisse pro Kategorie: Hypothese Nennen, Kommentierung, Ergebnisse präsentieren, Tabellen etc
+%%Rahmenbedingungen: Region, BA und allenfalls BU: MS zu feine Gliederung, EquLoc too maany Einzelwerte, CuNo too many Einzelwerte
+%%Sales & Quotation: Budget Druck, Rest ging nicht
+%%Fullfillment: PMNo to many Einzelwerte, PMAge gemäss Kategorie, PMTen (EVTL.), NoPM not, da Analyse zeigt dass nur einmal 3 PM gab, PMChange,
+%%Fulfillment: LeadSASPr, LeadSASPrFF, LeadSAS.PrFF,  NoLeadSASFF nicht, da zu wenig Fälle
+%%Fulfillment: CostFCajd alle und HOM
+%%Kosten: Tabelle: finanzielle Performanceanalyse: Umsatz, Marge, Erklärung, Erkenntnisse (Bud, Ac, Dev)
+%%Kosten: Tabelle: finanzielle Performancenaalyse: Kosten(Bud, Act, Abw und Abw Schlüssel)
+%%Kosten: evtl. Tabelle: pro Umsatzkategorie Anz. Cost Dev und: mit wenig, viel Verlust
+%%Kosten: Mittelwerte für alle Variablen
+%%Zeit: alle, aber ohne Delay
+%%Komplexität: alle 
+
+%Tabelle Übersicht Stichprobe
+\begin{table}[htbp]
+	\centering
+	\caption{Übersicht Stichprobe}
+	\begin{tabular} {l|r|r}
+		\textbf{Erfolgskriterium} & \textbf{absolut} & \textbf{relativ} \\\hline
+		SUCCESS & 654 & 68\% \\
+		FAIL & 312 & 32\% \\\hline
+		\textbf{Total} & \textbf{966} & \textbf{100\%} \\
+	\end{tabular}
+\end{table}
+\section{Finanzielle Performance Analyse}
+Zur Bewertung der finanziellen Performance wurden drei verschiedene Auswertungen gemacht: Abweichung Act-Bud, Zusammensetzung der Kosten sowie eine Auswertung pro Umsatzkategorie. Das Ziel besteht darin, den finanziellen Verlust in Abhängigkeit des Erfolgskriterium (DB1BudDev) zu quantifizieren. 
+%Bud TO Cost DB1
 \begin{table}[H]
 	\centering
-	\caption{Ansätze zur Identifikation von Frühwarnsignalen
-		\newline in Anlehnung an Haji-Kazemi, Andersen \& Krane (2013)}\label{tab:Ans}	
-	\begin{tabular}{l|l}
-		Risikomanagement & Past Project Consultation\\
-		Earned Value Management & Cause-Effect-Analyse\\
-		Projekt Assessment Ansätze & Gut feelings \\
-		Performance Management & Interface Analysis\\
-		Stakeholder Analyse & Project Analysis \\
-		Maturity Assessment & Project Surrounding Analysis\\
-	\end{tabular}		
+	\caption{Budget TO, Cost und DB1 [TCHF]}
+	\begin{tabular}{lrrrr}
+		\textbf{Erfolgskriterium} & \textbf{TO Bud} & \textbf{Cost Bud} &
+		\textbf{DB1 Bud} & \textbf{DB1 Bud [\%]} \\\hline
+		SUCCESS & 1'552'450 & -1'156'598 & 395'851 & 25.5\% \\
+		FAIL  & 618'013 & -465'066 & 152'947 & 24.7\% \\\hline
+		\textbf{Total} & \textbf{2'170'463} & \textbf{-1'621'664} & \textbf{548'799} & \textbf{25.3\%}\\
+	\end{tabular}%
+	\label{bud}%
+\end{table}%
+%Act TO Cost DB+
+\begin{table}[H]
+	\centering
+	\caption{Actuals TO, Cost und DB1 [TCHF]}
+	\begin{tabular}{lrrrr}
+		\textbf{Erfolgskriterium} & \textbf{TO Act} & \textbf{Cost Act} & \textbf{DB1 Act}&
+		\textbf{DB1 Act [\%]} \\\hline
+		SUCCESS & 1'560'001 & -1'041'728 & 518'273 & 33.2\% \\
+		FAIL  & 631'346 & -526'600 & 104'746 & 16.6\% \\\hline
+		\textbf{Total} & \textbf{2'191'347} & \textbf{-1'568'328} & \textbf{623'018} & \textbf{28.4\%} \\
+	\end{tabular}
+	\label{act}%
+\end{table}%
+%Deviation TO Cost DB1
+\begin{table}[H]
+	\centering
+	\caption{Abweichungen ($Act-Bud$) TO, Cost und DB1 [TCHF] }
+	\begin{tabular}{lrrrr}
+		\textbf{Erfolgskriterium} & \textbf{TO} & \textbf{Cost} & \textbf{DB1}&
+		\textbf{DB1 [\%]} \\\hline
+		SUCCESS & 7'551 & 114'870 & 122'421 & 7.7\% \\
+		FAIL  & 13'333 & -61'534 & -48'202 & -8.2\% \\\hline
+		\textbf{Total} & \textbf{20'884} & \textbf{53'336} & \textbf{74'220} & \textbf{3.1\%} \\
+	\end{tabular}
+	\label{Abw}%
+\end{table}%
+Die Tabelle \ref{Abw} wurde mittels Tabellen \ref{bud} und \ref{act} berechnet und zeigt, dass der realisierte Umsatz höher war als budgetiert wurde. Diese Abweichung kann auf Zusatzverkäufe oder die Verrechnung allfälliger Mehrkosten an den Kunden zurückgeführt werden. Der kumulierte DB1 der Fail-Projekte lag 48 Mio. CHF (-32\%) unter dem Budget und bei den Success-Projekten 122 Mio. CHF über dem Budget. Die positive Abweichung der Istkosten der Success-Projekte kann mittels der realisierten Kostenreserve, die üblicherweise pro Projekt einkalkuliert wird und je nach Geschäftsbereich zwischen 4\% und 9\% beträgt, zurückgeführt werden. Wenn die Kostenreserve aufgebraucht wird, resultieren Mehrkosten und die Kostenabweichung wird negativ. Da die Reserve in dieser Betrachtung nicht ersichtlich ist, wäre die effektive Differenz für Fail-Projekte (Success-Projekte) tiefer (höher). Die realisierte Marge über alle Success-Projekte beträgt 33\% und liegt 7.7\% über der budgetierten Marge von 25.4\%. Demgegenüber beträgt der DB1Act der Fail-Projekte 16.6\% und liegt 8.2\% unter dem DB1 Bud von 24.7\%. Nachfolgend wird die Kostenperformance näher betrachtet, um herauszufinden, bei welcher Projektphase die Mehrkosten entstehen.
+%Aufschlüsselung Kostenabweichung gemäss Projektphase
+\begin{table}[H]
+	\centering
+	\caption{Aufschlüsselung der Kosten nach der Projektphase [TCHF]}
+	\begin{tabular}{lrrrrr|r}
+		\textbf{Erfolgskriterium} & \multicolumn{1}{l}{\textbf{Total Cost}} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Summe}} \\\hline
+		SUCCESS & 114'870 & 47'615 & -2'159 & -908  & -7'114 & 37'434 \\
+		FAIL  & -61'534 & -20'253 & -12'721 & -7'220 & -22'053 & -62'247 \\\hline
+		\textbf{ Total} & \textbf{53'336} & \textbf{ 27'363} & \textbf{ -14'880} & 
+		\textbf{ -8'128} & \textbf{ -29'167} & \textbf{ -24'812} \\
+	\end{tabular}%
+	\label{stocostdb1dev}%
+\end{table}%
+Die Aufschlüsselung der Kostenabweichung der Tabelle \ref{stocostdb1dev} zeigt, dass die Installationsphase sowohl der erfolgreichen als auch der nicht-erfolgreich Projekte mit Mehrkosten verbunden ist. Die negative Kostenabweichung der Fail-Projekte kann zu einem Drittel auf die IS- und zu einem weiteren Drittel auf die MS-Kosten zurückgeführt werden. Bei den Success-Projekten kann ein gewisser 'Verlust'-Kompensationseffekt durch die positive Kostenabweichung der MS-Kosten festgestellt werden. Die Kostendifferenz zwischen Act und Bud der Fail-Projekte kann fast vollständig durch Summe der Kostenabweichungen der vier Projektphasen MS, ME, PA und IS erklärt werden. Der Unterschied zu 'Total Cost' ist auf fehlende Abbildung der anderen Kostenarten der Projektstruktur zurückzuführen. Dieser Effekt ist bei den Success-Projekten ebenfalls sichtbar und kann zu einem Teil auf die Realisation des Kostenpuffers zurückgeführt werden.
+\newline
+Als Ergänzung wurde versucht zu eruieren, von welchem Projekttyp in Bezug auf das Umsatzvolumen die Margeneinbusse der Fail-Projekte stammt. Dazu wurde die Häufigkeit und der DB1 Abweichung pro Umsatzkategorie ausgewertet.
+% Table generated by Excel2LaTeX from sheet 'TOBud_cat'
+\begin{table}[htpb]
+	\centering
+	\caption{DB1 und Häufigkeit pro Umsatzkategorie (TOBud\_Cat) [TCHF]}
+	\begin{tabular}{lrcrrrr}
+		\multicolumn{1}{l}{\textbf{Kat.}} & \multicolumn{1}{l}{\textbf{TOBud\_Cat}} & \multicolumn{1}{c}{\textbf{ Anz.}} & \multicolumn{1}{l}{\textbf{DB1 Act}} & \multicolumn{1}{l}{\textbf{DB1 Bud }} & \multicolumn{1}{l}{\textbf{DB1BudDevabs}} &  \multicolumn{1}{c}{\textbf{\%}}\\\hline
+		\multicolumn{1}{r}{1} & \multicolumn{1}{l}{[13.2,500)} & 54    & 4'508 & 6'181 & -1'672 & -27\% \\
+		\multicolumn{1}{r}{2} & \multicolumn{1}{l}{[500,1e+03)} & 87    & 11'956 & 18'167 & -6'210 & -34\% \\
+		\multicolumn{1}{r}{3} & \multicolumn{1}{l}{[1e+03,1.5e+03)} & 54    & 13'510 & 17'476 & -3'966 & -23\% \\
+		\multicolumn{1}{r}{4} & \multicolumn{1}{l}{[1.5e+03,2e+03)} & 32    & 11'106 & 14'928 & -3'822 & -26\% \\
+		\multicolumn{1}{r}{5} & \multicolumn{1}{l}{[2e+03,2.5e+03)} & 17    & 6'286 & 9'447 & -3'161 & -33\% \\
+		\multicolumn{1}{r}{6} & \multicolumn{1}{l}{[2.5e+03,3e+03)} & 12    & 6'987 & 8'276 & -1'289 & -16\% \\
+		\multicolumn{1}{r}{7} & \multicolumn{1}{l}{[3e+03,3.5e+03)} & 8     & 5'419 & 6'778 & -1'359 & -20\% \\
+		\multicolumn{1}{r}{8} & \multicolumn{1}{l}{[3.5e+03,4e+03)} & 8     & 4'338 & 6'445 & -2'107 & -33\% \\
+		\multicolumn{1}{r}{9} & \multicolumn{1}{l}{[4e+03,4.5e+03)} & 4     & 3'191 & 4'551 & -1'360 & -30\% \\
+		\multicolumn{1}{r}{10} & \multicolumn{1}{l}{[4.5e+03,5e+03)} & 6     & 2'686 & 4'349 & -1'662 & -38\% \\
+		\multicolumn{1}{r}{11} & \multicolumn{1}{l}{[5e+03,1e+04)} & 23    & 23'602 & 35'644 & -12'043 & -34\% \\
+		\multicolumn{1}{r}{12} & \multicolumn{1}{l}{[1e+04,3.42e+04)} & 7     & 11'155 & 20'706 & -9'551 & -46\% \\\hline
+		\textbf{Total} &       &    \textbf{312}   & \textbf{104'746} & \textbf{152'947} & \textbf{-48'202} & \textbf{-32\%} \\
+	\end{tabular}%
+	\label{tab:ftobudcat}%
+\end{table}%
+\newline In der Tabelle \ref{tab:ftobudcat} wird ersichtlich, dass ein Viertel des der DB1-Abweichung auf 23 Projekte mit einem Umsatzvolumen zwischen 5 und 10 Mio. CHF und 20\% auf 7 Projekte mit einem Umsatzvolumen von mehr als 10 Mio. CHF zurückzuführen ist. Die drittgrösste Abweichung stammt von der Umsatzkategorie mit den meisten Projekten.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Auswertung Erfolgsfaktoren
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Erfolgsfaktoren}
+In diesem Kapitel werden die Ergebnisse pro Variablenkategorie sowie mögliche Erklärungsansätze erläutert. Mittels Histogrammen, Häufigkeitstabellen und Mittelwerten wurde versucht, die Charakteristiken vergangener Fail-Projekte zu ergründen. Die Stichprobe wurde hierfür gemäss Erfolgskriterium in zwei Datensets unterteilt. Zur Evaluation von kategorialen Variablen wurde ein weiteres Kriterium, die Erfolgsquote hinzugezogen, um beispielsweise Geschäftsbereiche oder Region untereinander vergleichen zu können.
+\newline
+\begin{equation}
+\text{Erfolgsquote} = \frac{\text{{Anzahl Success-Projekte}}}{\text{Anzahl Fail-Projekte}}
+\end{equation}
+
+\paragraph{Rahmenbedingungen}
+Die Analyse der Rahmenbedingungen eines Projekts geben Hinweise darauf, in welchen Geschäftsbereichen und Regionen und mit welchen Kunden nicht-erfolgreiche gemäss dem Erfolgskriterium realisiert wurden. Da die Bühler AG in einer Matrix-Organisation organsiert ist, wurde nebst den Einzelauswertungen für die Region und die Business Area, der Regionen-BA Split für die Häufigkeit der Success- und Fail-Projekte erstellt.
+%Tabelle Auswertung Häufigkeit pro Region
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Region}
+	\begin{tabular}{lrrrrrr}
+		\textbf{Region} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\ \hline
+		East\_Asia & 6.7   & 20    & 3     & 13.0\% & 23    & 2.4\% \\
+		EU    & \textbf{1.7}   & 240   & 145   & 37.7\% & 385   & 39.9\% \\
+		MEA\_Afr & 2.7   & 112   & 42    & 27.3\% & 154   & 15.9\% \\
+		North\_Ame & \textbf{1.4}   & 54    & 38    & 41.3\% & 92    & 9.5\% \\
+		SAS\_BCHI & 2.9   & 119   & 41    & 25.6\% & 160   & 16.6\% \\
+		South\_Ame & 1.9   & 58    & 31    & 34.8\% & 89    & 9.2\% \\
+		South\_Asia & 4.3   & 51    & 12    & 19.0\% & 63    & 6.5\% \\ \hline
+		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{freg}%
+\end{table}% 
+Die Ergebnisse der Tabellen \ref{freg} und \ref{fba} auf der nachfolgenden Seite reflektieren die Tatsache, dass Europa der grösste Absatzmarkt und GM die grösste Business Area der Bühler AG ist. Die niedrigste Erfolgsquote hat NAM als viertgrösste Region (in Abhängigkeit der Anzahl Projekte), gefolgt von Europa. Die Anzahl der Fail-Projekte in den Regionen EU, MEA und SAS\_BCHI beträgt 73\% ($(145+42+41)/312$), weshalb die Erfolgsquote von allen Projekten hauptsächlich durch diese drei Regionen bestimmt wird. Die kleinsten Regionen haben die besten Erfolgsquoten. Die Geschäftsbereichen CF, VN, GL und GM ($(42+68+32+122)/312$) umfassen zusammen 84\% aller Fail-Projekte, wobei die drei letzt genannten zugleich die niedrigsten Erfolgsquoten ausweisen. Die Anzahl untersuchter Projekte der letzten drei Jahre der Geschäftsbereiche CF und VN ist faktisch identisch, allerdings weist VN eine viel tiefere Erfolgsquote aus als CF.
+%Auswertung Häufigkeit und Erfolgsquote pro Region
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Geschäftsbereich}
+	\begin{tabular}{lrrrrrr}
+		\textbf{BA}   & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\ \hline
+		CF    & 2.8   & 118   & 42    & 26.3\% & 160   & 16.6\% \\
+		DC    & 5.6   & 96    & 17    & 15.0\% & 113   & 11.7\% \\
+		GD    & 2.3   & 7     & 3     & 30.0\% & 10    & 1.0\% \\
+		GL    & \textbf{1.2}  & 39    & 32    & 45.1\% & 71    & 7.3\% \\
+		GM    & \textbf{1.9}   & 226   & 122   & 35.1\% & 348   & 36.0\% \\
+		LO    & 1.4   & 30    & 21    & 41.2\% & 51    & 5.3\% \\
+		SR    & 5.0   & 35    & 7     & 16.7\% & 42    & 4.3\% \\
+		TP    & NA      & 8     & 0     & 0.0\% & 8     & 0.8\% \\
+		VN    & \textbf{1.4}   & 95    & 68    & 41.7\% & 163   & 16.9\% \\\hline
+		\textbf{Total } & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fba}%
+\end{table}%
+Bei der Auswertung der Geschäftseinheiten auf Basis der Tabelle \ref{fbabu} für GL, GM und VN, konnte festgestellt werden, dass die kleineren BU's von GM eine verhältnismässig tiefe Erfolgsquote hatten. Dennoch wird das Verhältnis zwischen erfolgreichen und nicht-erfolgreichen Projekten fast ausschliesslich durch IM, die grösste BU in GM bestimmt. In der Business Area VN, sind die Erfolgsquoten mit Ausnahme von PN und OL grundsätzlich tief. Die Business Unit Grain Storage determiniert die Geschäftsbereichserfolgsquote von GL.
+%Auswertung BU und BA
+\begin{table}[htpb]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Geschäftseinheit für GL, GM und VN}
+	\begin{tabular}{llrrrrr}
+		\textbf{BA} & \textbf{BU} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} \\\hline
+		GL    & GC    & NA    & 1     & 0     & 0.0\% & 1 \\
+		GL    & GS    & 1.2   & 36    & 29    & 44.6\% & 65 \\
+		GL    & MT    & 0.7   & 2     & 3     & 60.0\% & 5 \\\hline
+		\textbf{GL} &  & \textbf{1.2} & \textbf{39} &\textbf{32} & \textbf{45.1\%} & \textbf{71}\\
+		&       &       &       &       &        &   \\
+		GM    & BA    & 1.5   & 17    & 11    & 39.3\% & 28 \\
+		GM    & BR    & 0.9   & 12    & 14    & 53.8\% & 26 \\
+		GM    & IM    & 2.1   & 185   & 87    & 32.0\% & 272 \\
+		GM    & SM    & 1.2   & 12    & 10    & 45.5\% & 22 \\\hline
+		\textbf{GM} &  & \textbf{1.9} & \textbf{226} &\textbf{122} & \textbf{35.1\%} & \textbf{348}\\
+		&       &       &       &       &        &   \\
+		VN    & AG    & 0.8   & 11    & 14    & 56.0\% & 25 \\
+		VN    & FE    & 1.2   & 27    & 22    & 44.9\% & 49 \\
+		VN    & NU    & 1.3   & 27    & 21    & 43.8\% & 48 \\
+		VN    & OL    & 2.0   & 6     & 3     & 33.3\% & 9 \\
+		VN    & PN    & 3.0   & 24    & 8     & 25.0\% & 32 \\\hline
+		\textbf{VN} &  & \textbf{1.4} & \textbf{95} &\textbf{68} & \textbf{41.7\%} & \textbf{163}\\
+	\end{tabular}%
+	\label{fbabu}%
+\end{table}%
+\newline Im Regionen-BA Split der Tabelle \ref{tab:fregba} sind für diejenigen Regionen mit den niedrigsten Erfolgsquoten, EU und NAM jene BA's mit den niedrigsten Erfolgsquoten zu finden. Die Kombination EU-GM, EU-GL, EU-VN mit den tiefen Erfolgsquoten machen knapp 30\% ($(50+23+26)/312$) aller Fail-Projekte aus. Die niedrige Erfolgsquote von NAM stammt vor allem aus VN- und GM-Projekten, wobei VN noch vor GM weniger gut abschneidet.
+% Auswertung BA-Region
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung Regionen-BA für EU und North\_Ame}
+	\begin{tabular}{llrrrrr}
+		\textbf{Region} & \textbf{BA}    & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} \\\hline
+		EU    & CF    & 1.9   & 58    & 31    & 34.8\% & 89 \\
+		EU    & DC    & 5.0   & 45    & 9     & 16.7\% & 54 \\
+		EU    & GD    & NA    & 2     & 0     & 0.0\% & 2 \\
+		EU    & \textbf{GL}    & 1.0   & 24    & 23    & 48.9\% & 47 \\
+		EU    & \textbf{GM}  & 1.2   & 58    & 50    & 46.3\% & 108 \\
+		EU    & LO    & 2.5   & 10    & 4     & 28.6\% & 14 \\
+		EU    & SR    & 2.5   & 5     & 2     & 28.6\% & 7 \\
+		EU    & \textbf{VN}     & 1.5   & 38    & 26    & 40.6\% & 64 \\\hline
+		North\_Ame & CF    & 2.0   & 10    & 5     & 33.3\% & 15 \\
+		North\_Ame & DC    & 1.0   & 2     & 2     & 50.0\% & 4 \\
+		North\_Ame & GL    & 1.0   & 1     & 1     & 50.0\% & 2 \\
+		North\_Ame & \textbf{GM}   & 1.5   & 24    & 16    & 40.0\% & 40 \\
+		North\_Ame & LO    & 4.0   & 4     & 1     & 20.0\% & 5 \\
+		North\_Ame & SR    & 1.0   & 1     & 1     & 50.0\% & 2 \\
+		North\_Ame & \textbf{VN}  & 1.0   & 12    & 12    & 50.0\% & 24 \\
+	\end{tabular}%
+	\label{tab:fregba}%
+\end{table}%
+Zusammenfassend lässt sich aussagen, dass ungefähr 60\% ($(122+68)/312$ respektive $(145+38)/312$) der Fail-Projekte entweder in den Geschäftsbereichen VN und GM oder in den Regionen EU und NAM liegen. Zudem wird die Erfolgsquote aller Projekte zu 30\% durch europäische Projekte von den Geschäftsbereichen GM, GL und VN bestimmt wird.
+%
+%Analyse der Kosten
+%
+\paragraph{Kosten} Das Umsatzvolumen (TOBud) soll Aufschluss über die Grösse und Wichtigkeit eines Projekts geben. Die zugrundeliegende Prämisse postuliert, dass Projekte mit höherem Umsatzvolumen risikoreicher sind und deshalb eher unter Budget beendet werden. Die Gegenhypothese unterstellt, dass grössere Projekte (hoher TOBud) relativ mehr Beachtung erhalten, da sie den Erfolg eines Geschäftsbereich respektive einer Region mehr beeinflussen als kleinere Projekte. Deshalb liege der Fokus auf der Einhaltung der Budgetvorgaben.
+%
+%Histogram of TOBud_cat
+%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm]{test.pdf}
+	\caption{Histogram Umsatzkategorie}
+	\label{fig: htobudcat}
+	\text{1	= [13.2,500), 2 = [500,1e+03), 3 = [1e+03,1.5e+03), 4 = [1.5e+03,2e+03), 5 = [2e+03,2.5e+03)}
+	\text{6 =	[2.5e+03,3e+03), 7 = [3e+03,3.5e+03), 8 = [3.5e+03,4e+03), 9 = [4e+03,4.5e+03)}
+	\text{10 = [4.5e+03,5e+03), 11 = [5e+03,1e+04), 12 = [1e+04,3.42e+04)}
+\end{figure}
+Die Verteilung Umsatzvolumen mit Hilfe der Umsatzkategorie ist linksschief und zeigt dass der Grossteil der Projekte ein Umsatzvolumen von weniger als 10 Mio. CHF haben. Die Anzahl Fail-Projekte konzentriert sich folglich in den vier untersten Kategorien (vgl. auch Tabelle \ref{tab:ftobudcat}).
+%%
+%%Relative und Asolute Kostenabweichung
+%%
+\newline\newline\textit{Absolute und relative Kostenabweichung (CostActBud):} Die absoluten und relativen Abweichungen zwischen den aktuellen und den budgetierten Kosten sind direkt mit dem Erfolgskriterium korreliert und sind erwartungsgemäss für Fail-Projekte höher. 
+% Mean absolute Kostenabweichungen
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel der absoluten Kostenabweichungen pro Kostenart [TCHF]}
+	\begin{tabular}{lrrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Total Cost}} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}}
+		\\\hline
+		FALSE & -197  & -65   & -41   & -23   & -71 \\
+		TRUE  & 176   & 73    & -3    & -1    & -11 \\
+	\end{tabular}%
+	\label{mcostabs}%
+\end{table}%
+% Mean relative Kostenabweichung
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel der relativen Kostenabweichungen pro Kostenart [\%]}
+	\begin{tabular}{lrrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Total Cost}} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}}
+		\\\hline
+		FALSE & 12    & 9     & 206   & 79    & 93 \\
+		TRUE  & -10   & 4     & 56    & 17    & 28 \\
+	\end{tabular}%
+	\label{mcostrel}%
+\end{table}%
+Die Tabellen \ref{mcostabs} und \ref{mcostrel} zeigen, dass die durchschnittlichen Abweichung der Projektkosten von nicht-erfolgreichen Projekten in absoluten und relativen Grössen über derjenigen der Success-Projekte liegt. Dabei fällt vor allem der Durchschnittswert der relativen Differenz Kostenabweichung der ME-Kosten auf.
+\newline\newline\textit{Relative Anteile des Kostenbudgets:} Die Zusammensetzung der budgetierten Projektkosten soll Hinweise zur Projektart aufzeigen und ob sie sich zwischen den zwei Projektgruppen unterscheidet.
+\begin{table}[htbp]
+	\centering
+	\caption{Arithmetisches Mittel der relativen Anteile am Gesamtkostenbudget je Kostenart [\%]}
+	\begin{tabular}{lrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{BudMSTot}} & \multicolumn{1}{l}{\textbf{BudMETot}} & \multicolumn{1}{l}{\textbf{BudPATot}} & \multicolumn{1}{l}{\textbf{BudISTot}} \\\hline
+		FALSE & 67.1  & 6.2   & 5.9   & 7.7 \\
+		TRUE  & 67.9  & 5.4   & 5.1   & 6.8 \\
+	\end{tabular}%
+	\label{mbudtot}%
+\end{table}%
+Die dargestellten Mittelwerte in der Tabelle \ref{mbudtot} liegen für nicht-erfolgreiche Projekte bei ME, PA und IS etwas höher. In der vorherigen Auswertung der durchschnittlichen Kostenabweichung wurde exakt bei diesen Projektphasen für Fail-Projekte deutlich höhere Werte festgestellt.
+%
+%Auswertung Nachlieferung
+%
+\newline\newline\textit{Nachlieferung SUCostTO:} Nachlieferungen verursachen zusätzliche Kosten, die aufgrund der zeitlichen Verzögerung bei der Fabrikation der Maschine oder Installation entstehen können. Es wird spekuliert, dass der Anteil der Kosten aus Nachlieferungen im Verhältnis zum Umsatzbudget bei Fail-Projekten höher ist als bei Success-Projekten.
+%Mean SU Cost
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel der SUCostTO [\%]}
+	\begin{tabular}{lr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{SUCostTO}} \\\hline
+		FALSE & -0.81 \\
+		TRUE  & -0.36 \\
+	\end{tabular}%
+	\label{msu}%
+\end{table}%
+Die Auswertung (s. Tabelle \ref{msu}) des arithmetischen Mittels der prozentualen SU-Kosten am Umsatz bestätigt diese erwartete Vermutung.
+%Mean SU Cost pro Umsatzkategorie
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel der SUCostTO [\%] pro TO-Kategorie}
+	\begin{tabular}{llr}
+		\textbf{Success} & \textbf{TOBud\_Cat} & \multicolumn{1}{l}{\textbf{SUCostTO}} \\\hline
+		FALSE & [13.2,500) & -0.93 \\
+		FALSE & [500,1e+03) & -0.69 \\
+		FALSE & [1e+03,1.5e+03) & -0.47 \\
+		FALSE & [1.5e+03,2e+03) & -0.72 \\
+		FALSE & [2e+03,2.5e+03) & -0.57 \\		
+		FALSE & [2.5e+03,3e+03) & -0.82 \\
+		FALSE & [3e+03,3.5e+03) & -0.31 \\
+		FALSE & [3.5e+03,4e+03) & -0.69 \\
+		FALSE & [4e+03,4.5e+03) & -0.52 \\
+		FALSE & [4.5e+03,5e+03) & -6.88 \\
+		FALSE & [5e+03,1e+04) & -0.82 \\
+		FALSE & [1e+04,3.42e+04) & -0.36 \\
+	\end{tabular}%
+	\label{msutocat}%
+\end{table}%
+Die Mittelwertauswertung von SUCostTO in der Tabelle \ref{msutocat} pro TO-Kategorie zeigt, dass für Projekte mit einem Umsatzvolumen zwischen 13.2 TCHF und 500 TCHF die Nachlieferungskosten in Relation zum Umsatz am höchsten war. Der Wert 6.9\% kann als Anomalie betrachtet werden und ist auf ein Projekt mit einem SUCostTO-Wert von ca. 40\% als Einzelfall zu betrachten.
+%
+%Auswertung DeltaLastFCAct
+%
+\newline\newline\textit{Abweichung zwischen dem letzten FC und Act DeltaLastFCAct:} Tendenziell wird die Anpassung des Forecast für die Projektkosten bei erwarteten Mehrkosten möglichst lange hinausgezögert. Einerseits kann mit diesem Vorgehen, die Erklärungsdirektive umgangen werden und anderseits besteht wahrscheinlich die Hoffnung, dass die Projektkosten sich wieder normalisieren. Deshalb wird erwartet, dass die Differenz zwischen der letzten FC-Anpassung und den tatsächlichen Kosten bei Fail-Projekten höher war. 
+%Tabelle Mean DeltaLastFCAct  
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel DeltaLastFCAct für MS, ME, PA und IS [TCHF]}
+	\begin{tabular}{lrrrrr}
+		\textbf{Success} & \multicolumn{1}{c}{\textbf{Total FC}} & \multicolumn{1}{c}{\textbf{MS}} & \multicolumn{1}{c}{\textbf{ME}} & \multicolumn{1}{c}{\textbf{PA}} & \multicolumn{1}{c}{\textbf{IS}}
+		\\\hline
+		FALSE & -490.54 & -445.53 & 7.48 & -12.87 & -14.52 \\
+		TRUE  & -436.41 & -454.24 & 7.93 & -13.41 & -6.49\\
+	\end{tabular}%
+	\label{mdeltalastfcact}%
+\end{table}%
+Die Ergebnisse der Tabelle \ref{mdeltalastfcact} bestätigen diese Vermutung. Die durchschnittliche Differenz bei den IS-Kosten war für Fail-Projekte doppelt so hoch.
+%%
+%%
+%%Auswertung FF-Variablen
+%%
+%%
+\paragraph{Fulfillment} Der bedeutenste Einflussfaktor im Projektmanagement ist der Projektmanager selbst. Die Evaluation der realisierten Projekte pro Projektmanager inklusive der Erfolgsquote hat ergeben, dass die 966 Projekte von 301 unterschiedlichen Projektmanager abgewickelt wurde. 145 Projektmanager haben ihre Projekte aussschliesslich erfolgreich beendet, wohingegen gerade einmal 45 PM nur unzureichend Projekte abgewickelt hat (s. Tablle \ref{tab:pmno} im Anhang).
+%
+%Auswertung Projektmanager Change
+%
+\newline\newline\textit{Projektmanager:} Der Wechsel des Projektmanagers wird mit konfligierende Verhältnisse zwischen den Vertragsparteien assoziiert, weshalb hypothetisch vermutet wird, dass Fail-Projekte eher mit einem PMChange einhergehen. 
+\begin{table}[H]
+	\centering
+	\caption{Häufigkeitsverteilung PMChange}
+	\begin{tabular}{lrrrrr}
+		\textbf{PMChange} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} &
+		\multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
+		no    & 628   & 295   & 32.0\% & 923 & 96\% \\
+		yes   & 26    & 17    & 39.5\% & 43  & 4\% \\\hline
+		\textbf{Total} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{pmchange}%
+\end{table}%
+Insgesamt wurden 43 Projekte mit einem Wechsel des Projektmanagers über die letzten drei Jahre abgewickelt, wie der Tabelle \ref{pmchange} zu entnehmen ist. Davon sind 17 gescheitert und 26 wurden erfolgreich abgeschlossen. Die Anzahl Projektmanager (NoPM) ist direkt mit der Variable PMChange verbunden und weist wenig Informationsgehalt auf. Es gab in der Stichprobe sechs Projekte, bei denen der PM zweimal ausgetauscht wurde, davon sind fünf Projekte gescheitert.
+%
+% Auswertung Alter und Tenuer PM
+%
+\newline Das Alter (PMAge2) und die Dienstjahre (PMTen2) des Projektmanagers sind Proxyvariablen für die Lebens- und Berufserfahrung sowie die Kenntnisse der Bühlerwelt. Erfahrenere (ältere) sowie langjährige Mitarbeitende müssten mehr Erfolg im Projektmanagement haben, da sie mehr Praxiserfahrung mit der Bühler-Welt einerseits und dem Projektmanagement anderseits haben sollten. Die Durchschnittswerte des Alter und der Dienstjahre in der Tabelle \ref{ageten} im Anhang sind für Fail-Projekte und Success-Projekte faktisch identisch. Sie betragen gerundet 40 beziehungsweise 12 Jahre.
+% Table generated by Excel2LaTeX from sheet 'fagecat'
+\begin{table}[htbp]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Alterskategorie}
+	\begin{tabular}{lrrrrrr}
+		\textbf{Cat\_age} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
+		20-25 & 2.5   & 15    & 6     & 28.6\% & 21    & 2.2\% \\
+		26-30 & 2.3   & 130   & 57    & 30.5\% & 187   & 19.4\% \\
+		31-35 & 3.0   & 130   & 44    & 25.3\% & 174   & 18.0\% \\
+		36-40 & 2.3   & 97    & 43    & 30.7\% & 140   & 14.5\% \\
+		41-45 & \textbf{1.8} & 105   & 57    & 35.2\% & 162   & 16.8\% \\
+		46-50 & 2.3   & 65    & 28    & 30.1\% & 93    & 9.6\% \\
+		51-55 & \textbf{1.3} & 69    & 52    & 43.0\% & 121   & 12.5\% \\
+		56-60 & \textbf{1.4} & 26    & 19    & 42.2\% & 45    & 4.7\% \\
+		61-63 & 2.8   & 17    & 6     & 26.1\% & 23    & 2.4\% \\\hline
+		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fagecat}%
+\end{table}%
+Die Tabelle zeigt, dass in den Alterskategorien (51-55) und (56-60) relativ am meisten nicht-erfolgreiche' Projekte. Folglich liegt ein Indiz für die Gegenhypothese vor, wobei angemerkt werden muss, dass Verteilung der Projekte diese Quote beeinflussen kann. Beispielsweise könnte den erfahreneren Mitarbeitenden, die herausfordernden Projekte zugewiesen werden, da sie über mehr fundiertes Wisse im Projektmanagement verfügen.
+%
+% Auswertung Lead SAS
+%
+\newline\newline\textit{Lead SAS}
+Die Bühler AG unterscheidet zwei Typen von Lead SAS: die Lead SAS für das gesamte Projekt (LeadSASPr) und die Lead SAS für die Projektabwicklung (LeadSASFF). Lead legt in dieser Hinsicht die Verantwortung fest. Da die Verantwortlichkeit auf zwei Gesellschaften aufgeteilt werden kann, wurde zudem eruiert, ob sich die LeadSASFF von der LeadSASPr unterscheidet (LeadSAS.PrFF). Es wird postuliert, dass einige Gesellschaften Projekte erfolgreicher managen. Zudem wird angenommen, dass bei zwei Verantwortungsparteien, die Erfolgsquote höher sein muss, da die jeweiligen Aufgabenbereich besser fokussiert werden kann.
+% Table frequency Lead SASPr
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquoten und Häufigkeitsverteilung pro LeadSASPr}
+	\begin{tabular}{lrrrrrr}
+		\textbf{LeadSASPr} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\textbackslash{}\%]}} \\\hline
+		BJHB  & 0.6   & 10    & 17    & 63.0\% & 27    & 2.8\% \\
+		\textbf{BBS}   & 0.8   & 27    & 35    & 56.5\% & 62    & 6.4\% \\
+		\textbf{BMIL}  & 0.9   & 13    & 15    & 53.6\% & 28    & 2.9\% \\
+		BRAL  & 0.9   & 12    & 13    & 52.0\% & 25    & 2.6\% \\
+		\textbf{BLOA}  & 1.0   & 19    & 19    & 50.0\% & 38    & 3.9\% \\
+		BPRI  & 1.0   & 2     & 2     & 50.0\% & 4     & 0.4\% \\
+		\textbf{BBAR}  & 1.1   & 8     & 7     & 46.7\% & 15    & 1.6\% \\
+		BJOI  & 1.2   & 19    & 16    & 45.7\% & 35    & 3.6\% \\
+		BSSE  & 1.2   & 27    & 22    & 44.9\% & 49    & 5.1\% \\
+		BMIN  & 1.2   & 31    & 25    & 44.6\% & 56    & 5.8\% \\
+		BBIN  & 1.3   & 20    & 15    & 42.9\% & 35    & 3.6\% \\
+		BPAR  & 1.3   & 16    & 12    & 42.9\% & 28    & 2.9\% \\
+		BBAI  & 2.0   & 2     & 1     & 33.3\% & 3     & 0.3\% \\
+		BMAD  & 2.1   & 15    & 7     & 31.8\% & 22    & 2.3\% \\
+		BMEX  & 2.5   & 5     & 2     & 28.6\% & 7     & 0.7\% \\
+		BLON  & 3.0   & 3     & 1     & 25.0\% & 4     & 0.4\% \\
+		BUZ   & 3.6   & 310   & 86    & 21.7\% & 396   & 41.0\% \\
+		BLOC  & 5.5   & 11    & 2     & 15.4\% & 13    & 1.3\% \\
+		BYOK  & 5.5   & 11    & 2     & 15.4\% & 13    & 1.3\% \\
+		BCHI  & 5.7   & 34    & 6     & 15.0\% & 40    & 4.1\% \\
+		BBAN  & 7.3   & 51    & 7     & 12.1\% & 58    & 6.0\% \\
+		BDAG  & \multicolumn{1}{r}{NA} & 6     & 0     & 0.0\% & 6     & 0.6\% \\
+		BTEH  & \multicolumn{1}{r}{NA} & 2     & 0     & 0.0\% & 2     & 0.2\% \\\hline
+		\textbf{Total} &       & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fleadsas}%
+\end{table}%
+Der Vergleich Erfolgsquoten pro SAS der Tabelle \ref{fleadsas} zeigt, dass die europäischen Gesellschaften im Vergleich tiefere Erfolgsraten haben. BJHB, BBS, BMIL und BRAL, die zusammen 15\% aller Projekte abwickeln, haben eine unterdurchschnittliche Erfolgsbilanz.
+%Tabelle LeadSAS.PrFF
+\begin{table}[H]
+	\centering
+	\caption{Häufigkeitsverteilung LeadSAS.PrFF}
+	\begin{tabular}{lrrrrr}
+		\textbf{LeadSAS.PrFF} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}}
+		\\\hline
+		identisch    & 569   & 296   & 34.2\% & 865 & 89.5\% \\
+		verschieden   & 85    & 16    & 15.8\% & 101 & 10.5\% \\\hline
+		\textbf{Total} & \textbf{654} & \textbf{312} &       & \textbf{966} \\
+	\end{tabular}%
+	\label{fleadsasprff}%
+\end{table}%
+Die Resultate der Tabelle \ref{fleadsasprff} implizieren, dass der überwiegende Anteil der Projekte eine Verantwortungspartei hatte. Von den 101 Projekten mit geteilter Projektverantwortung wurden lediglich 16\% mit einem prozentualen DB1Act unter Budget abgeschlossen. Das Ergebnis kann folglich als Indiz zu Gunsten der Hypothese gewertet werden.
+%%
+%%
+%%Zeit
+%%
+%%
+\paragraph{Zeit} Die Beurteilung des Zeitmanagement hängt von der Einhaltung des vereinbarten Liefertermins ab. Mehrkosten und Zeitverzug gehen oftmals einher, weshalb unterstellt wird, dass Fail-Projekte den vereinbarten Projektabschluss nicht einhalten konnten. Ferner soll ergründet werden, ab welchem Zeitpunkt respektive Milestone der Zeitverzug üblicherweise eintritt.
+%Table durchschnittlicher PrTimeDelay und pro MS
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel der Projektlaufzeit und Zeitverzögerung [Monate]}
+	\begin{tabular}{lrrrrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Base}} & \multicolumn{1}{l}{\textbf{Act}} & \multicolumn{1}{l}{\textbf{Delay}} & \multicolumn{1}{l}{\textbf{MS2}} & \multicolumn{1}{l}{\textbf{MS8}} & \multicolumn{1}{l}{\textbf{MS10}} & \multicolumn{1}{l}{\textbf{MS11}} \\ \hline
+		TRUE  & 11.9  & 17.3  & -5.4  & -0.1  & -2.0  & -5.0  & -5.5 \\
+		FALSE & 11.4  & 18.7  & -7.2  & -0.2  & -1.7  & -5.7  & -7.3 \\
+	\end{tabular}%
+	\label{mtime}%
+\end{table}%
+Die durchschnittliche budgetierte Projektlaufzeit unterscheidet sich zwischen erfolgreichen und  nicht-erfolgreichen Projekten kaum wohingegen die effektive Projektlaufzeit der Fail-Projekte einen Monat mehr betrug (s. Tabelle \ref{mtime}). Beide Projektgruppen konnten im Durchschnitt den Liefertermin nicht einhalten, wobei die Success-Projekte ca. zwei Monate weniger zeitverzögert waren. Die Termineinhaltung beim MS2 Concept approved bewegt sich im vernachlässigbaren Bereich. Demgegenüber steigt der durchschnittliche Zeitverzug nach MS8 Documented auf zwei, nach MS10 Takeover auf fünf bis sechs Monate und liegt bei Projektabschluss (MS11) zwischen gerundet sechs und sieben Monaten.
+%Table Häufigkeit Delay False/Success
+\begin{table}[H]
+	\centering
+	\caption{Häufigkeitsverteilung zeitverzögerter Projekte}
+	\begin{tabular}{lrrrrr}
+		\textbf{Delay} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\ \hline
+		TRUE  & 515   & 268   & 34.2\% & 783   & 81.1\% \\
+		FALSE & 139   & 44    & 24.0\% & 183   & 18.9\% \\\hline
+		\textbf{Total} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fdelay}%
+\end{table}%
+Insgesamt wurde gemäss der Tabelle \ref{fdelay} der Liefertermin bei 783 Projekten nicht eingehalten, wobei das Verhältnis zwischen erfolgreichen und nicht-erfolgreichen zwei zu eins beträgt. Der prozentuale Anteil der Projekte, bei denen die Anlage pünktlich an den Kunden übergeben werden konnte, beträgt 20. 
+%Table Häufigkeit Delay pro MS
+\begin{table}[H]
+	\centering
+	\caption{Absolute Häufigkeitsverteilung zeitverzögerter Projekte pro Milestone}
+	\begin{tabular}{lrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{DelayMS2}} & \multicolumn{1}{l}{\textbf{DelayMS8}} & \multicolumn{1}{l}{\textbf{DelayMS10}} & \multicolumn{1}{l}{\textbf{DelayMS11}} \\\hline
+		FALSE & 43    & 209   & 275   & 270 \\
+		TRUE  & 75    & 408   & 532   & 516 \\\hline
+		\textbf{Total} & \textbf{118} & \textbf{717} & \textbf{807} &  \textbf{786}
+	\end{tabular}%
+	\label{fdelayms}%
 \end{table}
-Die Wahl der Methode ist abhängig von der Projektart und des Unternehmens. Haji-Kazemi, Andersen \& Krane (2013, S. 59) haben mittels mehrere Fallstudien eruiert, dass das Projekt Assessment sowie 'Gut feelings' in der Praxis die bewährt haben, wobei Experten die Überzeugung haben, dass Frühwarnsignale qualitativer Natur sind und eher durch Intuition Erfahrungswissen entdeckt werden. Klakegg, et.al, (2010) haben mittels formalen Assessments die Anzahl fehlender Informationen, fehlende Beurteilungen und Dokumentationen sowie unklare Anforderung der Meilenstein und verspätete Bericht als mögliche Frühwarnsignale ergründet. Missverständnisse bezüglich der Bedürfnisse, sowie mangelnde Offenheit der Unternehmenskultur und Kommunikationsbereitschaft zwischen den Projektteilnehmer, sowie angespannte Projektatomsphäre wurden in Fallstudien mittels der "Gut feelings"-Ansätzen als wichtige Früherkennungshinweise erkannt. Diese Erkenntnisse bestätigen unter anderem die Ansichten der befragten Experten aus anderen Studien. Denn bei der Evaluation von Assessments während der Projektlaufzeit können zwar wichtige Hinweise für nachfolgende Projekte ausgearbeitet, die aber im aktuellen Projekt nicht mehr berücksichtigt werden können. Während diese Indikatoren qualitativen Charakter haben und eher schwierig zu messen sind, konnten Haji-Kazem \& Anderson (2013) im Rahmen des Performance Management die Überwachung der Schnittstellenmassnahmen, die Mitarbeiterzufriedenheit und Risikoüberwachung als effiziente Quellen von Frühwarnsignalen erheben. Ihre Gemeinsamkeiten sind die quantitative und kontinuierliche Messbarkeit sowie die Funktion als sogenannte "leading" Indikatoren, die es ermöglichen in der Ursachen-Wirkungs-kette möglichst früh Hinweise zu möglichen Gefahren zu erhalten. "Lagging" Faktoren liefern dementsprechend eher spät oder zu spät Signale zu möglichen Risiken. Die Herausforderung bei der Identifikation von Frühwarnsignalen mit dem Performancemanagement-Ansatz ist die Selektion der zu überwachenden Faktoren. Ausserdem kann der Einfluss von Drittvariablen unentdeckt respektive unterschätzt werden.
-% Faktoren von Klakegg und Kommentieren
-% Faktoren von Performance Ansatz, 
-% Leading Lagging Faktor,  
-% wan ist früh, leading not lagging indicators, IdentifyAc says that performance only measures lagging 38
-% possible early warning signs culture, lack of an outsiders perspective on the project, anchoring in the permanent organization, lack of consistency between stakeholders ambition and certain organizations. gut felt signs: detection of unrealism, lack of clarity, misalignment btw qualitative and quantitaive risk analysis 42
-%no early signs in later stages, change...not used 43
-%problems: difficult to stop projects despite EWS
-%need for formalized proces for finding ealry warning signs, outside of the box thinking
-
-
-\subsection{Ansätze zur Früherkennung für die Bühler AG}\label{vierzwei}
-Die Erkenntnisse aus der Theorie des vorangehenden Kapitel setzen den Rahmen für die nachfolgende Ausführungen. Die zentralen Anforderungen an Frühwarnsignale sind zum einen, dass sie bereits zu einem frühen Zeitpunkt gemessen werden können. Die Implementierung eines ganzen Frühwarnsystems erfordert allerdings eine strategische Verankerung, da ein konstantes Monitoring und Screening, sowie eine anschliessende Auswertung und Interpretation der Daten notwendig ist. Ohne die Unterstützung des Managements wird die Durchsetzung eines solchen Vorhabens kaum durchsetzbar sein.
-%DAten
-Die Auswertungen der Einflussfaktoren des Kapitel \ref{drei} geben zwar Hinweise, was mögliche Attribute nicht-erfolgreicher Projekte sein können, allerdings fehlt es an einer statistisch begründeten Signifikanz des Zusammenhangs mit dem Erfolgskriterium. Nichtsdestotrotz können einige Faktoren bereits aufgrund ihrer Natur und des möglichen Erhebungszeitpunktes als mögliche Frühwarnindikatoren ausgeschlossen werden. Denn vorzugsweise sollen sogenannte "leading factors" fokussiert werden, zu denen sämtliche Performanceindikatoren, beispielsweise Kostenabweichungen, Kosten aus Nachlieferung oder Zeitverzögerungen gemäss (Zitat) nicht zählen. Die Rahmenbedingungen sowie auch der Projektmanager oder die Verantwortungsgesellschaften sind zwar zu Beginn des Projektes bekannt, verändern sich jedoch über die Projektlaufzeit kaum. Allerdings könnte nach einer entsprechenden Analyse ihres Einflusses auf die Erfolgswahrscheinlichkeit Projekte mit entsprechenden Attributen eher überwacht werden als andere. Ein solches Vorgehen kann dazuführen, dass andere Signale ausser Acht gelassen werden. Zudem wurden wie bereits gesagt, gewisse Faktoren in der Analyse nicht berücksichtigt, die möglicherweise auch als Frühwarnindikatoren funktionieren könnten. Aus diesen Gründen erscheint es erforderlich, dass neue Faktoren bezüglich ihrer Fähigkeit als Frühwarnsignal zu fungieren, ergründet werden. Es gibt jedoch keinen formalisierten Prozess, zu deren Identifikation. 
-\newline Obwohl Projekt Assessments und seine Formen sowie Risikoanalysen bereits viele Hinweise zu möglichen Risiken und Chancen liefern, 
-Bühler hat selbst für sogenannte Crash-Projekte Projekt-Assessments durchgeführt, die zu wichtigen Erkenntnissen für zukünftige Projekte geführt hat. Ausserdem wird am Ende jedes Projekts (Milestoen Debriefen) ein sogenanntes Debriefing abgehalten, welches implizierte, das Stärken und Schwächen eines jeden Projekts diskutiert wurden. Der Customer-Project Prozess hat neben anderen eine zentrale Schnittstelle vom Verkaufsprozess zum Fullfillment-Prozess. Basierend auf den Erkenntnissen der Literatur hat sich die Interface Analyse respektive die Beobachtung der
-\paragraph{Sales \& Quotation} Schnittstellenthemen als relativ guter Frühwarnindikator erwiesen. Es liegt auf der Hand, dass der Output aus dem SQ-Prozess direkter Input im FF-Prozess bildet. Deshalb entstand die Idee, sozusagen die Frühwarnung für den Projekterfolg ab diesem Zeitpunk zu implementieren. Aus den Prozessabläufen der Bühler AG geht hervor, dass sowohl der SQ-Prozess und der FF-Prozess für Projekte grösser als eine Million umfangreiche Risikoanalysen gemacht werden. Vermutungsweise wird bereits zu diesem Zeitpunkt mögliche Erkenntnisse über zukünftige Herausforderung gewonnen, die wenig Beachtung erhalten. Fehlende Informationen, Assessments oder Dokumentation können als mögliche Frühwarnsignale interpretiert werden (siehe Klaggeg). Deshalb kann es von Nutzen sein eine Kennzahl zu entwickeln, welche auf automatisierte Basis die erforderlichen Dokumente gemäss den Anforderungen des MS1 beobachtet werden, sodass sichergestellt werden kann, dass keine Informationslücken entstehen. Somit wäre bereits früh klar, bei welchen Projekten alle relevanten Informationen zu Verfügung standen und der Übergabeprozess geglückt war. Auf Basis der in Kapitel \ref{sec:drei} erhobenen Daten hat sich gezeigt, dass Volumenmässig der Anteil an Projekte unter oder gleich einer Million fast die Hälfe aller Projekte ausmacht. Es wäre denkbar, dass bei diesen Projekten umfangreiche Risikoprüfungen ausgeblieben sind, da sie nicht priorisiert werden. Diese Annahmen und auch Probleme dieser Projekte müssten genauer untersucht werden, um andere Frühwarnindikatoren zu entdecken. Nichtsdestotrotz ist die Schnittstelle von SQ zu FF auch bei kleinere Projekte wichtig, damit das Projekt erfolgreich abgewickelt werden kann. In diesem Fall würde könnte es sich anbieten, eine Art Interface Analysis, die die Anzahl Interface-Themen und deren Bearbeitung in Bezug auf nur diese Schnittstelle misst, so dass es einerseits eine Plattform gibt, die Interface-Themen erfasst und offene/ungelöste Themen ersichtlich sind. Diese Idee liefert allerdings nur dem Projektabwicklungsprozess nähere Informationen, ob ein Projekte auf die schiefe Bahn gerät. Deshalb müssen auch für den weiteren Projekt-Management Prozess mögliche Ansätze diskutiert werden.
-\paragraph{Projektabwicklung:} Im Propjektabwicklungsprozess sind weitere Schnittstellen vorhanden, welche genauer berücksichtigt werden müssen. Gemäss der Datenanalyse ist sowohl für Fail-Projekte und Success-Projekte der Mehrkostenanteil der IS-Kosten am höchsten gewesen. Unabhängig von der Ursache dieses Erscheinungsbild, ist die Installation die letzte Projektphase, so dass es von grossem Nutzen frühzeitig über mögliche Komplikationen Bescheid zu wissen, damit vorbereitende Massnahmen getroffen werden können. Zur Steuerung mittels Frühwarnsystem könnte ein Kombination aus Interfacemanagement und 'Gut Feelings' angewendet werden. Mittels Interfacemanagement soll sichergestellt werden, dass die auftauchenden Themen bearbeitet in nützlicher Frist bearbeitet werden. Der Ansatz der Gut Feelings hat zum Zweck, dass eine breiter Fokus für Variablen existiert, die einerseits während der Projektphase als mögliche Bedrohungen identifiziert werden und anderseits weder in den Risikochecks des SQ noch des FF inkludiert waren. Interne Dokumente belegen, dass der Projektmanager Erkenntnise aus der Risikoanalyse im Projektmanagement in detaillierter Form pflegen muss. Da erfahrungsgemäss ein gewisser Widerwille gegenüber umfangreichen Datenpflege festzustellen ist, sollte es im Tool eine Inputstelle geben für auf Intuition basierende Frühwarnsignale geben. Diese Anlaufstelle soll möglichst wertneutral, frei von Rechtfertigungsanforderung von übergeordneten Parteien, mit effizienter Handhabung und Zugang für sämtliche Projektteilnehmer ausgestattet sein. Dies ermöglicht dem Projektmanager eine Art Radar für zukünftige Herausforderung zu haben. Es sollte möglich sein, ein konstantes Monitoring pro Projekt ohne dabei detaillierte Angaben bereits erfassen zu müssen, sicherzustellen. Aspekte die berücksichtigt werden müssten sind die Strukturierung der Datenmenge sowie die Nutzung und Auswertung der Daten durch die Projektmanager.
-\paragraph{Verschuldungsfrage:} Die vorangehende Analyse der Projekte wendet sozusagen ein schwarz-weiss Denken in Bezug auf den Erfolg ab. Allerdings konnte während der Analysephase festgestellt werden, dass es schwierig ist zu unterscheiden, welcher Projekttyp vorliegt. Beispielsweise werden Projekte gemacht, um neue Kunden zu gewinnen oder eine neue Technologie zu fördern, was zur Folge haben kann, dass die Kostenvorgaben relative zum Umsatz ambitiös ausfallen. Es würde jedoch Sinn machen, solche Projekte vom Standardgeschäft abgrenzen zu können, um mögliche Kernkompetenzen respektive Faktoren, die den Projekterfolg beeinflussen zu identifizieren. Zudem ist es wahrscheinlich, dass der Grund für die Mehrkosten nicht immer beim der Bühler AG liegen muss, unter dem Ausschluss, dass die Auswahl der Kunden von ihr beeinflusst wird. In Zusammenhang mit der Identifikation der Erfolgsfaktoren der Bühler AG könnte es folglich von Nutzen sein, Faktoren zu herben, die Aufschluss über kundenseitig induzierte Ursachen geben und wie anschliessend die Mehrkosten gehandhabt wurden. Zudem könnte die Befragung der Projektmanager und Verkaufsmanager mehr Aufschluss über zu berücksichtigenden Erfolgsfaktoren des Projektmanagements der Bühler AG geben. Hinzu kommt, dass aufgrund der Datenqualität wichtige Faktoren, wie zum Beispiel der Zeitpunkt der Forecast-Anpassung nicht ausgewertet werden konnten.
-\paragraph{Projektprioritäten:} Aus einer finanziellen Perspektive die Fokussierung der Projekte mit grossem Umsatzvolumen, da ihr Einfluss auf das Ergebnis im Anlagengeschäft relativ gewichtig ist. Dennoch sollte der DB1 Verlust von Projekten mit einem Umsatzvolumen bis maximal 1.0 Mio. CHF nicht vernachläassigt werden, da sie am Projektvolumen eine relativ hohen Anteil haben. Wie bereits erwähnt wurde, werden Projekte unter 1 Mio. CHF von die internen Richtlinien zur vertieften Risikoanalyse der Bühler AG nicht erfasst.
-%%% Text fehlt 
-\paragraph{Incentivierung:} Die Anwendung von Frühwarnindikatoren bedingt, dass die Unternehmenskultur sowie auch die Projektmanagementstrategie entsprechend verändert respektive ausgerichtet wird. Die Implementierung von Frühwarnsignalen kann keine einmalige Übung darstellen, da es ein laufender Prozess ähnlich dem monatlichen Reporting ist. Die Abstimmung und Ausrichtung der Prozess und involvierten Personen auf ein gemeinsames Ziel "erfolgreiche Projekte" abzuschliessen ist dabei von grosser Wichtigkeit. Der Fokus sollte auf die Ergreifung von Massnahmen zur entsprechenden Gegensteuerung bei Komplikationen gerichtet sein anstatt auf die interne Schuldfrage. Eine sogenannte Fehlerkultur, die den Umgang mit Fehlern, Fehlerfolgen und Fehlerrisiken inkludiert, kann ein konstruktives Lernen aus Fehlern oder die Entdeckung effektiver Massnahmen bei Fehlerrisiken begünstigen. Alam Gühl (2016, S.20-21) plädiert im Rahmen der Projektkultur den positiven Umgang mit Fehlern und  den umfangreichen Austausch von entsprechenden Informationen, das von der Unternehmenskultur begünstigen werden kann. Ein anderes zentraler Einflussfaktor im Zusammenhang mit Frühwarnsignalen, ist auch die Fähigkeit des Projektmanagers zu Eingeständnissen, dass sein Projekt zu scheitern droht. Denn werden drohende Risiken und deren mögliche Realisation verkannt oder verhältnismässig spät kommuniziert, können der Handlungsspielraum eingegrenzt werden. Allerdings muss diese Denkweise aktiv im Unternehmen gefördert werden, damit das Bewusstsein der Fehlerakzeptanz, d.h. die positive Assoziation zu Fehlern und Scheitern gefestigt wird. 
-
-
-%%Personen abhängig alli müsssen an einem Strang ziehen, Ausrichtung der Menschen an Zielen es Unternehmesn
-%% Probleme Installation
-%% Projektkategorisierung
-%% Verschulden Bühler etc.
+Die Tabelle \ref{fdelayms} zeigt, dass die Mehrheit der Projekte bei MS2 noch im Zeitplan agierte und nach MS8 bereits hinter dem vereinbarten Liefertermin lag. Mittels Dummyvariablen pro Milestone wurde ausgewertet, ob sich ein anfängliche Verspätung durch die Projektlaufzeit durchzieht.
+% Table generated by Excel2LaTeX from sheet 'time_sukz'
+\begin{table}[H]
+	\centering
+	\caption{Absolute Häufigkeitsverteilung von Kombinationen der Zeitverzögerung}
+	\begin{tabular}{lrrrrrr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Delay}} & \multicolumn{1}{l}{\textbf{DelayMS2}} & \multicolumn{1}{l}{\textbf{DelayMS8}} & \multicolumn{1}{l}{\textbf{DelayMS10}} & \multicolumn{1}{l}{\textbf{DelayMS11}} & \multicolumn{1}{l}{\textbf{freq}} \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 1     & 1     & 1     & 147 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 0     & 1     & 1     & 64 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 1     & 1     & 1     & 33 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 0     & 0     & 1     & 10 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 1     & 0     & 1     & 7 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 0     & 1     & 1     & 5 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 0     & 0     & 0     & 0     & 1 \\
+		FALSE & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\\hline
+		\textbf{Total} &       &       &       &       &       & \textbf{268} \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 1     & 1     & 1     & 290 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 0     & 1     & 1     & 126 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 1     & 1     & 1     & 42 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 1     & 0     & 1     & 19 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 1     & 1     & 17 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 0     & 0     & 1     & 16 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 1     & 0     & 1     & 2 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 0     & 0     & 1     & 0     & 1 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 0     & 1 \\
+		TRUE  & \multicolumn{1}{l}{TRUE} & 1     & 0     & 0     & 1     & 1 \\\hline
+		\textbf{Total} &       &       &       &       &       & \textbf{515} \\
+	\end{tabular}%
+	\label{fdleay}%
+\end{table}%
+Die meisten Projekte hatten die Eigenschaft, bei einer Verspätung im MS8 ebenso auch im MS11 verspätet zu sein. Die zweithäufigste Gruppe war diejenige, die erstmalig ab dem MS10 den Liefertermin bis zum Projektabschluss nicht mehr einhalten konnte. Erst an dritter Stelle folgt die Gruppe, die bereits ab MS2 bis MS11 hinter dem Zeitplan lag. Auf Basis der Tabellen lassen sich jedoch keine Aussagen machen, ob bei einer Nichteinhaltung des vereinbarten Termin, das Projekt zwangsläufig unter Budget abschliessen wird. 
+%%
+%%
+%% Auswertung SQ
+%%
+%%
+\paragraph[short title]{Sales and Quotation} Die Einflussdeterminanten des SQ-Prozess sind einerseits der Stand im Bezug auf das OR-Budget bei Projektabschluss und die Erfahrung (AMAge2) sowie Dienstjahre (AMTen2) des Verkaufsmanager. Allerdings konnten letztere aufgrund fehlender Datensätze nicht ausgewertet werden. Grundsätzlich wird vermutet, dass ein Budgetdruck im Zeitpunkt des Verkaufsabschlusses, den Verkauf von risikoreicheren Projekten begünstigt. 
+% Table generated by Excel2LaTeX from sheet 'sq mean'
+\begin{table}[H]
+	\centering
+	\caption{Arithmetisches Mittel des BudGapOR der BU und Region}
+	\begin{tabular}{lrr|rr}
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{BU [TCHF]}} & \multicolumn{1}{l}{\textbf{BU [\%]}} & \multicolumn{1}{l}{\textbf{Region [TCHF]}} & \multicolumn{1}{l}{\textbf{Region [\%]}} \\\hline
+		FALSE & -7'244.2 & -11.3 & -20'845.5 & -9.3 \\
+		TRUE  & -1'207.2 & -4.0  & -14'886.9 & -6.8 \\
+	\end{tabular}%
+	\label{msq}%
+\end{table}%
+Die mittlere Abweichung des OR vom Budget des Geschäftseinheit und der Region der Tabelle \ref{msq} waren für Fail-Projekte in absoluten und relativen Grössen höher als für Success-Projekte.  
+%%
+%%
+%% Auswertung Komplexität
+%%
+%%
+\newline\newline\textbf{Komplexität:} Die Komplexität kann anhand unterschiedlicher Dimensionen gemessen werden wie zum Beispiel, dem Inhalt, den Zielen, den Beteiligten oder dem Umfeld. In der nachfolgenden Auswertung wurden die Anzahl Aufträge sowie involvierter Parteien bei den unterschiedlichen Projektphasen und Konsortien als Proxyvariablen für Komplexität untersucht. Die vorherrschende Auffassung bezüglich Komplexität, ist ihr negativer Einfluss auf den Projekterfolg.
+%
+%Auswertung Konsortium
+%
+Die Anzahl Projekte in der Stichprobe, die in einem Konsortium abgewickelt wurden, beträgt 78 , wovon 47 erfolgreich und 31 unter Budget abgeschlossen wurden, wie der Tabelle \ref{fcons} zu entnehmen ist. In EU und SAS\_BCHI wurden 51 Projekte im Konsortium abgewickelt.
+% Table generated by Excel2LaTeX from sheet 'con_part_reg'
+\begin{table}[H]
+	\centering
+	\caption{Absolute Häufigkeitsverteilung der Projekte mit Konsortium pro Region}
+	\begin{tabular}{lrrrr}
+		\textbf{ConPart} & \multicolumn{1}{l}{\textbf{Region}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\\hline
+		TRUE  & \multicolumn{1}{l}{East\_Asia} & 1     & 0     & NA \\
+		TRUE  & \multicolumn{1}{l}{\textbf{EU}} & 13    & 14    & 0.9 \\
+		TRUE  & \multicolumn{1}{l}{MEA\_Afr} & 9     & 7     & 1.3 \\
+		TRUE  & \multicolumn{1}{l}{North\_Ame} & 2     & 1     & 2.0 \\
+		TRUE  & \multicolumn{1}{l}{\textbf{SAS\_BCHI}} & 17    & 7     & 2.4 \\
+		TRUE  & \multicolumn{1}{l}{South\_Ame} & 4     & 2     & 2.0 \\
+		TRUE  & \multicolumn{1}{l}{South\_Asia} & 1     & 0     & NA \\\hline
+		\textbf{Total} &       & \textbf{47} & \textbf{31} & \textbf{1.5} \\
+	\end{tabular}%
+	\label{fcons}%
+\end{table}%
+Die meisten Konsortium-Projekte in Europa stammen vom Geschäftsbereich GL wovon nur jedes zweite erfolgreich zu Ende geführt werden konnte (s. Tabelle \ref{consregba}). Demgegenüber stehen 11 Projekte mit Konsortium in Middle East \& Africa des Geschäftsbereichs GM, wovon ebenso die Hälfte erfolgreich abgeschlossen werden konnte. Die DC-Projekte weisen gegenüber den GM-Projekten in SAS\_BCHI die bessere Erfolgsbilanz aus.
+% Table generated by Excel2LaTeX from sheet 'cons_par_reg_Ba'
+\begin{table}[htbp]
+	\centering
+	\caption{Erfolgsquote und absolute Häufigkeit von ConPart für EU, MEA\_Afr und SAS\_BCHI}
+	\begin{tabular}{llrrr}
+		\textbf{Region} & \textbf{BA} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\\hline
+		EU  & CF    & 5     & 0     & NA \\
+		& DC    & 0     & 1     & 0.0 \\
+		& GL    & 6     & 5     & 1.2 \\
+		& GM    & 1     & 3     & 0.3 \\
+		&VN    & 1     & 5     & 0.2 \\\hline
+		\textbf{Total} &  & \textbf{13} & \textbf{14} & \textbf{0.9} \\
+		&  &  & & \\
+		MEA\_Afr &	GL    & 2     & 2     & 1.0 \\
+		& 	GM    & 6     & 5     & 1.2 \\
+		& VN    & 1     & 0     & NA \\\hline
+		\textbf{Total} &  & \textbf{9} & \textbf{7} & \textbf{1.3} \\
+		& & & & \\
+		SAS\_BCHI & \multicolumn{1}{l}{CF} & 2     & 0     & NA \\
+		& \multicolumn{1}{l}{DC} & 11    & 1     & 11.0 \\
+		& \multicolumn{1}{l}{GM} & 4     & 6     & 0.7 \\\hline
+		\textbf{Total} &       &  \textbf{17}   & \textbf{7}     & \textbf{2.4} \\
+	\end{tabular}%
+	\label{consregba}%
+\end{table}%
+%
+%Auswertung Anzahl Aufträge
+%
+\newpage
+Die Anzahl Aufträge pro Projekt (NoContr) kann ein Indiz für die Anzahl Komponenten der Maschine oder involvierter Parteien sein. In der Stichprobe variiert sie zwischen eins und zehn, wobei die Mehrheit aller Projekte einen einzigen Auftrag pflegte (s. Tabelle \ref{fnocontr}). Weitere 20\% aller Projekte werden mittels zwei Aufträgen abgewickelt. Die Erfolgsquote der Projekte mit zwei Verträgen liegt leicht über derjenigen von Projekten mit einem Auftrag. Allerdings wird das Verhältnis zwischen Fail- und Success-Projekten der gesamten Stichprobe durch Projekte mit einem Vertrag bestimmt.
+% Table generated by Excel2LaTeX from sheet 'nocontr'
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung von NoContr}
+	\begin{tabular}{lrrrrrr}
+		\textbf{NoContr} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
+		\multicolumn{1}{r}{1} & 2.0   & 449   & 228   & 33.7\% & 677   & 70.1\% \\
+		\multicolumn{1}{r}{2} & 2.6   & 136   & 52    & 27.7\% & 188   & 19.5\% \\
+		\multicolumn{1}{r}{3} & 1.7   & 38    & 22    & 36.7\% & 60    & 6.2\% \\
+		\multicolumn{1}{r}{4} & 3.6   & 18    & 5     & 21.7\% & 23    & 2.4\% \\
+		\multicolumn{1}{r}{5} & 4.0   & 4     & 1     & 20.0\% & 5     & 0.5\% \\
+		\multicolumn{1}{r}{6} & 3.0   & 6     & 2     & 25.0\% & 8     & 0.8\% \\
+		\multicolumn{1}{r}{7} & NA    & 1     & 0     & 0.0\% & 1     & 0.1\% \\
+		\multicolumn{1}{r}{8} & NA    & 1     & 0     & 0.0\% & 1     & 0.1\% \\
+		\multicolumn{1}{r}{9} & NA    & 1     & 0     & 0.0\% & 1     & 0.1\% \\
+		\multicolumn{1}{r}{10} & 0.0   & 0     & 2     & 100.0\% & 2     & 0.2\% \\\hline
+		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\end{tabular}%
+	\label{fnocontr}%
+\end{table}%
+%
+%Auswertung Anzahl SAS
+%
+Die Anzahl involvierte SAS (NoSupplSAS) bei der Zulieferung liegt im Bereich null und zehn, wobei null mit Eigenproduktion oder Zulieferung durch Dritte gleichzusetzen ist. In den übrigen Projektphasen sind maximal drei andere Bühler-Gesellschaften involviert. Eine Einzelauswertung pro Projektphase ergibt relativ wenig Aufschluss, weshalb die Häufigkeit der Kombinationen untersucht wurde. 
+% Table generated by Excel2LaTeX from sheet 'nosas'
+\begin{table}[H]
+	\centering
+	\caption{Erfolgsquote und Häufigkeitsverteilung der NoSupplySAS-Kombinationen (Ausschnitt)}
+	\begin{tabular}{lrrrrrrrr}
+		\textbf{NoSupplSAS} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\ \hline
+		\multicolumn{1}{r}{0} & 0     & 0     & 0     & 0     & 180   & 89    & 269 & 2.0 \\
+		\multicolumn{1}{r}{1} & 1     & 0     & 0     & 0     & 73    & 26    & 99  & 2.8 \\
+		\multicolumn{1}{r}{2} & 2     & 0     & 0     & 0     & 38    & 13    & 51  & 2.9 \\
+		\multicolumn{1}{r}{2} & 2     & 1     & 0     & 0     & 23    & 13    & 36  & 1.8 \\
+		\multicolumn{1}{r}{1} & 1     & 1     & 1     & 1     & 15    & 12    & 27  & 1.3 \\
+		\multicolumn{1}{r}{1} & 1     & 1     & 0     & 0     & 17    & 11    & 28  & 1.5 \\ \hline
+		\textbf{Total} &       &       &       &       & \textbf{346} & \textbf{164} & \textbf{510} & 2.1 \\
+	\end{tabular}%
+	\label{fnosas}%
+\end{table}%
+Die obige Tabelle \ref{fnosas} zeigt, dass die Eigenfertigung respektive die Zusammenarbeit mit Drittlieferanten während allen Projektphasen das häufigste Charakteristika aller Projekte war. Es fällt auf, dass sich mehr als die Hälfte der Datenpunkte im Bereich mit maximal zwei involvierten SAS-Gesellschaften während der gesamten Projektlaufzeit konzentriert. Aufgrund der Erfolgsquoten kann postuliert werden, dass eine Zusammenarbeit mit mindestens einer weiteren Partei im MS, den Projekterfolg begünstigen könnte.
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%Beurteilung der Ergebnis
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
