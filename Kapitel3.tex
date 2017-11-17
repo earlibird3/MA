@@ -1,80 +1,216 @@
 % !TEX root = MA.tex
 %Wahl der Methodik???? verzicht auf Befragungen der Bühler AG...externe Perspektive im Methodikteil
 \chapter{Methodolgie}\label{sec:methode}
-In diesem Kapitel wird zuerst das analytische Vorgehen erläutert und anschliessend die Ergebnisse präsentiert sowie kritisch gewürdigt. In vergangenen Studien wurden die Erfolgsfaktoren von Projekten mittels der statistischen Auswertung von Einschätzungen ausgewählter Attribute zu deren Relevanz für den Projekterfolg erhoben. Die nachfolgende Analyse unterscheidet sich insofern, da für die Ergründung der Charakteristiken nicht-erfolgreicher Projekte unternehmensspezifische Projektinformationen verwendet wurden.
+In diesem Kapitel wird zuerst die Datengrundlage einschliesslich der zahlreichen Variablen und anschliessend das analytische Vorgehen erläutert.  
 %%Datengrundlage: Erläutere Stichprobe: Art, Grösse, Erhebung der Stichprobe
 %%Operationalisierung der Variablen: Welche Variablen: abhängige (Erfolgskriterium, Erfolgsquote), unabhängige(Einflussfaktoren), Erklärung, Verweis auf Prozess, Erklärung Erhebung und Prämsisen, Ausklammerung der Variablen, weshalb wieso.
 \section{Datengrundlage}\label{sec:datagr}
-Nachfolgend werden sämtliche Einflussdeterminaten und das Projektmanagement-Tool, das sämtlich Projektinformationen enthält, erläutert.
-\newline
-Das BPM-Cockpit enthält Informationen zu Kosten, Zeit, Verantwortlichkeiten, Risiken und Aktionen als auch zum Engineering inklusive verschiedener Projektstatus. Die Beurteilung der Projektperformance erfolgt anhand eines dreifarbigen Ampelsystems für Kosten, Zeit und Qualität. Die ersten beiden werden vom System automatisch gerechnet wohingegen die Qualität auf der subjektiven Einschätzung der Projektmanager beruht, die sie selbst berichten können. Basierend auf der internen Richtlinie für das BPM-Cockpit ist der Kostenstatus grün, wenn die konsolidierte Abweichung der Projektmarge zwischen dem Forecast und dem Budget mehr als -400 Prozentpunkte beträgt. Dieser Status ändert von grün auf gelb, sobald die Abweichung weniger als -4\% beträgt und von gelb auf rot, wenn die Schwelle von -10\% unterschritten wird. Die Zeitampel basiert einerseits auf der Differenz zwischen dem realisierten und dem geplanten Termin und anderseits auf der Eintragung im System. Sofern Angaben zum realisierten Termin im System enthalten sind, ist der Status grün, wenn er vor oder auf dem geplanten Datum liegt und gelb, wenn das Zeitversprechen nicht eingehalten wurde. Die rote Farbe impliziert, dass das BPM-Cockpit keine Informationen zur Erfüllung des Termins enthält und der geplante Termin vor dem heutigen Datum liegt. Die Farbe der Ampeln hängt davon ab, ob der Forecast für eine Reportingperiode angepasst wurde oder nicht. Je nach Grösse der Abweichung zwischen dem Budget und dem Forecast wird eine Erklärung vom entsprechenden Geschäftsbereich erwartet. Dies kann dazu führen, dass die Anpassung der ProgMse hinausgezögert wird.
-\newline
+Der untersuchte Datensatz enthält insgesamt $N = 1497$ Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als \glqq nicht abgeschlossen \grqq{}. Die Datenerhebung erfolgt mittels der dem Projektmanagementtool der Bühler AG, das sämtliche Informationen der Projekte enthält. Das BPM-Cockpit dient zudem dem monatlichen Projektreporting.
+\newline\newline
+Insgesamt wurden $i = 92$ kategoriale und metrische Variablen erhoben und in sechs Kategorien, die sich am Projektmanagementprozess der Bühler AG orientieren, unterteilt: Rahmenbedingung, SQ-Variablen, FF-Variablen, Komplexität, Kosten und Zeit. Die nachfolgende Tabelle zeigt die Verteilung der kategorischen und metrischen Variablen pro Kategorie.
+% Verteilung kategorialer und metrischer Variablen'
+\begin{table}[htbp]
+	\centering
+	\caption{Anzahl kategorialer und metrischer Variablen pro Kategorie}
+	\begin{tabular}{lrr|r}
+		\toprule
+		Kategorie & \multicolumn{1}{l}{kategoriale Variablen} & \multicolumn{1}{l}{metrisch Variablen} & \multicolumn{1}{l}{\textbf{Total}} \\
+		\midrule
+		Rahmenbedingung & 8     & 3     & \textbf{10} \\
+		SQ-Variablen & 4     & 6     & \textbf{9} \\
+		FF-Variablen & 9    & 22    & \textbf{33} \\
+		Komplexität & 1     & 6     & \textbf{7} \\
+		Kosten  & 0     & 24    & \textbf{24} \\
+		Zeit  & 0     & 9     & \textbf{9} \\
+		\bottomrule
+		\textbf{Total} & \textbf{22} & \textbf{70} & \textbf{92} \\
+	\end{tabular}%
+	\label{tab:katmet}%
+\end{table}%
+Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtliche Berechnungsformeln sind im Anhang zu finden. 
+%%
+\paragraph{Rahmenbedingungen:} Die Variablen dieser Kategorie definieren den Rahmen des Projekts in lokaler, technologischer und organisatorischer Hinsicht. Die Lead \gls{abk:sas} Organisation trägt die Gesamtverantwortung des Projekts. Der Stellenwert am Beispiel für den Geschäftsbereich, drückt aus, auf welche Projekte die Ressourcen konzentriert werden.
+% Variablen Rahmenbedingungen
+\begin{table}[htbp]
+	\centering
+	\caption{Variablen der Kategorie Rahmenbedingungen}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		CuNo  & Kundenummer \\
+		CuName & Kundenname \\
+		EquLoc & Land, in dem die Anlage gebaut wird \\
+		Region & Region \\
+		BA    & Geschäftsbereich \\
+		BU    & Geschäftseinheit \\
+		MS    & Marktsegement \\
+		BAImportPr & Stellenwert des Projekts im Geschäftsbereich \\
+		BUImportPr & Stellenwert des Projekts in der Geschäftseinheit \\
+		MSImportPr & Stellenwert des Projekts im Marktsegment \\
+		LeadSASPr & Lead SAS Projekt\\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:rahm}%
+\end{table}%
+\paragraph{\gls{abk:sq}-Variablen:} Die Tabelle \ref{tab:sqvar} zeigt alle Variablen, die mit dem Verkaufsprozess zusammenhängen. Der Output des \gls{abk:sq}-Prozess ist zugleich der Input des Projektabwicklungsprozess (s. Kapitel \ref{sec:pmbueh}), weshalb der Projekterfolg auch von den Entscheidungen der involvierten Parteien im \gls{abk:sq}-Prozess beeinflusst wird. Das Alter und die Betriebszugehörigkeit sind stellvertretende Variablen der Erfahrung und der Kenntnisse der Bühler Prozesse. Die Differenz zwischen dem realisierten und budgetierten Auftragsvolumen der Region und Geschäftseinheit sind ein Indiz für  Verkaufsdruck des Area Manager bei Projektabschluss. Dieser kann den Verkauf risikoreicher Projekte begünstigen, da die Beurteilung des Verkaufsmanager an den \gls{abk:OR} gekoppelt ist. Die Zeitverzögerung zwischen der Auftragsfreigabe und dem Projektbeginn kann als Hinweis für Unklarheiten und Unsicherheiten bezüglich des Projekts zwischen dem Verkaufs- und Projektmanager interpretiert werden kann.
+% Tabelle SQ Variabln
+\begin{table}[htbp]
+	\centering
+	\caption{Variablen der Kategorie Sales \& Quotation}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		AM    & Name des Area Manager \\
+		AMNo  & Personalidentifikationsnummer des Area Manager  \\
+		AMAge & Alter des Area Manager  \\
+		AMTen & Betriebeszugehörigkeit Area Manager  \\
+		ORDate & Datum der Auftragsfreigabe \\
+		PrStartDate & Projektstartdatum \\
+		BUORBudGapAbs & Budgetabweichung des Auftragsvolumen des Geschäftsbereich absolut \\
+		BUORBudGapRel & Budgetabweichung des Auftragsvolumen des Geschäftsbereich relativ \\
+		RegiORBudGapAbs & Budgetabweichung des Auftragsvolumen der Region absolut \\
+		RegiORBudGapRel & Budgetabweichung des Auftragsvolumen der Region relativ \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:sqvar}%
+\end{table}%
+
+\paragraph{FF-Variablen:}  Die Tabelle \ref{tab:ffvar} beinhaltet sämtliche  Variablen in Bezug auf den Projektmanager und das Forecast Management. Das Alter und die Betriebszugehörigkeit des Projektmanagers sind wie bereits beim Area Manager stellvertretende Variablen für die Berufserfahrung und das unternehmensspezifische Wissen. Der PMChange misst, ob der Projektmanager während der Projektlaufzeit gewechselt werden musste.
+\newline Im Rahmen des Projektcontrolling macht der Projektmanager monatlich eine Prognose (Forecast) in Bezug auf die Kosten- und Umsatzentwicklung. Da Verschlechterung der Kostenperformance relativ spät kommuniziert werde, misst CostMostnegFCadj zu welchem Zeitpunkt während der Projektlaufzeit die negativste Anpassung des Kosten FC gemacht wurde. Negativ impliziert dabei die Generierung von Mehrkosten. CostFCajd beurteilt, ob ein Forecast gemacht wurde unterteilt sie in drei Gruppen: Kosten und Umsatz angepasst, weniger Kosten und mehr Kosten. Das Ampelsystem der Bühler AG wurde in der Einleitung kurz erläutert. Es zeigt auf einer dreifarbigen Skala an, welcher Projektstatus künftig erwartet wird. HOMYellCost mit deshalb, wann das Projekt zum ersten Mal seit Projektbeginn den Status Gelb erhalten hat. Die organisatorische Verantwortung für das ganze Projekt und den Abwicklungsprozess, kann bei einer Gesellschaft oder zwei verschiedenen Gesellschaften angesiedelt sein. Die zusätzliche Schnittstelle und die Trennung der Verantwortlichkeiten kann den Projekterfolg wirken.
+% F-Variablen
+\begin{longtable}[ht]{p{0.25\textwidth}p{0.7\textwidth}}
+ 	\caption{Variablen der Kategorie Fulfillment}\\
+ 	\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\ 
+		\midrule
+		\endfirsthead 
+		PM    & Name des Projektmanager \\
+		PMAge2 & Alter des Projektmanager \\
+		PMTen2 & Betriebszugehörigkeit des Projektmanager  \\
+		PMNo  & Identifikationsnummer des Projektmanager  \\
+		PMChange & Wechsel des Projektmanager \\
+		NoPM  & Anzahl Projektmanager während der Laufzeit \\
+		LeadSAS.PrFF & Leas SAS Projekt unterscheidet sich von Lead SAS Projektabwicklung \\
+		NoLeadSASFF & Anzahl involvierter SAS bei der Projektabwicklung\\
+		CostFCadj & Anpassung des letzten Kosten FC \\
+		CostFCadjMS & Anpassung des letzten Kosten FC von MeS \\
+		CostFCadjME & Anpassung des letzten Kosten FC von ME \\
+		CostFCadjPA & Anpassung des letzten Kosten FC von PA \\
+		CostFCadjIS & Anpassung des letzten Kosten FC von IS \\
+		CostFirstadj & Anzahl Monate zwischen der ersten  negativen Anpasung des Kosten Forecast (FC) und dem Projektende \\
+		CostMostnegFCadj & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC und dem Projektende \\
+		CostMostnegFCadjMS & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von MeS und dem Projektende  \\
+		CostMostnegFCadjME & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von ME und dem Projektende  \\
+		CostMostnegFCadjPA & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von PA und dem Projektende  \\
+		CostMostnegFCadjIS & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von IS und dem Projektende  \\
+		HOMYellCost & Anzahl Monate zwishen HOM und dem ersten gelben Kostenstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMYellQual & Anzahl Monate zwishen HOM und dem ersten gelben Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMYellTime & Anzahl Monate zwishen HOM und dem ersten gelben Zeitstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedCost & Anzahl Monate zwishen HOM und dem ersten roten Kostenstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedQual & Anzahl Monate zwishen HOM und dem ersten roten Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedTime & Anzahl Monate zwishen HOM und dem ersten roten Zeitstatus in Relation zur erreichten Projektlaufzeit \\
+		\bottomrule
+	\label{tab:ffvar}%
+\end{longtable}%
+%%
+\paragraph{Komplexität:} Die Komplexität eines Projekts kann unterschiedliche Dimensionen betreffen, so zum Beispiel können die technische Anforderung an die Anlage, die Anzahl involvierter Parteien, die Zusammenarbeit mit externen Partnern sowie neuartige Prozesse den Komplexitätsgrad eines Projekts erhöhen. Die Tabelle \ref{tab:covar} führt die Variablen zur Abbildung der Komplexität auf. Die Anzahl Aufträge soll die Überisichtlichkeit bei der Projektabwicklung erfassen, allerdings wurde keine interne Bestimmungen, wann der Auftrag gesplittet werden muss. Die Anzahl involvierte Parteien, wurde mit Anzahl Zulieferer während der Projektphase approximiert. Der Zusammenschluss mit einem externen Unternehmen (Konsortium) kann die Komplexität erhöhen.
+% Tabelle Komplexität
+\begin{table}[htbp]
+	\centering
+	\caption{Variablen der Kategorie Komplexität}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		ConPart & Konsortium \\
+		NoSupplSAS & Anzahl zuliefernder Sales and Service Unternehmen (SAS) \\
+		NoSupplSASMS & Anzahl zuliefernder SAS Mechnical Supply (MeS) \\
+		NoSupplSASME & Anzahl zuliefernder SAS Mechnical Engineering (ME) \\
+		NoSupplSASPA & Anzahl zuliefernder SAS Plant and Automation (PA) \\
+		NoSupplSASIS & Anzahl zuliefernder SAS Installation (IS) \\
+		NoContr & Anzahl Aufträge \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:covar}%
+\end{table}%
+\paragraph{Kosten:} Die monetären Aspekte eines Projekts in der Tabelle \ref{costvat} umfassen die budgetierten und realisierten Zahlen von Umsatz, Kosten, Marge, in absoluten und relativen Grössen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast vor dem Projektende kann als Indiz, des Zeitmanagement der Prognosenpassung interpretiert werden. 
+% Tabelle Kosten
+\begin{table}[htbp]
+	\centering
+	\caption{Variablen der Kategorie Kosten:}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		TOBud & Umsatzbudget \\
+		TOAct & Turnover Act \\
+		BudMSTot & Anteil der MeS Kosten am Gesamtkostenbduget \\
+		BudMETot & Anteil der ME Kosten am Gesamtkostenbduget \\
+		BudPATot & Anteil der PA Kosten am Gesamtkostenbduget \\
+		BudISTot & Anteil der IS Kosten am Gesamtkostenbduget \\
+		DB1Bud & budgetierte  Projektmarge (DB1-Marge) \\
+		DB1Act & realisierte DB1-Marge \\
+		DB1Budabs & absolutes DB1 Budget (Bud) \\
+		DB1Actabs & absolute DB1 Actual (Act) \\
+		SUCostTO & Kosten aus Nachlieferung im Verhältnis zum Umsatz \\
+		CostActBudMSabs & absolute Kostenabweichung vom Bud der MeS Kosten \\
+		CostActBudMEabs & absolute Kostenabweichung vom Bud der ME Kosten \\
+		CostActBudPAabs & absolute Kostenabweichung vom Bud der PA Kosten \\
+		CostActBudISabs & absolute Kostenabweichung vom Bud der IS Kosten \\
+		CostActBudRel & relative Kostenabweichung  der Projektkosten \\
+		CostActBudMSRel & relative Kostenabweichung der MeS Kosten \\
+		CostActBudMERel & relative Kostenabweichung der ME Kosten \\
+		CostActBudPARel & relative Kostenabweichung der PA Kosten \\
+		CostActBudISRel & relative Kostenabweichung der IS Kosten \\
+		DeltaLastFCAct & Kostenabweichung zwischen dem letzten FC und Act des Projekts \\
+		DeltaLastFCActMS & Kostenabweichung zwischen dem letzten FC und Act von MeS \\
+		DeltaLastFCActME & Kostenabweichung zwischen dem letzten FC und Act von ME \\
+		DeltaLastFCActPA & Kostenabweichung zwischen dem letzten FC und Act von PA \\
+		DeltaLastFCActIS & Kostenabweichung zwischen dem letzten FC und Act von IS \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table}%
+%%
+\paragraph{Zeit:} Die Variablen der Tabelle \ref{zeitvar} messen sämtliche Zeitverzögerungen in Bezug auf die gesamte Projektlaufzeit und einzelner Meilensteine: MS2 \glqq Concept approved \grqq{ }, MS5 \glqq Point of no return \grqq{ }, MS8 \glqq Documented \grqq{ }, MS10 \glqq Takeover\grqq{ } und MS11 \glqq Project Closure \grqq{ }.
+% Table generated by Excel2LaTeX from sheet 'Ch3'
+\begin{table}[htbp]
+	\centering
+	\caption{Variablen der Kategorie Zeit}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		PrTimeBase & geplante Projektlaufzeit \\
+		PrTimeAct & erreichte Projektlaufzeit \\
+		PrTimeDelay & Zeitverzögerung bei Projektabschluss \\
+		PrTimeDelayMS2 & Zeitverzögerung bei MS2 \\
+		PrTimeDelayMS5 & Zeitverzögerung bei MS5 \\
+		PrTimeDelayMS8 & Zeitverzögerung bei MS8 \\
+		PrTimeDelayMS10 & Zeitverzögerung bei MS10 \\
+		PrTimeDelayMS11 & Zeitverzögerung bei MS11 \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:zeitvar}%
+\end{table}%
+
+%%Datenanalyse: Finanzielle Analyse
+%%Datenanalyse: Häufigkeitsverteilung etc.
+%%Datenanalyse: Hpyothesen
+\section{Datenanalyse}\label{sec:dataana}
 Obwohl die Performance eines Bühler-Projekts mittels des magischen Dreiecks - Zeit, Kosten und Qualität - beurteilt wird, hat letztendlich der Kostenaspekt aus finanzieller Perspektive die relativ gewichtigere Bedeutung als die anderen zwei Dimensionen. Deshalb wurde in Zusammenarbeit mit der Bühler AG, das folgende Erfolgskriterium festgelegt:
 \begin{equation}
 \text{Deviation DB1 \%} = \text{DB1 Act \%} - \text{DB1 Bud \%}
 \end{equation}
 Der KPI rechnet sich realisierte Marge (DB1 Act) in \% minus budgetierte Marge (DB1 Bud) in \% und wird jeweils am Projektende respektive nach Erreichung des MS11 (Kapitel \ref{zweieins}) kalkuliert. Die Kosten der Garantieperiode werden nicht direkt dem Projekt belastet sondern summarisch in einem anderen buchhalterischen Konto. Bei jedem Projekt wird präventiv ein Kostenpuffer im Bereich von 4\% bis 9\% einkalkuliert, der nach dem Projektende (MS11) bei einer Nullbeanspruchung im Projektergebnis realisiert wird.
 \newline Die nachfolgende Abbildung \ref{Einflussfaktoren} zeigt die ursprünglich 93 Determinanten eingeteilt in sechs Kategorien. Gewisse Faktoren könnten ihrer Natur nach auch in eine andere Gruppe gegliedert werden. In der Folge wird die Bedeutung und Relevanz der Variablen erklärt.
-%%%%%%%%%%%%%%%%%%%%%%%% WAraanty shit!
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=90mm]{Model.jpg}
-	\caption{Einflussfaktoren
-		\label{Einflussfaktoren}}
-\end{figure}
-\paragraph{Rahmenbedingungen:} In dieser Kategorie sind kategoriale Variablen zusammengefasst, die den eindeutigen Rahmen eines Projekts festlegen. Dazu gehören die Region (Region) respektive das Land (EquLoc), in welchem die Anlage gebaut wird, der Kunde (CuNo) und Geschäftsbereich (BA, BU und MS). Ausserdem zählt die relative Wichtigkeit eines Projekts (BAImportPr, BUImportPr und MSImportPr) für den entsprechenden Geschäftsbereich ebenso zu den Rahmenbedingungen. Die zugrundeliegende Hypothese unterstellt, dass bestimmte Kombinationen der Charakteristiken den Projekterfolg begünstigen. Kunden beispielsweise lassen sich bezügliche der individuellen Anlagespezifikationen, ihrer Bonität oder Kultur unterscheiden. Die Region in welcher die Anlage gebaut werden soll, birgt differenzierbare Risiken im Bereich der Politik, Wirtschaftsentwicklung oder länderspezifischer Handelsregelungen. Der Geschäftsbereich kann als eindeutiges Diversifikationskriterium der Anlage gewertet werden. Obwohl der Projektmanagementleitfaden intern universelle Gültigkeit hat, können während der Projektlaufzeit verschiedene Herausforderungen in Abhängigkeit der jeweiligen Anlage auftreten. Zudem kann davon ausgegangen werden, dass die Teamarbeit und Teamkultur pro Geschäftsbereich und -einheit verschieden sind und den Projekterfolg unterschiedlich beeinflussen. Die Wichtigkeit eines Projekts, das Umsatzbudget des Projekts im Verhältnis zum Median des Umsatzbudgets aller laufenden Projekte, kann als Indikator zur Konzentration von Ressourcen bei der Projektabwicklung interpretiert werden. Demzufolge müssten bedeutendere Projekte, die auch einen erheblichen Einfluss auf das Geschäftsbereichsergebnis haben, mehr Aufmerksamkeit in Bezug auf Risikominimierung erhalten.
-\paragraph{Sales \& Quotation (SQ):} Der Verkaufsprozess geht unmittelbar in die Projektabwicklung über, weshalb die vorgelagerten Entscheidungen direkt oder indirekt den Projekterfolg beeinflussen können. Zum Beispiel beeinflussen die Qualität der Offerte sowie die vertraglichen Vereinbarungen die Rahmenbedingungen für die Projektabwicklung. Die Offertstellung und vorgängige Risikoanalysen des Projekts liegen im Aufgaben- und Verantwortungsbereich des Area Managers (AM und AMNo). Es wird davon ausgegangen, dass erfahrenere (AMAge) und langjährige (AMTen) Verkaufsmanager über mehr Kenntnisse zu den Projekten allgemein, als auch deren Risiken und dem internen Prozess verfügen und deshalb 'erfolgreichere' Projekte verkaufen. Die Incentivierung und Performancemessung der Verkaufsmanager erfolgt über das Auftragsvolumen des Geschäftsbereichs und der Region. Die Abweichung von den Budgetvorgaben auf regionaler Ebene und der Geschäftsbereichsstufe (BUORBudGap und RegioORBudGap) zum Zeitpunkt des Projektabschlusses kann den Zielerreichungsdruck vor allem zum Jahresende erhöhen. Die Schnittstelle zwischen Sales \& Quotation und dem Fulfillment ist für den Projekterfolg von zentraler Bedeutung, weshalb eine Zeitverzögerung zwischen der Auftragsfreigabe (ORDate) und dem Projektbeginn (PrStartDate) als Indiz für Komplikationen, Unklarheiten und Unsicherheiten interpretiert werden kann. 
-\paragraph{Fulfillment (FF): } In dieser Kategorie werden sämtliche Faktoren im Zusammenhang mit dem Projektmanager (PM und PMNo), dem Forecastmanagement (FC-Management) und der Unternehmensverantwortung subsumiert, da sie den Projektabwicklungsprozess tangieren. Der Betriebszugehörigkeit der Projektmanager (PMTen) sowie dessen Erfahrungsschatz (PMAge) sind stellvertretende Variablen für die Kenntnisse der internen Prozesse und das vorhandene Wissen in Bezug auf den Beruf. Bei Unstimmigkeiten zwischen dem Kunden und dem Projektmanager, kann letzterer ersetzt werden (PMChange). Je nach Status des Projekts und Zeitpunkt des Wechsels können nicht alle Differenzen durch den neuen Projektmanager kompensiert werden, weshalb ein Austausch als Indiz für nicht-erfolgreiche Projekte betrachtet wird. In sehr seltenen Fällen muss die Funktion des Projektmanagers sogar mehrmals neu besetzt werden (NoPM), was den positiven Ausgang eines Projekts beeinträchtigen kann.
-\newline Die organisatorische Verantwortung für das ganze Projekt (LeadSASPr) und den Abwicklungsprozess (LeadSASFF), kann bei einer Gesellschaft oder zwei verschiedenen Gesellschaften (LeadSAS.PrFF) angesiedelt sein. Die zusätzliche Schnittstelle erhöht den Komplexitätsgrad eines Projekts und kann deshalb nachteilig auf den Projekterfolg wirken. Die Zusammenarbeit sowohl zwischen den Gesellschaften als auch innerhalb der Unternehmen kann sich voneinander unterscheiden, weshalb einige Gesellschaften wahrscheinlich mehr Erfolg im Projektmanagement aufweisen.
-\newline Das  Forecastmanagement liegt im Verantwortungsbereich des Projektmanagers und bezieht sich auf die Prognose des Projektumsatzes, der -kosten sowie der -marge, welche monatlich geprüft und entsprechend angepasst werden muss. Das frühzeitige Erkennen von drohenden Mehrkosten kann deren Verminderung oder Vermeidung begünstigen. Deshalb wurde pro Projektphase, Mechnical Supply \gls{abk:MS}, Mechnical Engineering \gls{abk:ME}, Plant \&Automation \gls{abk:PA} und Installation \gls{abk:IS} erhoben, ob der Forecast angepasst wurde. Dabei wurde zwischen 'nur Mehrkosten' und 'Mehrkosten inklusive Umsatzerhöhung' unterschieden, (CostFCadj). Zudem wurde die Anzahl Monate zwischen dem Projektabschluss (MS11) und der negativsten FC-Anpassung (CostmostnegFCadj) gemessen. Die Abweichungen von den Vorgaben in Bezug auf Zeit und Kosten wird systemisch automatisch berechnet und  durch das dreistufige Ampelsystem des Bühler Projektmanagement-Cockpit (BPM-Cockpit) reflektiert. Obwohl intern vorgeschrieben wird, dass jede mögliche Veränderung in der monatlichen Prognose unverzüglich einfliessen muss, wird aufgrund des Begründungszwangs bei hohen Abweichungen versucht, die Kommunikation der negativen Veränderung so lange wie möglich hinauszuzögern.  % Erklärung wieso HOM
-Deshalb wurde die Periode zwischen dem erstmaligen gelben respektive roten Status und dem Projektbeginn HOM gemessen und ins Verhältnis zur vereinbarten Projektzeit (HOMRed/YellowCost/Time/Quality) gesetzt.  %Auf diese Weise kann herausgefunden werden..
-\paragraph{Kosten:} Die monetären Aspekte eines Projekts umfassen Umsatz (TO), Kosten (Cost), Marge (DB1), Budget (Bud) und realisierte Zahlen (Act), deren Vergleich und die monetären Abweichungen zwischen dem letzten Forecast und den Istzahlen. Ein höheres Umsatzbudget (TOBud) wird mit komplexeren und umfangreicheren Projekten, die ein höheres Mass an Planung, Ressourcen sowie Betreuung erfordern, assoziiert. Ausserdem ist ihr finanzieller Einfluss auf das Geschäftsbereich- bzw. Regionenergebnis von besonderer Wichtigkeit. Die Kostenabweichungen (CostActBud) pro Projektphase in absoluten und relativen Grössen sollen Aufschluss über die Verlustbereiche geben. Die Zusammensetzung der budgetierten Kosten pro Projektphase in Relation zum Umsatz (BudMS/ME/PA/ISTot) kann zudem Aufschluss über die Projektart geben, da beispielsweise ein hoher Engineering-Anteil erwartungsgemäss eher mit Mehrkosten einhergeht als ein hoher MS-Anteil. Es wurden zusätzlich die Kosten aus Nachlieferungen infolge Nichteinhaltung des vereinbarten Liefertermins in das Modell mit einbezogen, da hypothetisch vermutet wird, dass dieser Kostenanteil in Bezug zum Umsatzbudget bei nicht-erfolgreichen Projekten höher sein muss. Im Zusammenhang mit der Projektmarge liegt der Fokus vor allem auf Projekten mit einem Budget nahe des intern festgelegten Grenzwertes von 23\%. Denn sämtliche Projekte, deren budgetierte Projektmarge unter diesem Wert liegt, bedarf einer Zustimmung zur Eingehung dieses Risikos sprich der Projektdurchführung durch die nächst höhere Managementstufe. Davon ausgehend, dass aufgrund des Budgetdrucks versucht wird diesen Genehmigungsprozess zu umgehen, wird vermutete, dass risikoreichere Projekte verkauft werden, die letztendlich eher mit negativer Performance einhergehen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast (DeltaLastFCAct) pro Projektphase soll zudem erfassen, wie hoch die Mehrkosten kurz vor dem Ende der Projektlaufzeit waren, um Rückschlüsse auf den Zeitpunkt der Herausforderungen machen zu können. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Prüfen und Bühler besprechen
-\paragraph{Zeit: } In dieser Gruppe sind alle Variablen, die in Verbindung mit der Projektlaufzeit und den Milestones stehen zusammengefasst. Die Einhaltung des Liefertermins sowie die Lokalisierung von Zeitverzögerungen anhand ausgewählter Milestones sind hierbei von grossem Interesse. Dazu wurde die Zeitdifferenz (PrTimeDelay) zwischen der vereinbarten (PrTimeBaseline) und der erreichten Projektlaufzeit(PrTimeAct) für das ganze Projekte und die folgenden Milestones gemessen: MS2 Concept approved, MS5 Point of no return, MS8 Documented, MS10 Takeover und MS11 Project.
-\paragraph{Komplexität:} Die Komplexität eines Projekts kann unterschiedliche Dimensionen betreffen, so zum Beispiel können die technische Anforderung an die Anlage, die Anzahl involvierter Parteien, die Zusammenarbeit mit externen Partnern sowie neuartige Prozesse den Komplexitätsgrad eines Projekts erhöhen. Zur Abbildung der Komplexität wurden als sogenannte Proxyvariablen die Anzahl involvierter Zulieferer respektive Partner pro Projektphase (NoSupplSAS) und Verträge (NoContr) pro Projekt erhoben. Gewisse Projekte werden im Konsortium (ConPart), das heisst mit einem externen Partner abgewickelt, da dieser beispielsweise mehr oder ergänzende Expertise in Bezug auf die Anlage hat.
-\begin{table}[htbp]
-	\centering
-	\caption{Übersicht der Faktoren}
-	\begin{tabular}{llll}
-		\textbf{Erfolgskriterium} &       &       &  \\\hline
-		DB1BudDev &   Dummy\_Success *    &       &  \\
-		Success * &     Dummy\_Fail * &       &  \\
-		\textbf{Rahmenbedingungen} & \multicolumn{1}{l}{\textbf{Zeitmanagement}} & \multicolumn{1}{l}{\textbf{Sales \& Quoatation}} & \multicolumn{1}{l}{\textbf{Komplexität}} \\\hline
-		CuNo  & \multicolumn{1}{l}{PrTimeBase} & \multicolumn{1}{l}{BUORBudGapAbs} & \multicolumn{1}{l}{ConPart} \\
-		EquLoc & \multicolumn{1}{l}{PrTimeAct} & \multicolumn{1}{l}{BUORBudGapRel} & \multicolumn{1}{l}{NoSupplSAS} \\
-		BA    & \multicolumn{1}{l}{PrTimeDelay} & \multicolumn{1}{l}{RegiORBudGapAbs} & \multicolumn{1}{l}{NoSupplSASMS} \\
-		BU    & \multicolumn{1}{l}{PrTimeDelayMS2} & \multicolumn{1}{l}{RegiORBudGapRel} & \multicolumn{1}{l}{NoSupplSASME} \\
-		MS    & \multicolumn{1}{l}{PrTimeDelayMS8} &       & \multicolumn{1}{l}{NoSupplSASPA} \\
-		Region & \multicolumn{1}{l}{PrTimeDelayMS10} &       & \multicolumn{1}{l}{NoSupplSASIS} \\
-		& \multicolumn{1}{l}{PrTimeDelayMS11} &       & \multicolumn{1}{l}{NoContr} \\
-		& \multicolumn{1}{l}{Delay * } &       &  \\
-		\textbf{Kostenmanagement} &       & \multicolumn{1}{l}{\textbf{Fulfillment}} &  \\\hline
-		TOBud & \multicolumn{1}{l}{CostActBudISRel} & \multicolumn{1}{l}{PMNo} & \multicolumn{1}{l}{CostFCadjPA} \\
-		BudMSTot & \multicolumn{1}{l}{DeltaLastFCAct} & \multicolumn{1}{l}{PMAge2} & \multicolumn{1}{l}{CostFCadjIS} \\
-		BudMETot & \multicolumn{1}{l}{DeltaLastFCActMS} & \multicolumn{1}{l}{PMTen2} & \multicolumn{1}{l}{HOMYellCost} \\
-		BudPATot & \multicolumn{1}{l}{DeltaLastFCActME} & \multicolumn{1}{l}{PMChange} & \multicolumn{1}{l}{HOMYellQual} \\
-		BudISTot & \multicolumn{1}{l}{DeltaLastFCActPA} & \multicolumn{1}{l}{NoPM} & \multicolumn{1}{l}{HOMYellTime} \\
-		DB1Bud & \multicolumn{1}{l}{DeltaLastFCActIS} & \multicolumn{1}{l}{LeadSASPr} & \multicolumn{1}{l}{HOMRedCost} \\
-		DB1Act & \multicolumn{1}{l}{TOAct} & \multicolumn{1}{l}{LeadSAS.PrFF} & \multicolumn{1}{l}{HOMRedQual} \\
-		CostActBudMSabs & \multicolumn{1}{l}{TOBudDevabs *} & \multicolumn{1}{l}{NoLeadSASFF} & \multicolumn{1}{l}{HOMRedTime} \\
-		CostActBudMEabs & \multicolumn{1}{l}{CostBud *} & \multicolumn{1}{l}{CostFCadj} & \multicolumn{1}{l}{PrStartDate} \\
-		CostActBudPAabs & \multicolumn{1}{l}{CostAct *} & \multicolumn{1}{l}{CostFCadjMS} & \multicolumn{1}{l}{Cat\_age * } \\
-		CostActBudISabs & \multicolumn{1}{l}{CostBudDevabs *} & \multicolumn{1}{l}{CostFCadjME} &  \\
-		SUCostTO & \multicolumn{1}{l}{DB1Budabs} &       &  \\
-		CostActBudRel & \multicolumn{1}{l}{DB1Actabs} &       &  \\
-		CostActBudMSRel & \multicolumn{1}{l}{DB1BudDevabs *} &       &  \\
-		CostActBudMERel & \multicolumn{1}{l}{TOBudCat *} &       &  \\
-		CostActBudPARel &       &       &  \\
-	\end{tabular}%
-	\label{tab:ovvar}%
-\end{table}%
+
 \newpage
 
-%%Datenanalyse: Finanzielle Analyse
-%%Datenanalyse: Häufigkeitsverteilung etc.
-%%Datenanalyse: Hpyothesen
-\section{Datenanalyse}\label{sec:dataana}
-Die untersuchte Stichprobe enthält alle Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als 'nicht abgeschlossen'.
-\newline Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Variablen hatten geringe bis keine Korrelation mit der abhängigen Variable sprich dem Erfolgskriterium. Die lineare Variablentransformationen und andere Methoden, um eine Verteilungskurve zu simulieren, führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und hat ausserdem das Ziel, die finanziellen Einbussen von sogenannten nicht-erfolgreichen Projekten zu untersuchen. Die Aussagekraft der Ergebnisse wird dadurch so eingeschränkt, dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können.  Die Ergebnisse haben nur in Bezug auf die die untersuchte Stichprobe Gültigkeit. Es ist jedoch denkbar, auf Basis der Ergebnisse neue Hypothesen zu formulieren, welche mittels anderer, geeigneter statistischer Methoden geprüft werden könnten. Die erstmalige Auswertung der Projektdaten kann zudem Erkenntnisse zu möglichen Charakteristiken nicht-erfolgreicher Projekte liefern.
+
+Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Variablen hatten geringe bis keine Korrelation mit der abhängigen Variable sprich dem Erfolgskriterium. Die lineare Variablentransformationen und andere Methoden, um eine Verteilungskurve zu simulieren, führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und hat ausserdem das Ziel, die finanziellen Einbussen von sogenannten nicht-erfolgreichen Projekten zu untersuchen. Die Aussagekraft der Ergebnisse wird dadurch so eingeschränkt, dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können.  Die Ergebnisse haben nur in Bezug auf die die untersuchte Stichprobe Gültigkeit. Es ist jedoch denkbar, auf Basis der Ergebnisse neue Hypothesen zu formulieren, welche mittels anderer, geeigneter statistischer Methoden geprüft werden könnten. Die erstmalige Auswertung der Projektdaten kann zudem Erkenntnisse zu möglichen Charakteristiken nicht-erfolgreicher Projekte liefern.
 \newline Das Erfolgskriterium (DB1BudDev) wurde in Zusammenarbeit mit der Bühler AG festgelegt. Aus finanzieller und interne Perspektive ist die Abweichung der relativen Projektmarge (DB1Act) vom Budget (DB1Bud) von zentraler Bedeutung. Denn sowohl die Finanzziele wie auch die Incentivierung der Projekt- und Verkaufsmanager sowie der Geschäftsbereichsleitung basieren auf dem DB1 und den entsprechenden Budgetvorgaben. Die relative Projektmarge errechnet sich aus Umsatz minus Kosten in Relation zum Umsatz. Anhand der Differenz zwischen Act und Bud wird der Erfolg ($Differenz \geq 0$) respektive Nicht-Erfolg ($Differenz < 0$) von Projekten gemessen. Der DB1BudDev wurde zu Analysezwecken in eine binäre Variable (Success) transformiert. Daraus folgt, dass alle positiven (negativen) Differenzen als erfolgreiche (nicht-erfolgreiche) Projekte betrachtet werden. Im Folgenden werden erfolgreiche Projekte und Success-Projekte sowie nicht-erfolgreiche Projekte und Fail-Projekte als Synonyme verwendet. Obwohl retrospektiv Erkenntnisse und Erfahrungen aufgrund der Durchführung eines Projekts einen Gewinn für das Unternehmen darstellen können, wird diesem Aspekt in dieser Analyse nicht Rechnung getragen.
 \newline\newline\textbf{Datenaufbereitung:} Der Rohdatensatz enthält sämtliche Daten zu den Faktoren der untersuchten Projekte (Stichprobe). Er setzt sich aus drei Datensätzen zusammen, die separat aus dem Bühler-System extrahiert wurden. Der Stichprobenumfang beträgt $N = 1471$ und die Anzahl Faktoren $i = 93$. Das Alter (PMAge und AMAge) und die Betriebszugehörigkeit (PMTen und AMTen) der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
 \newline
