@@ -5,7 +5,7 @@ In diesem Kapitel wird zuerst die Datengrundlage einschliesslich der zahlreichen
 %%Datengrundlage: Erläutere Stichprobe: Art, Grösse, Erhebung der Stichprobe
 %%Operationalisierung der Variablen: Welche Variablen: abhängige (Erfolgskriterium, Erfolgsquote), unabhängige(Einflussfaktoren), Erklärung, Verweis auf Prozess, Erklärung Erhebung und Prämsisen, Ausklammerung der Variablen, weshalb wieso.
 \section{Datengrundlage}\label{sec:datagr}
-Der untersuchte Datensatz enthält insgesamt $N = 1497$ Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als \glqq nicht abgeschlossen \grqq{}. Die Datenerhebung erfolgt mittels der dem Projektmanagementtool der Bühler AG, das sämtliche Informationen der Projekte enthält. Das BPM-Cockpit dient zudem dem monatlichen Projektreporting.
+Der untersuchte Datensatz enthält insgesamt $N = 1497$ Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als \glqq nicht abgeschlossen \grqq{}. Die Datenerhebung erfolgt mittels der dem Projektmanagementtool der Bühler AG, das sämtliche Informationen der Projekte enthält. Es konnten somit lediglich Projekte derjenigen Bühler Gesellschaften berücksichtigt werden, die mit dem BPM-Cockpit arbeiten.
 \newline\newline
 Insgesamt wurden $i = 92$ kategoriale und metrische Variablen erhoben und in sechs Kategorien, die sich am Projektmanagementprozess der Bühler AG orientieren, unterteilt: Rahmenbedingung, SQ-Variablen, FF-Variablen, Komplexität, Kosten und Zeit. Die nachfolgende Tabelle zeigt die Verteilung der kategorischen und metrischen Variablen pro Kategorie.
 % Verteilung kategorialer und metrischer Variablen'
@@ -16,9 +16,9 @@ Insgesamt wurden $i = 92$ kategoriale und metrische Variablen erhoben und in sec
 		\toprule
 		Kategorie & \multicolumn{1}{l}{kategoriale Variablen} & \multicolumn{1}{l}{metrisch Variablen} & \multicolumn{1}{l}{\textbf{Total}} \\
 		\midrule
-		Rahmenbedingung & 8     & 3     & \textbf{10} \\
-		SQ-Variablen & 4     & 6     & \textbf{9} \\
-		FF-Variablen & 9    & 22    & \textbf{33} \\
+		Rahmenbedingung & 8     & 3     & \textbf{11} \\
+		SQ-Variablen & 4     & 6     & \textbf{10} \\
+		FF-Variablen & 9    & 22    & \textbf{31} \\
 		Komplexität & 1     & 6     & \textbf{7} \\
 		Kosten  & 0     & 24    & \textbf{24} \\
 		Zeit  & 0     & 9     & \textbf{9} \\
@@ -83,9 +83,8 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 \begin{longtable}[ht]{p{0.25\textwidth}p{0.7\textwidth}}
  	\caption{Variablen der Kategorie Fulfillment}\\
  	\toprule
-		\textbf{Code} & \textbf{Name der Variable} \\ 
+		\textbf{Code} & \textbf{Name der Variable} \\  \endfirsthead\endhead
 		\midrule
-		\endfirsthead 
 		PM    & Name des Projektmanager \\
 		PMAge2 & Alter des Projektmanager \\
 		PMTen2 & Betriebszugehörigkeit des Projektmanager  \\
@@ -121,21 +120,21 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 	\centering
 	\caption{Variablen der Kategorie Komplexität}
 	\begin{tabular}{ll}
-		\toprule
-		\textbf{Code} & \textbf{Name der Variable} \\
-		\midrule
+			\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\ \midrule
 		ConPart & Konsortium \\
 		NoSupplSAS & Anzahl zuliefernder Sales and Service Unternehmen (SAS) \\
 		NoSupplSASMS & Anzahl zuliefernder SAS Mechnical Supply (MeS) \\
 		NoSupplSASME & Anzahl zuliefernder SAS Mechnical Engineering (ME) \\
 		NoSupplSASPA & Anzahl zuliefernder SAS Plant and Automation (PA) \\
 		NoSupplSASIS & Anzahl zuliefernder SAS Installation (IS) \\
-		NoContr & Anzahl Aufträge \\
+		NoContr & Anzahl Aufträge \\ 
 		\bottomrule
 	\end{tabular}%
 	\label{tab:covar}%
 \end{table}%
-\paragraph{Kosten:} Die monetären Aspekte eines Projekts in der Tabelle \ref{costvat} umfassen die budgetierten und realisierten Zahlen von Umsatz, Kosten, Marge, in absoluten und relativen Grössen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast vor dem Projektende kann als Indiz, des Zeitmanagement der Prognosenpassung interpretiert werden. 
+%%
+\paragraph{Kosten:} Die monetären Aspekte eines Projekts in der Tabelle \ref{tab:costvar} umfassen die budgetierten und realisierten Zahlen von Umsatz, Kosten, Marge, in absoluten und relativen Grössen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast vor dem Projektende kann als Indiz, des Zeitmanagement der Prognosenpassung interpretiert werden. 
 % Tabelle Kosten
 \begin{table}[htbp]
 	\centering
@@ -171,10 +170,10 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		DeltaLastFCActIS & Kostenabweichung zwischen dem letzten FC und Act von IS \\
 		\bottomrule
 	\end{tabular}%
-	\label{tab:addlabel}%
+	\label{tab:costvar}%
 \end{table}%
 %%
-\paragraph{Zeit:} Die Variablen der Tabelle \ref{zeitvar} messen sämtliche Zeitverzögerungen in Bezug auf die gesamte Projektlaufzeit und einzelner Meilensteine: MS2 \glqq Concept approved \grqq{ }, MS5 \glqq Point of no return \grqq{ }, MS8 \glqq Documented \grqq{ }, MS10 \glqq Takeover\grqq{ } und MS11 \glqq Project Closure \grqq{ }.
+\paragraph{Zeit:} Die Variablen der Tabelle \ref{tab:zeitvar} messen sämtliche Zeitverzögerungen in Bezug auf die gesamte Projektlaufzeit und einzelner Meilensteine: MS2 \glqq Concept approved \grqq{ }, MS5 \glqq Point of no return \grqq{ }, MS8 \glqq Documented \grqq{ }, MS10 \glqq Takeover\grqq{ } und MS11 \glqq Project Closure \grqq{ }.
 % Table generated by Excel2LaTeX from sheet 'Ch3'
 \begin{table}[htbp]
 	\centering
@@ -200,34 +199,76 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 %%Datenanalyse: Häufigkeitsverteilung etc.
 %%Datenanalyse: Hpyothesen
 \section{Datenanalyse}\label{sec:dataana}
-Obwohl die Performance eines Bühler-Projekts mittels des magischen Dreiecks - Zeit, Kosten und Qualität - beurteilt wird, hat letztendlich der Kostenaspekt aus finanzieller Perspektive die relativ gewichtigere Bedeutung als die anderen zwei Dimensionen. Deshalb wurde in Zusammenarbeit mit der Bühler AG, das folgende Erfolgskriterium festgelegt:
-\begin{equation}
-\text{Deviation DB1 \%} = \text{DB1 Act \%} - \text{DB1 Bud \%}
-\end{equation}
-Der KPI rechnet sich realisierte Marge (DB1 Act) in \% minus budgetierte Marge (DB1 Bud) in \% und wird jeweils am Projektende respektive nach Erreichung des MS11 (Kapitel \ref{zweieins}) kalkuliert. Die Kosten der Garantieperiode werden nicht direkt dem Projekt belastet sondern summarisch in einem anderen buchhalterischen Konto. Bei jedem Projekt wird präventiv ein Kostenpuffer im Bereich von 4\% bis 9\% einkalkuliert, der nach dem Projektende (MS11) bei einer Nullbeanspruchung im Projektergebnis realisiert wird.
-\newline Die nachfolgende Abbildung \ref{Einflussfaktoren} zeigt die ursprünglich 93 Determinanten eingeteilt in sechs Kategorien. Gewisse Faktoren könnten ihrer Natur nach auch in eine andere Gruppe gegliedert werden. In der Folge wird die Bedeutung und Relevanz der Variablen erklärt.
-
-\newpage
-
-
-Nach der ersten Datenexploration und Prüfung der Annahmen für lineare statistische Modelle, wurde festgestellt, dass die ursprünglich geplante Methodenwahl nicht angewendet werden konnte. Denn die unabhängigen Variablen hatten geringe bis keine Korrelation mit der abhängigen Variable sprich dem Erfolgskriterium. Die lineare Variablentransformationen und andere Methoden, um eine Verteilungskurve zu simulieren, führten nur zu kleineren Verbesserung. Dieser Umstand und die Tatsache, dass Erfolgsfaktoren bereits sehr gut erforscht wurden, hat die Entscheidung auf Inferenzstatistik zu verzichten bestärkt. Die nachfolgende Analyse ist deshalb deskriptiver Natur und hat ausserdem das Ziel, die finanziellen Einbussen von sogenannten nicht-erfolgreichen Projekten zu untersuchen. Die Aussagekraft der Ergebnisse wird dadurch so eingeschränkt, dass da keine Rückschlüsse auf die Grundgesamtheit (sämtliche Projekte der Bühler AG) gemacht werden können.  Die Ergebnisse haben nur in Bezug auf die die untersuchte Stichprobe Gültigkeit. Es ist jedoch denkbar, auf Basis der Ergebnisse neue Hypothesen zu formulieren, welche mittels anderer, geeigneter statistischer Methoden geprüft werden könnten. Die erstmalige Auswertung der Projektdaten kann zudem Erkenntnisse zu möglichen Charakteristiken nicht-erfolgreicher Projekte liefern.
-\newline Das Erfolgskriterium (DB1BudDev) wurde in Zusammenarbeit mit der Bühler AG festgelegt. Aus finanzieller und interne Perspektive ist die Abweichung der relativen Projektmarge (DB1Act) vom Budget (DB1Bud) von zentraler Bedeutung. Denn sowohl die Finanzziele wie auch die Incentivierung der Projekt- und Verkaufsmanager sowie der Geschäftsbereichsleitung basieren auf dem DB1 und den entsprechenden Budgetvorgaben. Die relative Projektmarge errechnet sich aus Umsatz minus Kosten in Relation zum Umsatz. Anhand der Differenz zwischen Act und Bud wird der Erfolg ($Differenz \geq 0$) respektive Nicht-Erfolg ($Differenz < 0$) von Projekten gemessen. Der DB1BudDev wurde zu Analysezwecken in eine binäre Variable (Success) transformiert. Daraus folgt, dass alle positiven (negativen) Differenzen als erfolgreiche (nicht-erfolgreiche) Projekte betrachtet werden. Im Folgenden werden erfolgreiche Projekte und Success-Projekte sowie nicht-erfolgreiche Projekte und Fail-Projekte als Synonyme verwendet. Obwohl retrospektiv Erkenntnisse und Erfahrungen aufgrund der Durchführung eines Projekts einen Gewinn für das Unternehmen darstellen können, wird diesem Aspekt in dieser Analyse nicht Rechnung getragen.
-\newline\newline\textbf{Datenaufbereitung:} Der Rohdatensatz enthält sämtliche Daten zu den Faktoren der untersuchten Projekte (Stichprobe). Er setzt sich aus drei Datensätzen zusammen, die separat aus dem Bühler-System extrahiert wurden. Der Stichprobenumfang beträgt $N = 1471$ und die Anzahl Faktoren $i = 93$. Das Alter (PMAge und AMAge) und die Betriebszugehörigkeit (PMTen und AMTen) der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
-\newline
-Es wurden alle unplausiblen Faktoren und Berechnungsspalten vom Datensatz entfernt. Anschliessend wurde die Anzahl fehlender Daten pro Faktor ausgewertet und sämtliche Determinanten mit mehr als 300 fehlender Datensätze von der weiteren Analyse ausgeschlossen (vgl. Tabelle \ref{tab:na}). Zudem verbleibt nebst PrTimeDelayMS5, AMAge2 und AMTen2 die Variable AMNo unberücksichtigt, da durch den Ausschluss der verbundenen Faktoren wenig zusätzlicher Informationsgewinn erwartet wird. Ausserdem mussten alle Variablen, welche die Zeitdifferenz zwischen dem letzten Kostenforecast und dem Projektende messen (CostMostnegFCadj für \gls{abk:MS}, \gls{abk:ME}, \gls{abk:PA} und \gls{abk:IS}) sowie Indikatoren für die relative Wichtigkeit eines Projekts (BAImportPr, BUImportPr, MSImportPr) aufgrund fragwürdiger Plausibilität und Korrektheit der Daten von der Analyse ausgeschlossen werden. Mittels diesem Vorgehen kann der Datenverlust infolge fehlender Daten in Grenzen gehalten werden. Der neue Stichprobenumfang beträgt $N = 1076$ und die Anzahl Faktoren $i = 71$.
-\newline
-Im Anschluss wurden die Datensätze auf ihre Plausibilität getestet und Ausreisser entfernt. Die Plausibilitätsüberlegungen basieren auf der logischen Interpretation und Herleitung der Indikatoren. Die Tabellen mit den Begründungen der unplausiblen Werte und Ausreisser befinden sich im Anhang. Die Outliers wurden mit Hilfe von Boxplots, Histogramme und der 'Interquartile Ranges' (IQR) der numerischen Variablen identifiziert. Zur quantitativen Bestimmung der Ausreisser wurde folgendes Entscheidungskalkül angewendet:
+Das Ziel der Analyse ist, die Charakteristiken der erfolgreichen und nicht erfolgreichen Projekte der Bühler AG auf Basis der zur Verfügung gestellten Daten zu untersuchen. Das Kriterium zur Beurteilung des Projekterfolgs ist die Abweichung zwischen dem Ist- und Sollwert der prozentualen Projektmarge (DB1BudDev). Damit wird der Kostenaspekt des eisernen Dreieck fokussiert, der aus finanzieller Sicht eine zentrale Bedeutung, da sich die Kostenperformance auf das Geschäftsergebnis auswirkt. Zur Berechnung des Erfolgskriteriums der Bühler-Projekte wird der realisierte relative Marge (DB1 Act) von der budgetierten relativen Marge (DB1 Bud) subtrahiert. 
+\begin{equation*}
+\text{DB1BudDev \%} = \text{DB1 Act \%} - \text{DB1 Bud \%}
+\end{equation*}
+In der Analyse wird ausschliesslich dieses Erfolgskriterium angewendet, wodurch eine finanzielle Perspektive eingenommen wird. Nachfolgend soll nun das analytische Vorgehen sowie die Operationalisierung der Daten erklärt werden. 
 \newline\newline
-Ausreisse sind Werte, die $< Q1 - 1.5 * IQR$ respektive $ > Q3 + 1-5 * IQR$ sind.
-\newline
-Extreme Ausreisser sind Werte, die $< Q1 - 3 * IQR$ respektive $> Q3 + 3 * IQR$ sind.
+Die Datengrundlage besteht aus insgesamt 22 kategorialen und 70 metrischen Variablen. Ursprünglich war geplant einen linearen Zusammenhang zwischen dem Erfolg und den Variablen zu ergründen. Allerdings erfüllten die Daten die erforderlichen Voraussetzungen des Zusammenhangs zwischen abhängiger Variable und unabhängigen Variablen nur bedingt, weshalb die Anwendung linear statistischer Modelle nicht weiter in Betracht gezogen wurde. Die Charakteristiken zwischen den erfolgreichen und nicht erfolgreichen Projekten sollen alternativ mittels deskriptiver statistischer Methoden  herausgearbeitet werden. Dazu wurde der Datensatz um eine binäre Variable (Success), die direkt vom Erfolgskriteriums, dem DB1BudDev abgeleitet wird, ergänzt:
+\begin{equation*}
+\text{Success } = \text{True if } \text{DB1BudDev}\geq 0
+\end{equation*}
+\begin{equation*}
+\text{Success } = \text{False if } \text{DB1BudDev} < 0
+\end{equation*}
+Unter der Berücksichtigung des binären Kriterium wurden die kategorialen Variablen auf der Basis von Häufigkeitsverteilungen und die metrischen Variablen mittels Mittelwerten und Standardabweichungen untersucht. Dadurch wurden die absoluten und relativen Häufigkeiten von erfolgreichen, respektive nicht erfolgreichen Projekten erfasst. Die Berechnung der Erfolgsquote ermöglichte den Vergleich zwischen den Ausprägungen der kategorialen Variablen, beispielsweise den Regionen A ist besser als Region B.
+\begin{equation*}
+\text{Erfolgsquote } = \frac{\text{Anzahl erfolgreicher Projekte}}{\text{Anzahl nicht erfolgreicher Projekte}} 
+\end{equation*}
+Die Berechnung der Mittelwerte und Standardabweichungen der metrischen Variablen in Abhängigkeit des binären Erfolgskriterium ermöglichte zudem die Feststellung von Unterschieden zwischen erfolgreiche und nicht erfolgreichen Projekten.
+%%%Legitimierung
+Da der gesamte Datensatz analysiert, haben die Ergebnisse nur auf die untersuchten Projekte Gültigkeit und können nicht generalisiert werden.
+%%
+%%Datenaufbereitung
+%%
 \newline\newline
-Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extrem negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extreme positive DB1Act sind bei einer durchschnittlichen Projektmarge von ca. 30\% relativ unwahrscheinlich und lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen für PA und IS wurden jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn es wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Entscheidungskalküls lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und $ i = 71$ Faktoren.
+\paragraph{Datenaufbereitung: } Der Datensatz setzt sich aus drei Datensätzen zusammen, die separat aus dem BPM-Cockpit extrahiert wurden. Der Anzahl Projekte zu Beginn beträgt $N = 1471$ und die Anzahl Variablen $i = 93$. Die Bühler Projektmanagement Identifikationsnummer (BPMID) wurde in der Beschreibung der Variablen (s. Kapitel \ref{sec:datagr}) nicht berücksichtigt, da sie lediglich der eindeutigen Identifikation eines Projekts dient. Das Alter (PMAge und AMAge) und die Betriebszugehörigkeit (PMTen und AMTen) der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
+\newline\newline
+\paragraph{Bereinigung der Variablen: }Die BPMID, Berechnungsvariablen und doppelt erfasste Variablen wurden zu Beginn vom Datensatz entfernt. Da die Plausibilität einiger Variablen nach dem Erhalt der Daten nicht mit Sicherheit gewährleistet war, wurde sie nochmals geprüft. Es wurden acht weiter Variablen aufgrund fehlender Korrektheit von der Analyse ausgeschlossen. Anschliessend wurde die Anzahl fehlender Daten pro Variable ausgewertet und sämtliche Variablen mit mehr als 300 fehlender Daten nicht weiter berücksichtigt (vgl. Tabelle \ref{tab:na}). Zusätzlich wurde die Variable AMNo infolge des Ausschluss verbundener Variablen vom Datensatz entfernt. Die restlichen Projekte mit unvollständigen Daten wurden gelöscht. Dieses Vorgehen ermöglichte den Erhalt zahlreicher Datensätze (Projekte).
+\newline\newline
+Danach wurden sämtliche Projekte mit unplausiblen Datensätze, deren Erläuterung im Anhang zu finden sind, entfernt. Die Ausreisser wurden mittels des Boxplot-Ansatz von John W. Turkey aus dem Jahre 1969, gemäss dem sämtliche Werte ausserhalb des folgenden Wertebereichs als Ausreisser eingestuft werden können, ermittelt \citep{lifengli16}.
+\begin{equation*}
+\text{Interquartile Range (IQR)}
+\end{equation*}
+\begin{equation*}
+\text{[Q1,Q1-1.5*IQR und [Q3,Q3+1.5*IQR]}
+\end{equation*}
+Zur Identifikation extremer Ausreisser kann die Grenze des Wertebereichs auf der Basis des dreifachen IQR herangezogen werden.
+\begin{equation*}
+\text{[Q1,Q1-3*IQR und [Q3,Q3+3*IQR]}
+\end{equation*}
+%%
+%%
+Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extrem negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extreme positive DB1Act lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen für Plant \& Automation und Installation jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn es wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Wertebereiche lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und $ i = 71$ Faktoren.
 \newline\newline
 %%
 %%Zusätliche Variablen
 %%
-\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken vor allem kategoriale Variablen auf Basis der vorhandene Daten erhoben (mit * gekennzeichnet). Die nachfolgende Tabelle zeigt sämtliche alle in der Auswertung berücksichtigten Faktoren nach der Variablenkategorie strukturiert. Sämtliche Berechnungsformeln sowie die Interpretationen der Faktoren sind im Anhang enthalten.
+\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken zusätzliche Variablen auf Basis der vorhandene Daten erhoben nachfolgende, die in der Tabelle \ref{zusvar} zu sehen sind.
+% Zusätzliche var'
+\begin{table}[htbp]
+	\centering
+	\caption{Add caption}
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Code} & \textbf{Name der Variable} \\
+		\midrule
+		Success & Binäre Variable für den Erfolg \\
+		Dummy\_Success & Dummyvariable Success \\
+		Dummy\_Fail & Dummyvariable Fail \\
+		Cat\_age & Kategoriale Variable für das Alters des Projektmanagers \\
+		TOBud\_Cat & Kategoriale Variable für das Umsatz Budgets \\
+		TOBudDevabs & Umsatzabweichung \\
+		DB1BudDevabs & Abweichung der absoluten Marge \\
+		CostBudDevabs & Kostenabweichung \\
+		CostAct & realisierte Kosten \\
+		CostBud & budgetierte Kosten \\
+		Delay & Binäre Variable für die Zeitverzögerung \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:zusvar}%
+\end{table}%
 
 
 
