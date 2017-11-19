@@ -1,15 +1,17 @@
 % !TEX root = MA.tex
 %Wahl der Methodik???? verzicht auf Befragungen der Bühler AG...externe Perspektive im Methodikteil
 \chapter{Methodolgie}\label{sec:methode}
-In diesem Kapitel wird zuerst die Datengrundlage einschliesslich der zahlreichen Variablen und anschliessend das analytische Vorgehen erläutert.  
+Zunächst wird die Datengrundlage der Analyse erläutert und anschliessend das analytische Vorgehen. 
 %%Datengrundlage: Erläutere Stichprobe: Art, Grösse, Erhebung der Stichprobe
 %%Operationalisierung der Variablen: Welche Variablen: abhängige (Erfolgskriterium, Erfolgsquote), unabhängige(Einflussfaktoren), Erklärung, Verweis auf Prozess, Erklärung Erhebung und Prämsisen, Ausklammerung der Variablen, weshalb wieso.
 \section{Datengrundlage}\label{sec:datagr}
-Der untersuchte Datensatz enthält insgesamt $N = 1497$ Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des Project Closure (MS11). Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittles dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als \glqq nicht abgeschlossen \grqq{}. Die Datenerhebung erfolgt mittels der dem Projektmanagementtool der Bühler AG, das sämtliche Informationen der Projekte enthält. Es konnten somit lediglich Projekte derjenigen Bühler Gesellschaften berücksichtigt werden, die mit dem BPM-Cockpit arbeiten.
+Der untersuchte Datensatz enthält insgesamt $N = 1497$ Projekte, die im Zeitraum zwischen 2013 und 2105 abgeschlossen wurden. Die eindeutigen Abgrenzungskriterien bilden der Projektstatus und das Datum des MS11 Projektabschlusses. Zuerst wurden alle Projekte mit einem MS11-Datum zwischen dem 1.1.2013 und dem 31.12.2015 eingegrenzt. Anschliessend wurde mittels dem Projektstatus sichergestellt, dass das Projekt auch aus finanzieller Sicht abgeschlossen war. Denn gewisse Projekte sind zwar operativ bereits beendet, gelten aber aufgrund ausstehender Rechnungen aus finanzieller Sicht als \glqq nicht abgeschlossen\grqq. 
 \newline\newline
-Insgesamt wurden $i = 92$ kategoriale und metrische Variablen erhoben und in sechs Kategorien, die sich am Projektmanagementprozess der Bühler AG orientieren, unterteilt: Rahmenbedingung, SQ-Variablen, FF-Variablen, Komplexität, Kosten und Zeit. Die nachfolgende Tabelle zeigt die Verteilung der kategorischen und metrischen Variablen pro Kategorie.
+Die zu erhebenden Projektdaten hat das Bühler Projektmanagement in Zusammenarbeit mit dem Controlling auf der Basis ihrer Erfahrung bestimmt. Da dies eine erstmalige Analyse war und einige Parameter nicht direkt aus dem System extrahiert werden konnten, wurde mit der Unterstützung der IT-Abteilung eine eigene Abfrage programmiert. Die Autorin hatte dabei eine unterstützende und vermittelnde Funktion bei der Erklärung der Parameter und deren Berechnung. Die manuelle berechneten Informationen zum Alter und der Betriebszugehörigkeit wurden mittels Dokument in den Datenpool importiert. Die Abfrage hatte den Vorteil, dass alle Daten in kompakter Form erhoben werden konnten. Die anschliessende Prüfung der berechneten Parameter waren aufgrund der indirekten Datenverfügbarkeit eine herausfordernde Aufgabe. Die zusätzlich Anzeige der Berechnungsspalten sollte den iterativen Plausibilisierungsprozess vereinfachen. Allerdings konnte die Datenplausibilität zum Ende der Prüfungen nicht mit absoluter Sicherheit gewährleistet werden, da die Prüfung der Berechnungslogik im Verantwortungsbereich der Informatikabteilung lag und es keine Möglichkeit gab, die Daten manuell zu berechnen zum mit den Werten in der Abfrage zu vergleichen. In der Folge werden nun sämtliche erhobenen Daten erläutert.
+\newline\newline
+Die Projektdaten umfassen insgesamt $i = 92$ kategoriale und metrische Variablen pro Projekt. Diese Parameter wurden in sechs Kategorien, die sich am Projektmanagementprozess der Bühler AG orientieren, gegliedert: Rahmenbedingung, SQ-Variablen, FF-Variablen, Komplexität, Kosten und Zeit. Die nachfolgende Tabelle \ref{tab:katmet} zeigt die Verteilung der kategorischen und metrischen Variablen pro Kategorie. In der Folge werden die Kategorien und Parameter zum Verständnis in zusammenfassender Weise erläutert.
 % Verteilung kategorialer und metrischer Variablen'
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\caption{Anzahl kategorialer und metrischer Variablen pro Kategorie}
 	\begin{tabular}{lrr|r}
@@ -27,9 +29,10 @@ Insgesamt wurden $i = 92$ kategoriale und metrische Variablen erhoben und in sec
 	\end{tabular}%
 	\label{tab:katmet}%
 \end{table}%
-Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtliche Berechnungsformeln sind im Anhang zu finden. 
 %%
-\paragraph{Rahmenbedingungen:} Die Variablen dieser Kategorie definieren den Rahmen des Projekts in lokaler, technologischer und organisatorischer Hinsicht. Die Lead \gls{abk:sas} Organisation trägt die Gesamtverantwortung des Projekts. Der Stellenwert am Beispiel für den Geschäftsbereich, drückt aus, auf welche Projekte die Ressourcen konzentriert werden.
+%% Erklärung der Variablen 
+%%
+\paragraph{Rahmenbedingungen:} Die Rahmenbedingungen der Tabelle\ref{tab:rahm} charakterisieren das Projekts in lokaler, technologischer und organisatorischer Hinsicht. Die Lead \gls{abk:sas} Organisation trägt die Gesamtverantwortung des Projekts. Die Wichtigkeit des Projekts drückt die dessen Priorität in Bezug auf Ressourcen und Aufmerksamkeit aus.
 % Variablen Rahmenbedingungen
 \begin{table}[htbp]
 	\centering
@@ -40,22 +43,22 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		\midrule
 		CuNo  & Kundenummer \\
 		CuName & Kundenname \\
-		EquLoc & Land, in dem die Anlage gebaut wird \\
+		EquLoc & Lieferort \\
 		Region & Region \\
 		BA    & Geschäftsbereich \\
 		BU    & Geschäftseinheit \\
-		MS    & Marktsegement \\
-		BAImportPr & Stellenwert des Projekts im Geschäftsbereich \\
-		BUImportPr & Stellenwert des Projekts in der Geschäftseinheit \\
-		MSImportPr & Stellenwert des Projekts im Marktsegment \\
-		LeadSASPr & Lead SAS Projekt\\
+		MS    & Marktsegment \\
+		BAImportPr & Wichtigkeit des Projekts im Geschäftsbereich \\
+		BUImportPr & Wichtigkeit des Projekts in der Geschäftseinheit \\
+		MSImportPr & Wichtigkeit des Projekts im Marktsegment \\
+		LeadSASPr & verantwortliche Organisation des Projekts\\
 		\bottomrule
 	\end{tabular}%
 	\label{tab:rahm}%
 \end{table}%
-\paragraph{\gls{abk:sq}-Variablen:} Die Tabelle \ref{tab:sqvar} zeigt alle Variablen, die mit dem Verkaufsprozess zusammenhängen. Der Output des \gls{abk:sq}-Prozess ist zugleich der Input des Projektabwicklungsprozess (s. Kapitel \ref{sec:pmbueh}), weshalb der Projekterfolg auch von den Entscheidungen der involvierten Parteien im \gls{abk:sq}-Prozess beeinflusst wird. Das Alter und die Betriebszugehörigkeit sind stellvertretende Variablen der Erfahrung und der Kenntnisse der Bühler Prozesse. Die Differenz zwischen dem realisierten und budgetierten Auftragsvolumen der Region und Geschäftseinheit sind ein Indiz für  Verkaufsdruck des Area Manager bei Projektabschluss. Dieser kann den Verkauf risikoreicher Projekte begünstigen, da die Beurteilung des Verkaufsmanager an den \gls{abk:OR} gekoppelt ist. Die Zeitverzögerung zwischen der Auftragsfreigabe und dem Projektbeginn kann als Hinweis für Unklarheiten und Unsicherheiten bezüglich des Projekts zwischen dem Verkaufs- und Projektmanager interpretiert werden kann.
+\paragraph{\gls{abk:sq}-Variablen:} Die Tabelle \ref{tab:sqvar} fasst diejenigen Parameter zusammen, die in Verbindung mit dem Verkaufsprozess stehen. Der Output des \gls{abk:sq}-Prozesses ist zugleich der Input des Projektabwicklungsprozesses (s. Kapitel \ref{sec:pmbueh}), weshalb sich die vorgelagerten Entscheidungen auf den Projekterfolg auswirken können. Das Alter und die Betriebszugehörigkeit sind stellvertretende Variablen der Arbeitserfahrung und der Kenntnisse der Bühler Prozesse. Die Differenz zwischen dem realisierten und budgetierten Auftragsvolumen der Region und Geschäftseinheit misst den Verkaufsdruck des Area Manager beim Vertragsabschluss mit dem Kunden. Dieser kann den Verkauf risikoreicher Projekte begünstigen, da der Area Manager anhand der Budgeterreichung des Auftragsvolumen beurteilt wird.
 % Tabelle SQ Variabln
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\caption{Variablen der Kategorie Sales \& Quotation}
 	\begin{tabular}{ll}
@@ -68,8 +71,8 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		AMTen & Betriebeszugehörigkeit Area Manager  \\
 		ORDate & Datum der Auftragsfreigabe \\
 		PrStartDate & Projektstartdatum \\
-		BUORBudGapAbs & Budgetabweichung des Auftragsvolumen des Geschäftsbereich absolut \\
-		BUORBudGapRel & Budgetabweichung des Auftragsvolumen des Geschäftsbereich relativ \\
+		BUORBudGapAbs & Budgetabweichung des Auftragsvolumen des Geschäftsbereichs absolut \\
+		BUORBudGapRel & Budgetabweichung des Auftragsvolumen des Geschäftsbereichs relativ \\
 		RegiORBudGapAbs & Budgetabweichung des Auftragsvolumen der Region absolut \\
 		RegiORBudGapRel & Budgetabweichung des Auftragsvolumen der Region relativ \\
 		\bottomrule
@@ -77,8 +80,8 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 	\label{tab:sqvar}%
 \end{table}%
 
-\paragraph{FF-Variablen:}  Die Tabelle \ref{tab:ffvar} beinhaltet sämtliche  Variablen in Bezug auf den Projektmanager und das Forecast Management. Das Alter und die Betriebszugehörigkeit des Projektmanagers sind wie bereits beim Area Manager stellvertretende Variablen für die Berufserfahrung und das unternehmensspezifische Wissen. Der PMChange misst, ob der Projektmanager während der Projektlaufzeit gewechselt werden musste.
-\newline Im Rahmen des Projektcontrolling macht der Projektmanager monatlich eine Prognose (Forecast) in Bezug auf die Kosten- und Umsatzentwicklung. Da Verschlechterung der Kostenperformance relativ spät kommuniziert werde, misst CostMostnegFCadj zu welchem Zeitpunkt während der Projektlaufzeit die negativste Anpassung des Kosten FC gemacht wurde. Negativ impliziert dabei die Generierung von Mehrkosten. CostFCajd beurteilt, ob ein Forecast gemacht wurde unterteilt sie in drei Gruppen: Kosten und Umsatz angepasst, weniger Kosten und mehr Kosten. Das Ampelsystem der Bühler AG wurde in der Einleitung kurz erläutert. Es zeigt auf einer dreifarbigen Skala an, welcher Projektstatus künftig erwartet wird. HOMYellCost mit deshalb, wann das Projekt zum ersten Mal seit Projektbeginn den Status Gelb erhalten hat. Die organisatorische Verantwortung für das ganze Projekt und den Abwicklungsprozess, kann bei einer Gesellschaft oder zwei verschiedenen Gesellschaften angesiedelt sein. Die zusätzliche Schnittstelle und die Trennung der Verantwortlichkeiten kann den Projekterfolg wirken.
+\paragraph{FF-Variablen:}  Die Tabelle \ref{tab:ffvar} beinhaltet sämtliche  Variablen in Bezug auf den Projektmanager und das \gls{abk:fc} Management. Das Alter und die Betriebszugehörigkeit des Projektmanagers sind, wie bereits beim Area Manager, stellvertretende Variablen für die Berufserfahrung und das unternehmensspezifische Wissen. Der PMChange misst, ob der Projektmanager während der Projektlaufzeit gewechselt werden musste.
+\newline Im Rahmen des Projektcontrolling macht der Projektmanager monatlich eine Prognose (Forecast) in Bezug auf die Kosten- und Umsatzentwicklung. Deshalb messen die Parameter CostFCajd, ob der Forecast angepasst und die CostMostnegFCadj welchem Zeitpunkt während der Projektlaufzeit die negativste Anpassung des Kosten FC gemacht wurde. Dabei wurde beim erst genannten Parameter zwischen einer reinen Veränderung der Kosten und der Anpassung von Kosten und Umsatz unterschieden. Das Ampelsystem des BPM-Cockpit zeigt auf einer dreifarbigen Skala an, welcher Projektstatus künftig erwartet wird. Dabei wurde die erstmalige Gefährdung der Zielerreichung eines Projekts gemessen. Rot und Gelb unterscheiden die Stufe der Gefährdung. Die organisatorische Verantwortung für das ganze Projekt und den Abwicklungsprozess, kann bei einer Gesellschaft oder zwei verschiedenen Gesellschaften angesiedelt sein. Die zusätzliche Schnittstelle und die Trennung der Verantwortlichkeiten kann den Projekterfolg beeinflussen.
 % F-Variablen
 \begin{longtable}[ht]{p{0.25\textwidth}p{0.7\textwidth}}
  	\caption{Variablen der Kategorie Fulfillment}\\
@@ -87,9 +90,9 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		\midrule
 		PM    & Name des Projektmanager \\
 		PMAge2 & Alter des Projektmanager \\
-		PMTen2 & Betriebszugehörigkeit des Projektmanager  \\
-		PMNo  & Identifikationsnummer des Projektmanager  \\
-		PMChange & Wechsel des Projektmanager \\
+		PMTen2 & Betriebszugehörigkeit des Projektmanagers  \\
+		PMNo  & Identifikationsnummer des Projektmanagers  \\
+		PMChange & Wechsel des Projektmanagers \\
 		NoPM  & Anzahl Projektmanager während der Laufzeit \\
 		LeadSAS.PrFF & Leas SAS Projekt unterscheidet sich von Lead SAS Projektabwicklung \\
 		NoLeadSASFF & Anzahl involvierter SAS bei der Projektabwicklung\\
@@ -98,25 +101,25 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		CostFCadjME & Anpassung des letzten Kosten FC von ME \\
 		CostFCadjPA & Anpassung des letzten Kosten FC von PA \\
 		CostFCadjIS & Anpassung des letzten Kosten FC von IS \\
-		CostFirstadj & Anzahl Monate zwischen der ersten  negativen Anpasung des Kosten Forecast (FC) und dem Projektende \\
-		CostMostnegFCadj & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC und dem Projektende \\
-		CostMostnegFCadjMS & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von MeS und dem Projektende  \\
-		CostMostnegFCadjME & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von ME und dem Projektende  \\
-		CostMostnegFCadjPA & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von PA und dem Projektende  \\
-		CostMostnegFCadjIS & Anzahl Monate zwischen der negativsten Anpasung des Kosten FC  von IS und dem Projektende  \\
-		HOMYellCost & Anzahl Monate zwishen HOM und dem ersten gelben Kostenstatus in Relation zur erreichten Projektlaufzeit \\
-		HOMYellQual & Anzahl Monate zwishen HOM und dem ersten gelben Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
-		HOMYellTime & Anzahl Monate zwishen HOM und dem ersten gelben Zeitstatus in Relation zur erreichten Projektlaufzeit \\
-		HOMRedCost & Anzahl Monate zwishen HOM und dem ersten roten Kostenstatus in Relation zur erreichten Projektlaufzeit \\
-		HOMRedQual & Anzahl Monate zwishen HOM und dem ersten roten Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
-		HOMRedTime & Anzahl Monate zwishen HOM und dem ersten roten Zeitstatus in Relation zur erreichten Projektlaufzeit \\
+		CostFirstadj & Anzahl Monate zwischen der ersten  negativen Anpassung des Kosten Forecast und dem Projektende \\
+		CostMostnegFCadj & Anzahl Monate zwischen der negativsten Anpassung des Kosten FC und dem Projektende \\
+		CostMostnegFCadjMS & Anzahl Monate zwischen der negativsten Anpassung des Kosten FC von MeS und dem Projektende  \\
+		CostMostnegFCadjME & Anzahl Monate zwischen der negativsten Anpassung des Kosten FC von ME und dem Projektende  \\
+		CostMostnegFCadjPA & Anzahl Monate zwischen der negativsten Anpassung des Kosten FC von PA und dem Projektende  \\
+		CostMostnegFCadjIS & Anzahl Monate zwischen der negativsten Anpassung des Kosten FC von IS und dem Projektende  \\
+		HOMYellCost & Anzahl Monate zwischen HOM und dem ersten gelben Kostenstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMYellQual & Anzahl Monate zwischen HOM und dem ersten gelben Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMYellTime & Anzahl Monate zwischen HOM und dem ersten gelben Zeitstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedCost & Anzahl Monate zwischen HOM und dem ersten roten Kostenstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedQual & Anzahl Monate zwischen HOM und dem ersten roten Qualitätsstatus in Relation zur erreichten Projektlaufzeit \\
+		HOMRedTime & Anzahl Monate zwischen HOM und dem ersten roten Zeitstatus in Relation zur erreichten Projektlaufzeit \\
 		\bottomrule
 	\label{tab:ffvar}%
 \end{longtable}%
 %%
-\paragraph{Komplexität:} Die Komplexität eines Projekts kann unterschiedliche Dimensionen betreffen, so zum Beispiel können die technische Anforderung an die Anlage, die Anzahl involvierter Parteien, die Zusammenarbeit mit externen Partnern sowie neuartige Prozesse den Komplexitätsgrad eines Projekts erhöhen. Die Tabelle \ref{tab:covar} führt die Variablen zur Abbildung der Komplexität auf. Die Anzahl Aufträge soll die Überisichtlichkeit bei der Projektabwicklung erfassen, allerdings wurde keine interne Bestimmungen, wann der Auftrag gesplittet werden muss. Die Anzahl involvierte Parteien, wurde mit Anzahl Zulieferer während der Projektphase approximiert. Der Zusammenschluss mit einem externen Unternehmen (Konsortium) kann die Komplexität erhöhen.
+\paragraph{Komplexität:} Die Komplexität eines Projekts kann unterschiedliche Dimensionen betreffen, so zum Beispiel können die technische Anforderung an die Anlage, die Anzahl involvierter Parteien, die Zusammenarbeit mit externen Partnern sowie neuartige Prozesse den Komplexitätsgrad eines Projekts erhöhen. Die Tabelle \ref{tab:covar} führt die Variablen zur Abbildung der Komplexität auf. Die Anzahl Aufträge soll die Übersichtlichkeit bei der Projektabwicklung erfassen. Die Anzahl involvierter Parteien, wurde mit Anzahl Zulieferer während der Projektphase approximiert. Der Zusammenschluss mit einem externen Unternehmen (Konsortium) kann den Koordinationsaufwand zwischen den Organisationen erhöhen.
 % Tabelle Komplexität
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\caption{Variablen der Kategorie Komplexität}
 	\begin{tabular}{ll}
@@ -124,19 +127,19 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		\textbf{Code} & \textbf{Name der Variable} \\ \midrule
 		ConPart & Konsortium \\
 		NoSupplSAS & Anzahl zuliefernder Sales and Service Unternehmen (SAS) \\
-		NoSupplSASMS & Anzahl zuliefernder SAS Mechnical Supply (MeS) \\
-		NoSupplSASME & Anzahl zuliefernder SAS Mechnical Engineering (ME) \\
-		NoSupplSASPA & Anzahl zuliefernder SAS Plant and Automation (PA) \\
-		NoSupplSASIS & Anzahl zuliefernder SAS Installation (IS) \\
+		NoSupplSASMS & Anzahl zuliefernder SAS Mechanical Supply \\
+		NoSupplSASME & Anzahl zuliefernder SAS Mechsnical Engineering \\
+		NoSupplSASPA & Anzahl zuliefernder SAS Plant and Automation \\
+		NoSupplSASIS & Anzahl zuliefernder SAS Installation \\
 		NoContr & Anzahl Aufträge \\ 
 		\bottomrule
 	\end{tabular}%
 	\label{tab:covar}%
 \end{table}%
 %%
-\paragraph{Kosten:} Die monetären Aspekte eines Projekts in der Tabelle \ref{tab:costvar} umfassen die budgetierten und realisierten Zahlen von Umsatz, Kosten, Marge, in absoluten und relativen Grössen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast vor dem Projektende kann als Indiz, des Zeitmanagement der Prognosenpassung interpretiert werden. 
+\paragraph{Kosten:} Die monetären Aspekte eines Projekts in der Tabelle \ref{tab:costvar} umfassen die budgetierten (Bud) und realisierten (Act) Zahlen von Umsatz, Kosten und Marge, in absoluten und relativen Grössen. Die Abweichung der realisierten Kosten vom letzten Kostenforecast misst ob erhebliche Mehrkosten erst vor dem Projektende prognostiziert wurden (hohe Werte), oder zu einem früheren Zeitpunkt (tiefe Werte). 
 % Tabelle Kosten
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
 	\caption{Variablen der Kategorie Kosten:}
 	\begin{tabular}{ll}
@@ -145,14 +148,14 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 		\midrule
 		TOBud & Umsatzbudget \\
 		TOAct & Turnover Act \\
-		BudMSTot & Anteil der MeS Kosten am Gesamtkostenbduget \\
-		BudMETot & Anteil der ME Kosten am Gesamtkostenbduget \\
-		BudPATot & Anteil der PA Kosten am Gesamtkostenbduget \\
-		BudISTot & Anteil der IS Kosten am Gesamtkostenbduget \\
-		DB1Bud & budgetierte  Projektmarge (DB1-Marge) \\
+		BudMSTot & Anteil der MeS Kosten am Gesamtkostenbudget \\
+		BudMETot & Anteil der ME Kosten am Gesamtkostenbudget \\
+		BudPATot & Anteil der PA Kosten am Gesamtkostenbudget \\
+		BudISTot & Anteil der IS Kosten am Gesamtkostenbudget \\
+		DB1Bud & budgetierte  Projektmarge \\
 		DB1Act & realisierte DB1-Marge \\
-		DB1Budabs & absolutes DB1 Budget (Bud) \\
-		DB1Actabs & absolute DB1 Actual (Act) \\
+		DB1Budabs & absolutes DB1 Budget  \\
+		DB1Actabs & absolute DB1 Actual \\
 		SUCostTO & Kosten aus Nachlieferung im Verhältnis zum Umsatz \\
 		CostActBudMSabs & absolute Kostenabweichung vom Bud der MeS Kosten \\
 		CostActBudMEabs & absolute Kostenabweichung vom Bud der ME Kosten \\
@@ -173,7 +176,7 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 	\label{tab:costvar}%
 \end{table}%
 %%
-\paragraph{Zeit:} Die Variablen der Tabelle \ref{tab:zeitvar} messen sämtliche Zeitverzögerungen in Bezug auf die gesamte Projektlaufzeit und einzelner Meilensteine: MS2 \glqq Concept approved \grqq{ }, MS5 \glqq Point of no return \grqq{ }, MS8 \glqq Documented \grqq{ }, MS10 \glqq Takeover\grqq{ } und MS11 \glqq Project Closure \grqq{ }.
+\paragraph{Zeit:} Die Variablen der Tabelle \ref{tab:zeitvar} messen sämtliche Zeitverzögerungen in Bezug auf die gesamte Projektlaufzeit und einzelner Meilensteine: MS2 \glqq Concept approved\grqq, MS5 \glqq Point of no return\grqq, MS8 \glqq Documented\grqq, MS10 \glqq Takeover\grqq{} und MS11 \glqq Project Closure\grqq.
 % Table generated by Excel2LaTeX from sheet 'Ch3'
 \begin{table}[htbp]
 	\centering
@@ -194,12 +197,11 @@ Nachfolgend werden die Variablen tabellarisch dargestellt und erläutert. Sämtl
 	\end{tabular}%
 	\label{tab:zeitvar}%
 \end{table}%
-
-%%Datenanalyse: Finanzielle Analyse
-%%Datenanalyse: Häufigkeitsverteilung etc.
-%%Datenanalyse: Hpyothesen
+%%
+%%Datenanalyse
+%%
 \section{Datenanalyse}\label{sec:dataana}
-Das Ziel der Analyse ist, die Charakteristiken der erfolgreichen und nicht erfolgreichen Projekte der Bühler AG auf Basis der zur Verfügung gestellten Daten zu untersuchen. Das Kriterium zur Beurteilung des Projekterfolgs ist die Abweichung zwischen dem Ist- und Sollwert der prozentualen Projektmarge (DB1BudDev). Damit wird der Kostenaspekt des eisernen Dreieck fokussiert, der aus finanzieller Sicht eine zentrale Bedeutung, da sich die Kostenperformance auf das Geschäftsergebnis auswirkt. Zur Berechnung des Erfolgskriteriums der Bühler-Projekte wird der realisierte relative Marge (DB1 Act) von der budgetierten relativen Marge (DB1 Bud) subtrahiert. 
+Das Ziel der Analyse ist, die Charakteristiken der erfolgreichen und nicht erfolgreichen Projekte der Bühler AG auf Basis der zur Verfügung gestellten Daten zu untersuchen. Das Kriterium zur Beurteilung des Projekterfolgs ist die Abweichung zwischen dem Ist- und Sollwert der prozentualen Projektmarge (DB1BudDev). Damit wird der Kostenaspekt des eisernen Dreiecks fokussiert, der aus finanzieller Sicht eine zentrale Bedeutung hat, da sich die Kostenperformance auf das Geschäftsergebnis auswirkt. Zur Berechnung des Erfolgskriteriums der Bühler-Projekte wird die realisierte relative Marge (DB1 Act) von der budgetierten relativen Marge (DB1 Bud) subtrahiert. 
 \begin{equation*}
 \text{DB1BudDev \%} = \text{DB1 Act \%} - \text{DB1 Bud \%}
 \end{equation*}
@@ -212,22 +214,23 @@ Die Datengrundlage besteht aus insgesamt 22 kategorialen und 70 metrischen Varia
 \begin{equation*}
 \text{Success } = \text{False if } \text{DB1BudDev} < 0
 \end{equation*}
-Unter der Berücksichtigung des binären Kriterium wurden die kategorialen Variablen auf der Basis von Häufigkeitsverteilungen und die metrischen Variablen mittels Mittelwerten und Standardabweichungen untersucht. Dadurch wurden die absoluten und relativen Häufigkeiten von erfolgreichen, respektive nicht erfolgreichen Projekten erfasst. Die Berechnung der Erfolgsquote ermöglichte den Vergleich zwischen den Ausprägungen der kategorialen Variablen, beispielsweise den Regionen A ist besser als Region B.
+Unter der Berücksichtigung des binären Kriteriums wurden die kategorialen Variablen auf der Basis von Häufigkeitsverteilungen und die metrischen Variablen mittels Mittelwerten und Standardabweichungen untersucht. Dadurch wurden die absoluten und relativen Häufigkeiten von erfolgreichen, respektive nicht erfolgreichen Projekten erfasst. Die Berechnung der Erfolgsquote ermöglichte den Vergleich zwischen den Ausprägungen der kategorialen Variablen, beispielsweise den Regionen A ist besser als Region B.
 \begin{equation*}
 \text{Erfolgsquote } = \frac{\text{Anzahl erfolgreicher Projekte}}{\text{Anzahl nicht erfolgreicher Projekte}} 
 \end{equation*}
-Die Berechnung der Mittelwerte und Standardabweichungen der metrischen Variablen in Abhängigkeit des binären Erfolgskriterium ermöglichte zudem die Feststellung von Unterschieden zwischen erfolgreiche und nicht erfolgreichen Projekten.
+Die Berechnung der Mittelwerte und Standardabweichungen der metrischen Variablen in Abhängigkeit des binären Erfolgskriterium ermöglichte die Feststellung von Unterschieden zwischen erfolgreichen und nicht erfolgreichen Projekten.
 %%%Legitimierung
 Da der gesamte Datensatz analysiert, haben die Ergebnisse nur auf die untersuchten Projekte Gültigkeit und können nicht generalisiert werden.
 %%
 %%Datenaufbereitung
 %%
+\paragraph{Datenbereinigung:} Da bei 92 Variablen die Vollständigkeit der Projektdaten schwierig sicherzustellen ist, wurde der Datenbereinigungsprozess so angepasst, dass die Projektanzahl $N = 1497$ möglichst erhalten werden konnte. Dazu wurde die Plausibilität der Parameter $i = 92$ nochmals geprüft und jene mit einer hohen Anzahl fehlender Werte vom Datensatz entfernt. Erst anschliessend wurden diejenigen Projekte mit unplausiblen und fehlender Daten Variablen 
 \newline\newline
-\paragraph{Datenaufbereitung: } Der Datensatz setzt sich aus drei Datensätzen zusammen, die separat aus dem BPM-Cockpit extrahiert wurden. Der Anzahl Projekte zu Beginn beträgt $N = 1471$ und die Anzahl Variablen $i = 93$. Die Bühler Projektmanagement Identifikationsnummer (BPMID) wurde in der Beschreibung der Variablen (s. Kapitel \ref{sec:datagr}) nicht berücksichtigt, da sie lediglich der eindeutigen Identifikation eines Projekts dient. Das Alter (PMAge und AMAge) und die Betriebszugehörigkeit (PMTen und AMTen) der Projekt- und Areamanager mussten korrigiert werden, da der ursprüngliche Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess.
+Die Projektidentifikationsnummer (BPMID), Berechnungsparameter und doppelt erfasste Variablen wurden vom Datensatz entfernt. Die BPMID ist das eindeutige Identifikationsmerkmal eines Projekts und hat keine weiteren Informationsgehalt. Das Alter (PMAge und AMAge) und die Betriebszugehörigkeit (PMTen und AMTen) der Projekt- und Areamanager mussten korrigiert werden, da der extrahierte Datensatz die Unterscheidung zwischen fehlenden Werten und Nullwerten nicht zu liess. Aufgrund mangelhafter Plausibilität und Korrektheit wurden acht weitere Variablen vom Datensatz entfernt. Anschliessend wurde die Anzahl fehlender Daten pro Variable ausgewertet und sämtliche Variablen mit mehr als 300 fehlender Daten nicht weiter berücksichtigt (vgl. Tabelle \ref{tab:na} im Anhang). Zusätzlich wurde die Variable AMNo infolge des Ausschluss verbundener Variablen vom Datensatz entfernt. Die restlichen Projekte mit unvollständigen Daten wurden gelöscht.
 \newline\newline
-\paragraph{Bereinigung der Variablen: }Die BPMID, Berechnungsvariablen und doppelt erfasste Variablen wurden zu Beginn vom Datensatz entfernt. Da die Plausibilität einiger Variablen nach dem Erhalt der Daten nicht mit Sicherheit gewährleistet war, wurde sie nochmals geprüft. Es wurden acht weiter Variablen aufgrund fehlender Korrektheit von der Analyse ausgeschlossen. Anschliessend wurde die Anzahl fehlender Daten pro Variable ausgewertet und sämtliche Variablen mit mehr als 300 fehlender Daten nicht weiter berücksichtigt (vgl. Tabelle \ref{tab:na}). Zusätzlich wurde die Variable AMNo infolge des Ausschluss verbundener Variablen vom Datensatz entfernt. Die restlichen Projekte mit unvollständigen Daten wurden gelöscht. Dieses Vorgehen ermöglichte den Erhalt zahlreicher Datensätze (Projekte).
+Danach wurde die Plausibilität der Projektdaten anhand der logischen Implikation der Parameter deren Berechnungsformeln und wirtschaftlicher Überlegungen geprüft. Beispielsweise muss das Umsatzbudget grösser als 0 sein, da mit Projekte ein Gewinn erwirtschaftet werden will, ist ein Wert 0 unplausibel. Einzig die Anteile am Gesamtkostenbudget wurden auf Werte grösser 0\% und kleiner 96\% begrenzt, da aufgrund der Einreichung eines Kostenpuffer von minimal 4\% in einem anderen Gefäss der Projektstruktur ein Wert von 100\% nicht plausible war.
 \newline\newline
-Danach wurden sämtliche Projekte mit unplausiblen Datensätze, deren Erläuterung im Anhang zu finden sind, entfernt. Die Ausreisser wurden mittels des Boxplot-Ansatz von John W. Turkey aus dem Jahre 1969, gemäss dem sämtliche Werte ausserhalb des folgenden Wertebereichs als Ausreisser eingestuft werden können, ermittelt \citep{lifengli16}.
+Die Ausreisser wurden mittels des Boxplot-Ansatz von John W. Turkey aus dem Jahre 1969, gemäss dem sämtliche Werte ausserhalb des folgenden Wertebereichs als Ausreisser eingestuft werden können, ermittelt \citep{lifengli16}.
 \begin{equation*}
 \text{Interquartile Range (IQR)}
 \end{equation*}
@@ -240,12 +243,12 @@ Zur Identifikation extremer Ausreisser kann die Grenze des Wertebereichs auf der
 \end{equation*}
 %%
 %%
-Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extrem negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extreme positive DB1Act lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen für Plant \& Automation und Installation jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn es wurde davon ausgegangen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Wertebereiche lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und $ i = 71$ Faktoren.
+Je nach Zweck der Analyse und untersuchten Objekten sind Ausreisser unterschiedlich einzustufen. Die Geschäftsbereiche der Bühler AG verkaufen unterschiedliche Anlangen, weshalb die Datenbereiche der Faktoren stark variieren können. Die realisierte Projektmarge (DB1Act), wurde auf die Werte des doppelten IQR berichtigt, da extrem negative Margen auf sogenannte Crash-Projects schliessen lassen, welche bereits mittels internem Audit untersucht wurden und die Stichprobenergebnisse unnötige verzerren können. Extrem positive DB1Act lassen Zweifel zur Richtigkeit der Kostenverbuchung zu. Bei den relativen Kostenabweichungen wurde für Plant \& Automation und Installation jeweils einzelne Extremalwerte nur dann entfernt, wenn kein entsprechendes Budget geplant wurde. Denn wird angenommen, dass die Budgetierung der Projektkosten nicht korrekt verlaufen ist, was letztendlich zu extremalen relativen Kostenabweichung geführt hat. Es wurden keine weiteren Ausreisser eliminiert, selbst wenn einige Werte ausserhalb des Wertebereichs des dreifachen IQR lagen. Nach der Datenbereinigung umfasst die zu untersuchende Stichprobe $N = 966$ Projekte und $ i = 71$ Faktoren.
 \newline\newline
 %%
 %%Zusätliche Variablen
 %%
-\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken zusätzliche Variablen auf Basis der vorhandene Daten erhoben nachfolgende, die in der Tabelle \ref{zusvar} zu sehen sind.
+\textbf{Zusätzliche Variablen:} Nach dem Datenbereinigungsprozess wurde zu analytischen Zwecken zusätzliche Variablen auf Basis der vorhandene Daten erhoben nachfolgenden, die in der Tabelle \ref{tab:zusvar} zu sehen sind.
 % Zusätzliche var'
 \begin{table}[htbp]
 	\centering
