@@ -1,17 +1,23 @@
 \chapter{Ergebnisse}\label{sec: Ergeb}
-
-
+Nachfolgend werden die Ergebnisse pro Variablenkategorie dargestellt und kurz erläutert. Aufgrund der hohen Anzahl der Variablen, mussten gewisse Einschränkungen vorgenommen werden. Es wurden vor allem Resultate von Variablen mit einer zusätzlicher Einteilungsfunktion, beispielsweise das Land der Region, und solche mit ähnlichem Informationsgehalt nicht berücksichtigt. Die Begriff Success und Fail sind mit erfolgreichen respektive nicht erfolgreichen Projekten zu assoziieren.
+\newline\newline
+%%
+%%Übersicht der Stichprobe
+%%
+Die Stichprobe enthält 966 Projekte von denen 32\% gescheitert sind. Die Erfolgsquote beträgt 2.1, sprich zwei aus drei Projekten können erfolgreich abgeschlossen werden. 
 \begin{table}[H]
 	\centering
 	\caption{Übersicht Stichprobe}
 	\begin{tabular} {l|r|r}
-		\textbf{Erfolgskriterium} & \textbf{absolut} & \textbf{relativ} \\\hline
+		\toprule
+		\textbf{Erfolgskriterium} & \textbf{absolut} & \textbf{relativ} \\
+		\midrule
 		SUCCESS & 654 & 68\% \\
-		FAIL & 312 & 32\% \\\hline
+		FAIL & 312 & 32\% \\
+		\bottomrule
 		\textbf{Total} & \textbf{966} & \textbf{100\%} \\
 	\end{tabular}
 \end{table}
-
 %%Ergenbnisse pro Kategorie: Hypothese Nennen, Kommentierung, Ergebnisse präsentieren, Tabellen etc
 %%Rahmenbedingungen: Region, BA und allenfalls BU: MS zu feine Gliederung, EquLoc too maany Einzelwerte, CuNo too many Einzelwerte
 %%Sales & Quotation: Budget Druck, Rest ging nicht
@@ -25,8 +31,7 @@
 %%Zeit: alle, aber ohne Delay
 %%Komplexität: alle 
 \section{Rahmenbedinungen}
-Es wurden die Rahmenbedingungen Region, Geschäftsbereich und die Organisation ausgewertet. %%% WHY???
-%Tabelle Übersicht Stichprobe
+Die Häufigkeitsverteilung der Region in der Tabelle \ref{tab:freg} zeigt, dass Europa die grösste Region ist und Mittlere Osten und Afrika sowie China. Die Erfolgsquote der kleinsten Regionen gemessen am Projektvolumen hat die beste Erfolgsquote. Die tiefste Erfolgsquote bei einer mittleren Regionengrösse hatte Nordamerika.
 %Tabelle Auswertung Häufigkeit pro Region
 \begin{table}[H]
 	\centering
@@ -35,7 +40,7 @@ Es wurden die Rahmenbedingungen Region, Geschäftsbereich und die Organisation a
 		\toprule
 		\textbf{Region} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\
 		\midrule
-		East Asia ) & 6.7   & 20    & 3     & 13.0\% & 23    & 2.4\% \\
+		East Asia & 6.7   & 20    & 3     & 13.0\% & 23    & 2.4\% \\
 		EU    & \textbf{1.7}   & 240   & 145   & 37.7\% & 385   & 39.9\% \\
 		MEA & 2.7   & 112   & 42    & 27.3\% & 154   & 15.9\% \\
 		North\_Ame & \textbf{1.4}   & 54    & 38    & 41.3\% & 92    & 9.5\% \\
@@ -45,8 +50,10 @@ Es wurden die Rahmenbedingungen Region, Geschäftsbereich und die Organisation a
 		\bottomrule
 		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
 	\end{tabular}%
-	\label{freg}%
+	\label{tab:freg}%
 \end{table}%
+Die Auswertung der Geschäftsbereiche in der Tabelle \ref{tab:fba} hat ergeben, dass GM als grösste BA eine mittlere Erfolgsquote aufweist. GL und LO als mittelgrosse Geschäftsbereiche gemessen am Projektvolumen haben ein kleines Verhältnis zwischen erfolgreichen und nicht erfolgreichen Projekten. VN als zweit grösste BA schneidet gegenüber GM noch schlechter ab und hat aufgrund der höheren Anzahl Projekte mehr Einfluss auf die Erfolgsquote über alle Projekte.
+
 \begin{table}[H]
 	\centering
 	\caption{Erfolgsquote und Häufigkeitsverteilung pro Geschäftsbereich}
@@ -62,19 +69,21 @@ Es wurden die Rahmenbedingungen Region, Geschäftsbereich und die Organisation a
 		LO    & 1.4   & 30    & 21    & 41.2\% & 51    & 5.3\% \\
 		SR    & 5.0   & 35    & 7     & 16.7\% & 42    & 4.3\% \\
 		TP    & NA      & 8     & 0     & 0.0\% & 8     & 0.8\% \\
-		VN    & \textbf{1.4}   & 95    & 68    & 41.7\% & 163   & 16.9\% \\ \bottomrule
+		VN    & \textbf{1.4}   & 95    & 68    & 41.7\% & 163   & 16.9\% \\
+		\bottomrule
 		\textbf{Total } & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
 	\end{tabular}%
-	\label{fba}%
+	\label{tab:fba}%
 \end{table}%
-Die Ergebnisse der Tabellen \ref{freg} und \ref{fba}  reflektieren die Tatsache, dass Europa der grösste Absatzmarkt und GM die grösste Business Area der Bühler AG ist. Die niedrigste Erfolgsquote hat NAM als viertgrösste Region (in Abhängigkeit der Anzahl Projekte), gefolgt von Europa. Die Anzahl der Fail-Projekte in den Regionen EU, MEA und SAS\_BCHI beträgt 73\% ($(145+42+41)/312$), weshalb die Erfolgsquote von allen Projekten hauptsächlich durch diese drei Regionen bestimmt wird. Die kleinsten Regionen haben die besten Erfolgsquoten. Die Geschäftsbereichen CF, VN, GL und GM ($(42+68+32+122)/312$) umfassen zusammen 84\% aller Fail-Projekte, wobei die drei letzt genannten zugleich die niedrigsten Erfolgsquoten ausweisen. Die Anzahl untersuchter Projekte der letzten drei Jahre der Geschäftsbereiche CF und VN ist faktisch identisch, allerdings weist VN eine viel tiefere Erfolgsquote aus als CF.
-Im Regionen-BA Split der Tabelle \ref{tab:fregba} sind für diejenigen Regionen mit den niedrigsten Erfolgsquoten, EU und NAM jene BA's mit den niedrigsten Erfolgsquoten zu finden. Die Kombination EU-GM, EU-GL, EU-VN mit den tiefen Erfolgsquoten machen knapp 30\% ($(50+23+26)/312$) aller Fail-Projekte aus. Die niedrige Erfolgsquote von NAM stammt vor allem aus VN- und GM-Projekten, wobei VN noch vor GM weniger gut abschneidet.
+Die Auswertung des Region in Verbindung mit Geschäftsbereich trägt der Matrixorganisation der Bühler AG Rechnung. In der Tabelle \ref{tab:fregba} wird ersichtlich, dass in Europa die Geschäftsbereiche GM und GL sowie VN unterdurchschnittliche Erfolgsquoten aufweisen. Ein ähnliches Bild ist bei der Region Nordamerika festzustellen. Das Verhältnis von erfolgreichen und nicht erfolgreichen Projekten von CF liegt in beiden Regionen unter demjenigen des gesamten Datensatzes. DC hat in Europa eine überdurchschnittlich hohe Erfolgsquote im Vergleich zu ganzen Region.
 % Auswertung BA-Region
 \begin{table}[H]
 	\centering
 	\caption{Erfolgsquote und Häufigkeitsverteilung Regionen-BA für EU und North\_Ame}
 	\begin{tabular}{llrrrrr}
-		\textbf{Region} & \textbf{BA}    & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} \\\hline
+		\toprule
+		\textbf{Region} & \textbf{BA}    & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} \\
+		\midrule
 		EU    & CF    & 1.9   & 58    & 31    & 34.8\% & 89 \\
 		EU    & DC    & 5.0   & 45    & 9     & 16.7\% & 54 \\
 		EU    & GD    & NA    & 2     & 0     & 0.0\% & 2 \\
@@ -90,60 +99,67 @@ Im Regionen-BA Split der Tabelle \ref{tab:fregba} sind für diejenigen Regionen 
 		North\_Ame & LO    & 4.0   & 4     & 1     & 20.0\% & 5 \\
 		North\_Ame & SR    & 1.0   & 1     & 1     & 50.0\% & 2 \\
 		North\_Ame & \textbf{VN}  & 1.0   & 12    & 12    & 50.0\% & 24 \\
+		\bottomrule
 	\end{tabular}%
 	\label{tab:fregba}%
 \end{table}%
-Zusammenfassend lässt sich aussagen, dass ungefähr 60\% ($(122+68)/312$ respektive $(145+38)/312$) der Fail-Projekte entweder in den Geschäftsbereichen VN und GM oder in den Regionen EU und NAM liegen. Zudem wird die Erfolgsquote aller Projekte zu 30\% durch europäische Projekte von den Geschäftsbereichen GM, GL und VN bestimmt wird.
+\clearpage
 %%
 %%SQ
 %%
 \section{SQ-Variablen}
-Die Einflussdeterminanten des SQ-Prozess sind einerseits der Stand im Bezug auf das OR-Budget bei Projektabschluss und die Erfahrung (AMAge2) sowie Dienstjahre (AMTen2) des Verkaufsmanager. Allerdings konnten letztere aufgrund fehlender Datensätze nicht ausgewertet werden. Grundsätzlich wird vermutet, dass ein Budgetdruck im Zeitpunkt des Verkaufsabschlusses, den Verkauf von risikoreicheren Projekten begünstigt. 
+Die Tabelle \ref{tab:msq} zeigt, dass die mittlere Abweichung des Auftragsvolumen vom Budget für nicht erfolgreiche Projekte in der Region und im Geschäftsbereich sowohl in relativen als auch absoluten Grössen deutlich höher liegt. Die Parameter zum Area Manager konnten aufgrund fehlender Daten nicht ausgewertet werden.
 % Table generated by Excel2LaTeX from sheet 'sq mean'
 \begin{table}[H]
 	\centering
 	\caption{Arithmetisches Mittel des BudGapOR der BU und Region}
 	\begin{tabular}{lrr|rr}
+		\toprule
 		\textbf{Success} & \multicolumn{1}{l}{\textbf{BU [TCHF]}} & \multicolumn{1}{l}{\textbf{BU [\%]}} & \multicolumn{1}{l}{\textbf{Region [TCHF]}} & \multicolumn{1}{l}{\textbf{Region [\%]}} \\\hline
 		FALSE & -7'244.2 & -11.3 & -20'845.5 & -9.3 \\
 		TRUE  & -1'207.2 & -4.0  & -14'886.9 & -6.8 \\
+		\bottomrule
 	\end{tabular}%
-	\label{msq}%
+	\label{tab:msq}%
 \end{table}%
-Die mittlere Abweichung des OR vom Budget des Geschäftseinheit und der Region der Tabelle \ref{msq} waren für Fail-Projekte in absoluten und relativen Grössen höher als für Success-Projekte.  
 \newpage
 %%
 %%Fulfillment
 %%
-\section{Fulfillment}
-Der bedeutenste Einflussfaktor im Projektmanagement ist der Projektmanager selbst. Die Evaluation der realisierten Projekte pro Projektmanager inklusive der Erfolgsquote hat ergeben, dass die 966 Projekte von 301 unterschiedlichen Projektmanager abgewickelt wurde. 145 Projektmanager haben ihre Projekte aussschliesslich erfolgreich beendet, wohingegen gerade einmal 45 PM nur unzureichend Projekte abgewickelt hat 
+\section{FF-Variablen}
 %
 %Auswertung Projektmanager Change
 %
-\newline\newline\textit{Projektmanager:} Der Wechsel des Projektmanagers wird mit konfligierende Verhältnisse zwischen den Vertragsparteien assoziiert, weshalb hypothetisch vermutet wird, dass Fail-Projekte eher mit einem PMChange einhergehen. 
+\textit{Projektmanager: } Die Auswertung des Projektmanagers mittels einer  Häufigkeitsverteilung hat aufgrund der hohen Anzahl Einzelwerte wenig Informationsgehalt.
+\newline 
+Der Projektmanager wurde insgesamt bei 43 Projekten ausgewechselt, wovon 17 gescheitert sind. Die Anzahl Projektmanager lieferte keinen zusätzlichen Informationshinweis, da sie im direktem Zusammenhang mit dem PMChange steht. Im Datensatz hatten lediglich sechs Projekte mehr als zwei Projektmanager während der Projektlaufzeit.
 \begin{table}[H]
 	\centering
-	\caption{Häufigkeitsverteilung PMChange}
-	\begin{tabular}{lrrrrr}
-		\textbf{PMChange} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} &
-		\multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
-		no    & 628   & 295   & 32.0\% & 923 & 96\% \\
-		yes   & 26    & 17    & 39.5\% & 43  & 4\% \\\hline
-		\textbf{Total} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
+	\caption{Erfolgsquote und Häufigkeitsverteilung PMChange}
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		\textbf{PMChange} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} &
+		\multicolumn{1}{l}{\textbf{Total [\%]}} \\
+		\midrule
+		no    & 2.1 & 628   & 295   & 32.0\% & 923 & 96\% \\
+		yes   & 1.5 & 26    & 17    & 39.5\% & 43  & 4\% \\
+		\bottomrule
+		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
 	\end{tabular}%
 	\label{pmchange}%
 \end{table}%
-Insgesamt wurden 43 Projekte mit einem Wechsel des Projektmanagers über die letzten drei Jahre abgewickelt, wie der Tabelle \ref{pmchange} zu entnehmen ist. Davon sind 17 gescheitert und 26 wurden erfolgreich abgeschlossen. Die Anzahl Projektmanager (NoPM) ist direkt mit der Variable PMChange verbunden und weist wenig Informationsgehalt auf. Es gab in der Stichprobe sechs Projekte, bei denen der PM zweimal ausgetauscht wurde, davon sind fünf Projekte gescheitert.
-%
-% Auswertung Alter und Tenuer PM
-%
-\newline Das Alter (PMAge2) und die Dienstjahre (PMTen2) des Projektmanagers sind Proxyvariablen für die Lebens- und Berufserfahrung sowie die Kenntnisse der Bühlerwelt. Erfahrenere (ältere) sowie langjährige Mitarbeitende müssten mehr Erfolg im Projektmanagement haben, da sie mehr Praxiserfahrung mit der Bühler-Welt einerseits und dem Projektmanagement anderseits haben sollten. Die Durchschnittswerte des Alter und der Dienstjahre in der Tabelle \ref{ageten} im Anhang sind für Fail-Projekte und Success-Projekte faktisch identisch. Sie betragen gerundet 40 beziehungsweise 12 Jahre.
+%%
+%%Auswertung Alter und Tenuer PM
+%%
+Das Alter des Projektmanagers (PMAge2) wurde zum Zweck der Auswertung in eine kategoriale Variable mit einer Klassenbreite von fünf Jahren transformiert. Die Durchschnittswerte des Alter und der Dienstjahre in der Tabelle \ref{ageten} im Anhang sind für Fail-Projekte und Success-Projekte faktisch identisch. Sie betragen gerundet 40 beziehungsweise 12 Jahre. Die Tabelle \ref{tab:fagecat} zeigt, dass Projektmanager der Alterskategorien (51-55) und (56-60) eine geringe Erfolgsquote im Vergleich zur Quote des gesamten Datensatzes haben. Die obere und untere Randklasse wickeln jeweils am wenigsten Projekte ab, weisen aber ein relativ gutes Verhältnis zwischen erfolgreiche und nicht erfolgreichen Projekten aus.
 % Table generated by Excel2LaTeX from sheet 'fagecat'
-\begin{table}[htbp]
+\begin{table}[H]
 	\centering
-	\caption{Erfolgsquote und Häufigkeitsverteilung pro Alterskategorie}
+	\caption{Erfolgsquote und Häufigkeitsverteilung pro Alterskategorie(Cat\_age)}
 	\begin{tabular}{lrrrrrr}
-		\textbf{Cat\_age} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\\hline
+		\toprule
+		\textbf{Cat\_age} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}} \\
+		\midrule
 		20-25 & 2.5   & 15    & 6     & 28.6\% & 21    & 2.2\% \\
 		26-30 & 2.3   & 130   & 57    & 30.5\% & 187   & 19.4\% \\
 		31-35 & 3.0   & 130   & 44    & 25.3\% & 174   & 18.0\% \\
@@ -152,43 +168,82 @@ Insgesamt wurden 43 Projekte mit einem Wechsel des Projektmanagers über die let
 		46-50 & 2.3   & 65    & 28    & 30.1\% & 93    & 9.6\% \\
 		51-55 & \textbf{1.3} & 69    & 52    & 43.0\% & 121   & 12.5\% \\
 		56-60 & \textbf{1.4} & 26    & 19    & 42.2\% & 45    & 4.7\% \\
-		61-63 & 2.8   & 17    & 6     & 26.1\% & 23    & 2.4\% \\\hline
+		61-63 & 2.8   & 17    & 6     & 26.1\% & 23    & 2.4\% \\
+		\bottomrule
 		\textbf{Total} & \textbf{2.1} & \textbf{654} & \textbf{312} & \textbf{32.3\%} & \textbf{966} & \textbf{100.0\%} \\
 	\end{tabular}%
-	\label{fagecat}%
+	\label{tab:fagecat}%
 \end{table}%
-Die Tabelle zeigt, dass in den Alterskategorien (51-55) und (56-60) relativ am meisten nicht-erfolgreiche' Projekte. Folglich liegt ein Indiz für die Gegenhypothese vor, wobei angemerkt werden muss, dass Verteilung der Projekte diese Quote beeinflussen kann. Beispielsweise könnte den erfahreneren Mitarbeitenden, die herausfordernden Projekte zugewiesen werden, da sie über mehr fundiertes Wisse im Projektmanagement verfügen.
-
+%%
+%%Lead SAS Fulfillment
+%%
 %Tabelle LeadSAS.PrFF
+\textit{Lead SAS Projektabwicklung: }Der Verantwortungsbereich für das gesamte Projekt und die Projektabwicklung lagen bei insgesamt 101 Projekten nicht bei derselben Gesellschaft, wie die Tabelle \ref{tab:fleadsasprff} zeigt. Darunter sind 85 erfolgreiche Projekte, so dass die Erfolgsquote sehr hoch ist im Vergleich zu 2.1. Die Anzahl involvierter \gls{abk:sas} lieferte keine zusätzlichen Erkenntnisse, da lediglich bei vier Projekten mehr als zwei \gls{abk:sas} involviert waren.
 \begin{table}[H]
 	\centering
 	\caption{Häufigkeitsverteilung LeadSAS.PrFF}
-	\begin{tabular}{lrrrrr}
-		\textbf{LeadSAS.PrFF} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}}
-		\\\hline
-		identisch    & 569   & 296   & 34.2\% & 865 & 89.5\% \\
-		verschieden   & 85    & 16    & 15.8\% & 101 & 10.5\% \\\hline
-		\textbf{Total} & \textbf{654} & \textbf{312} &       & \textbf{966} \\
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		\textbf{LeadSAS.PrFF} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Fail [\%]}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Total [\%]}}
+		\\
+		\midrule
+		identisch    & 569  & 1.9 & 296   & 34.2\% & 865 & 89.5\% \\
+		verschieden   & 85  & 5.3  & 16    & 15.8\% & 101 & 10.5\% \\
+		\bottomrule
+		\textbf{Total} & \textbf{2.1} &\textbf{654} & \textbf{312} &  \textbf{32.2\%}   & \textbf{966} & \textbf{100\%} \\
 	\end{tabular}%
-	\label{fleadsasprff}%
+	\label{tab:fleadsasprff}%
 \end{table}%
-Die Resultate der Tabelle \ref{fleadsasprff} implizieren, dass der überwiegende Anteil der Projekte eine Verantwortungspartei hatte. Von den 101 Projekten mit geteilter Projektverantwortung wurden lediglich 16\% mit einem prozentualen DB1Act unter Budget abgeschlossen. Das Ergebnis kann folglich als Indiz zu Gunsten der Hypothese gewertet werden.
+%%
+%%Forecast
+%%
+\textit{Forecast: }Die Parameter, welche die Zeit zwischen dem Projektstart und dem erstmaligen gelben oder roten Ampelstatus messen, konnten nicht ausgewertet werden, da im Nachhinein festgestellt wurde, dass anstatt der realisierten die geplante Projektlaufzeit als Bezugsgrösse gewählt wurde. Die Korrektur der Grösse war nicht mehr möglich.
 \clearpage
 %%
 %%Komplexität
 %%
 \section{Komplexität:}
-Die Komplexität kann anhand unterschiedlicher Dimensionen gemessen werden wie zum Beispiel, dem Inhalt, den Zielen, den Beteiligten oder dem Umfeld. In der nachfolgenden Auswertung wurden die Anzahl Aufträge sowie involvierter Parteien bei den unterschiedlichen Projektphasen und Konsortien als Proxyvariablen für Komplexität untersucht. Die vorherrschende Auffassung bezüglich Komplexität, ist ihr negativer Einfluss auf den Projekterfolg.
+Die Komplexität wurde anhand der involvierten zuliefernden Bühler Gesellschaften während den Projektphasen und der Zusammenarbeit mit einer externen Gesellschaft evaluiert.
 %
+%Auswertung Anzahl SAS
+%
+Die Anzahl involvierte SAS (NoSupplSAS) im Mechanical Supply liegt im Bereich null und zehn, wobei null mit Eigenproduktion oder Zulieferung durch Dritte gleichzusetzen ist. In den übrigen Projektphasen sind maximal drei andere Bühler-Gesellschaften involviert. Die Komplexität ergibt sich aus der involvierten Anzahl während der gesamten Projektlaufzeit, sodass die Häufigkeit während allen Projektphasen zusammen ausgewertet wurde. Die Tabelle \ref{tab:fnosas} zeigt, dass die Eigenfertigung respektive die Zusammenarbeit mit Drittlieferanten während allen Projektphasen das häufigste Charakteristika aller Projekte war. 
+% Table generated by Excel2LaTeX from sheet 'nosas'
+\begin{table}[H]
+	\centering
+	\begin{threeparttable}
+	\caption{Erfolgsquote und Häufigkeitsverteilung der NoSupplySAS-Kombinationen}
+	\begin{tabular}{lrrrrrrrr}
+		\toprule
+		\textbf{NoSupplSAS} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\
+		\midrule
+		\multicolumn{1}{r}{0} & 0     & 0     & 0     & 0     & 180   & 89    & 269 & 2.0 \\
+		\multicolumn{1}{r}{1} & 1     & 0     & 0     & 0     & 73    & 26    & 99  & 2.8 \\
+		\multicolumn{1}{r}{2} & 2     & 0     & 0     & 0     & 38    & 13    & 51  & 2.9 \\
+		\multicolumn{1}{r}{2} & 2     & 1     & 0     & 0     & 23    & 13    & 36  & 1.8 \\
+		\multicolumn{1}{r}{1} & 1     & 1     & 1     & 1     & 15    & 12    & 27  & 1.3 \\
+		\multicolumn{1}{r}{1} & 1     & 1     & 0     & 0     & 17    & 11    & 28  & 1.5 \\ 
+		\bottomrule
+	\end{tabular}%
+	\begin{tablenotes}
+	\small
+	\item Anmerkung: Die Tabelle zeigt die sechs häufigsten Kombinationen
+	\end{tablenotes}
+\label{tab:fnosas}%
+\end{threeparttable}
+\end{table}%
 %Auswertung Konsortium
 %
-Die Anzahl Projekte in der Stichprobe, die in einem Konsortium abgewickelt wurden, beträgt 78 , wovon 47 erfolgreich und 31 unter Budget abgeschlossen wurden, wie der Tabelle \ref{fcons} zu entnehmen ist. In EU und SAS\_BCHI wurden 51 Projekte im Konsortium abgewickelt.
+Der Parameter Konsortium wurde in Kombination mit der Region und dem Geschäftsbereich ausgewertet, um die Ergebnisse der Rahmenbedingungen zu untersuchen. Die Ergebnisse zu den Geschäftsbereichen GM, GL und VN sind in der Anmerkung der Tabelle \ref{tab:fcons} enthalten. Insgesamt war bei 78 Projekten ein Drittunternehmen involviert. Davon sind 31 gescheitert und wurden in den Regionen Europa sowie Mittlere Osten und Afrika sowie China abgewickelt. 
 % Table generated by Excel2LaTeX from sheet 'con_part_reg'
 \begin{table}[H]
 	\centering
-	\caption{Absolute Häufigkeitsverteilung der Projekte mit Konsortium pro Region}
+	\begin{threeparttable}	
+	\caption{Erfolgsquote und Absolute Häufigkeitsverteilung der Projekte mit Konsortium pro Region}
 	\begin{tabular}{lrrrr}
-		\textbf{ConPart} & \multicolumn{1}{l}{\textbf{Region}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\\hline
+		\toprule
+		\textbf{ConPart} & \multicolumn{1}{l}{\textbf{Region}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\
+		\midrule
 		TRUE  & \multicolumn{1}{l}{East\_Asia} & 1     & 0     & NA \\
 		TRUE  & \multicolumn{1}{l}{\textbf{EU}} & 13    & 14    & 0.9 \\
 		TRUE  & \multicolumn{1}{l}{MEA\_Afr} & 9     & 7     & 1.3 \\
@@ -198,92 +253,60 @@ Die Anzahl Projekte in der Stichprobe, die in einem Konsortium abgewickelt wurde
 		TRUE  & \multicolumn{1}{l}{South\_Asia} & 1     & 0     & NA \\\hline
 		\textbf{Total} &       & \textbf{47} & \textbf{31} & \textbf{1.5} \\
 	\end{tabular}%
-	\label{fcons}%
+	\begin{tablenotes}
+	\tiny
+	\item EU GL: 6 erfolgreiche und 5 nicht erfolgreiche Projekte
+	\item EU GM: 1 erfolgreiche und 3 nicht erfolgreiche Projekte
+	\item EU VN: 1 erfolgreiche und 5 nicht erfolgreiche Projekte
+	\item SAS\_BCHI GM: 4 erfolgreiche und 6 nicht erfolgreiche Projekt
+	\end{tablenotes}
+	\label{tab:fcons}%
+	\end{threeparttable}
 \end{table}%
-Die meisten Konsortium-Projekte in Europa stammen vom Geschäftsbereich GL wovon nur jedes zweite erfolgreich zu Ende geführt werden konnte (s. Tabelle \ref{consregba}). Demgegenüber stehen 11 Projekte mit Konsortium in Middle East \& Africa des Geschäftsbereichs GM, wovon ebenso die Hälfte erfolgreich abgeschlossen werden konnte. Die DC-Projekte weisen gegenüber den GM-Projekten in SAS\_BCHI die bessere Erfolgsbilanz aus.
-% Table generated by Excel2LaTeX from sheet 'cons_par_reg_Ba'
-\begin{table}[htbp]
-	\centering
-	\caption{Erfolgsquote und absolute Häufigkeit von ConPart für EU, MEA\_Afr und SAS\_BCHI}
-	\begin{tabular}{llrrr}
-		\textbf{Region} & \textbf{BA} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\\hline
-		EU  & CF    & 5     & 0     & NA \\
-		& DC    & 0     & 1     & 0.0 \\
-		& GL    & 6     & 5     & 1.2 \\
-		& GM    & 1     & 3     & 0.3 \\
-		&VN    & 1     & 5     & 0.2 \\\hline
-		\textbf{Total} &  & \textbf{13} & \textbf{14} & \textbf{0.9} \\
-		&  &  & & \\
-		MEA\_Afr &	GL    & 2     & 2     & 1.0 \\
-		& 	GM    & 6     & 5     & 1.2 \\
-		& VN    & 1     & 0     & NA \\\hline
-		\textbf{Total} &  & \textbf{9} & \textbf{7} & \textbf{1.3} \\
-		& & & & \\
-		SAS\_BCHI & \multicolumn{1}{l}{CF} & 2     & 0     & NA \\
-		& \multicolumn{1}{l}{DC} & 11    & 1     & 11.0 \\
-		& \multicolumn{1}{l}{GM} & 4     & 6     & 0.7 \\\hline
-		\textbf{Total} &       &  \textbf{17}   & \textbf{7}     & \textbf{2.4} \\
-	\end{tabular}%
-	\label{consregba}%
-\end{table}%
-%
-%Auswertung Anzahl SAS
-%
-Die Anzahl involvierte SAS (NoSupplSAS) bei der Zulieferung liegt im Bereich null und zehn, wobei null mit Eigenproduktion oder Zulieferung durch Dritte gleichzusetzen ist. In den übrigen Projektphasen sind maximal drei andere Bühler-Gesellschaften involviert. Eine Einzelauswertung pro Projektphase ergibt relativ wenig Aufschluss, weshalb die Häufigkeit der Kombinationen untersucht wurde. 
-% Table generated by Excel2LaTeX from sheet 'nosas'
-\begin{table}[H]
-	\centering
-	\caption{Erfolgsquote und Häufigkeitsverteilung der NoSupplySAS-Kombinationen (Ausschnitt)}
-	\begin{tabular}{lrrrrrrrr}
-		\textbf{NoSupplSAS} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Success}} & \multicolumn{1}{l}{\textbf{Fail}} & \multicolumn{1}{l}{\textbf{Total}} & \multicolumn{1}{l}{\textbf{Erfolgsquote}} \\ \hline
-		\multicolumn{1}{r}{0} & 0     & 0     & 0     & 0     & 180   & 89    & 269 & 2.0 \\
-		\multicolumn{1}{r}{1} & 1     & 0     & 0     & 0     & 73    & 26    & 99  & 2.8 \\
-		\multicolumn{1}{r}{2} & 2     & 0     & 0     & 0     & 38    & 13    & 51  & 2.9 \\
-		\multicolumn{1}{r}{2} & 2     & 1     & 0     & 0     & 23    & 13    & 36  & 1.8 \\
-		\multicolumn{1}{r}{1} & 1     & 1     & 1     & 1     & 15    & 12    & 27  & 1.3 \\
-		\multicolumn{1}{r}{1} & 1     & 1     & 0     & 0     & 17    & 11    & 28  & 1.5 \\ \hline
-		\textbf{Total} &       &       &       &       & \textbf{346} & \textbf{164} & \textbf{510} & 2.1 \\
-	\end{tabular}%
-	\label{fnosas}%
-\end{table}%
-Die obige Tabelle \ref{fnosas} zeigt, dass die Eigenfertigung respektive die Zusammenarbeit mit Drittlieferanten während allen Projektphasen das häufigste Charakteristika aller Projekte war. Es fällt auf, dass sich mehr als die Hälfte der Datenpunkte im Bereich mit maximal zwei involvierten SAS-Gesellschaften während der gesamten Projektlaufzeit konzentriert. Aufgrund der Erfolgsquoten kann postuliert werden, dass eine Zusammenarbeit mit mindestens einer weiteren Partei im MS, den Projekterfolg begünstigen könnte.
 \clearpage
 %%
 %%Kosten
 %%
 \section{Kosten}
 %\section{Finanzielle Performance Analyse}
-Zur Bewertung der finanziellen Performance wurden drei verschiedene Auswertungen gemacht: Abweichung Act-Bud, Zusammensetzung der Kosten sowie eine Auswertung pro Umsatzkategorie. Das Ziel besteht darin, den finanziellen Verlust in Abhängigkeit des Erfolgskriterium (DB1BudDev) zu quantifizieren. 
+Zuerst wurde mittels der Abweichungen zwischen budgetierten und realisierten Zahlen der Umsatz, die Kosten und DB1 der finanzielle Verlust der gescheiterten Projekte quantifiziert. Die erste Tabelle \ref{tab:bud} enthält das Budget, die zweite Tabelle \ref{tab:act} die realisierten Zahlen und die letzte Tabelle \ref{tab:Abw} zeigt die Abweichungen zwischen den ersten beiden. Die tatsächlichen Kosten der erfolgreichen Projekte lagen unter den budgetierten Werten, wohingegen die gescheiterten Projekte erhebliche Mehrkosten generiert haben. Diese Abweichungen wirken sich direkt auf die Projektmarge aus, die bei den nicht erfolgreichen Projekten 8.2\% unter dem Budget von 24.7\% lagen. Demgegenüber zeigt sich bei den erfolgreichen Projekten das gegenteilige Ergebnis, die Projektmarge lag 7.7\% über dem budgetierten Wert von 25.5\%.
+\newline 
 %Bud TO Cost DB1
 \begin{table}[H]
 	\centering
-	\caption{ [TCHF]}
+	\caption{Budgetierter Umsatz, Kosten und DB1 sämtlicher Projekte[TCHF]}
 	\begin{tabular}{lrrrr}
-		\textbf{Erfolgskriterium} & \textbf{TO Bud} & \textbf{Cost Bud} &
-		\textbf{DB1 Bud} & \textbf{DB1 Bud [\%]} \\\hline
+		\toprule
+		\textbf{Erfolgskriterium} & \textbf{Umsatz} & \textbf{Kosten} &
+		\textbf{DB1} & \textbf{DB1 [\%]} \\
+		\midrule
 		SUCCESS & 1'552'450 & -1'156'598 & 395'851 & 25.5\% \\
-		FAIL  & 618'013 & -465'066 & 152'947 & 24.7\% \\\hline
+		FAIL  & 618'013 & -465'066 & 152'947 & 24.7\% \\
+		\bottomrule
 		\textbf{Total} & \textbf{2'170'463} & \textbf{-1'621'664} & \textbf{548'799} & \textbf{25.3\%}\\
 	\end{tabular}%
-	\label{bud}%
+	\label{tab:bud}%
 \end{table}%
 %Act TO Cost DB+
 \begin{table}[H]
 	\centering
-	\caption{Actuals TO, Cost und DB1 [TCHF]}
+	\caption{Realisierte(r) Umsatz, Kosten und DB1 sämtlicher Projekte[TCHF]}
 	\begin{tabular}{lrrrr}
+		\toprule
 		\textbf{Erfolgskriterium} & \textbf{TO Act} & \textbf{Cost Act} & \textbf{DB1 Act}&
-		\textbf{DB1 Act [\%]} \\\hline
+		\textbf{DB1 Act [\%]} \\
+		\midrule
 		SUCCESS & 1'560'001 & -1'041'728 & 518'273 & 33.2\% \\
-		FAIL  & 631'346 & -526'600 & 104'746 & 16.6\% \\\hline
+		FAIL  & 631'346 & -526'600 & 104'746 & 16.6\% \\
+		\bottomrule
 		\textbf{Total} & \textbf{2'191'347} & \textbf{-1'568'328} & \textbf{623'018} & \textbf{28.4\%} \\
 	\end{tabular}
-	\label{act}%
+	\label{tab:act}%
 \end{table}%
 %Deviation TO Cost DB1
 \begin{table}[H]
 	\centering
-	\caption{Abweichungen ($Act-Bud$) TO, Cost und DB1 [TCHF] }
+	\caption{Abweichungen ($Act-Bud$) Umsatz, Kosten und DB1 [TCHF]}
 	\begin{tabular}{lrrrr}
 		\textbf{Erfolgskriterium} & \textbf{TO} & \textbf{Cost} & \textbf{DB1}&
 		\textbf{DB1 [\%]} \\\hline
@@ -291,31 +314,45 @@ Zur Bewertung der finanziellen Performance wurden drei verschiedene Auswertungen
 		FAIL  & 13'333 & -61'534 & -48'202 & -8.2\% \\\hline
 		\textbf{Total} & \textbf{20'884} & \textbf{53'336} & \textbf{74'220} & \textbf{3.1\%} \\
 	\end{tabular}
-	\label{Abw}%
+	\label{tab:Abw}%
 \end{table}%
-Die Tabelle \ref{Abw} wurde mittels Tabellen \ref{bud} und \ref{act} berechnet und zeigt, dass der realisierte Umsatz höher war als budgetiert wurde. Diese Abweichung kann auf Zusatzverkäufe oder die Verrechnung allfälliger Mehrkosten an den Kunden zurückgeführt werden. Der kumulierte DB1 der Fail-Projekte lag 48 Mio. CHF (-32\%) unter dem Budget und bei den Success-Projekten 122 Mio. CHF über dem Budget. Die positive Abweichung der Istkosten der Success-Projekte kann mittels der realisierten Kostenreserve, die üblicherweise pro Projekt einkalkuliert wird und je nach Geschäftsbereich zwischen 4\% und 9\% beträgt, zurückgeführt werden. Wenn die Kostenreserve aufgebraucht wird, resultieren Mehrkosten und die Kostenabweichung wird negativ. Da die Reserve in dieser Betrachtung nicht ersichtlich ist, wäre die effektive Differenz für Fail-Projekte (Success-Projekte) tiefer (höher). Die realisierte Marge über alle Success-Projekte beträgt 33\% und liegt 7.7\% über der budgetierten Marge von 25.4\%. Demgegenüber beträgt der DB1Act der Fail-Projekte 16.6\% und liegt 8.2\% unter dem DB1 Bud von 24.7\%. Nachfolgend wird die Kostenperformance näher betrachtet, um herauszufinden, bei welcher Projektphase die Mehrkosten entstehen.
-%Aufschlüsselung Kostenabweichung gemäss Projektphase
+%%
+%%Aufschlüsselung Kostenabweichung gemäss Projektphase
+%% 
+Die Aufschlüsselung der Kosten in der Tabelle \ref{tab:stocostdb1dev} zeigt, dass während den Projektphasen ME und IS sowohl bei den nicht erfolgreichen, als auch der erfolgreichen die budgetierten Kosten erheblich überzogen wurden. Bei den gescheiterten Projekten sind die Mehrkosten von gerundet 62 TCHF zu ungefähr je einem Drittel durch die Kostendifferenz in MS und IS zurückzuführen. Die letzte Spalte sagt aus, dass die gesamte Kostendifferenz der gescheiterten Projekte durch die Mehrkosten der Projektphasen, wohingegen bei den erfolgreichen Projekten nur 30\% ($\frac{37'434}{114'870}$)  erklärt wird.
 \begin{table}[H]
 	\centering
+	\begin{threeparttable}
 	\caption{Aufschlüsselung der Kosten nach der Projektphase [TCHF]}
 	\begin{tabular}{lrrrrr|r}
-		\textbf{Erfolgskriterium} & \multicolumn{1}{l}{\textbf{Total Cost}} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Summe}} \\\hline
+		\toprule
+		\textbf{Erfolgskriterium} & \multicolumn{1}{l}{\textbf{Total Cost}} & \multicolumn{1}{l}{\textbf{MS}} & \multicolumn{1}{l}{\textbf{ME}} & \multicolumn{1}{l}{\textbf{PA}} & \multicolumn{1}{l}{\textbf{IS}} & \multicolumn{1}{l}{\textbf{Summe}} \\
+		\midrule
 		SUCCESS & 114'870 & 47'615 & -2'159 & -908  & -7'114 & 37'434 \\
-		FAIL  & -61'534 & -20'253 & -12'721 & -7'220 & -22'053 & -62'247 \\\hline
+		FAIL  & -61'534 & -20'253 & -12'721 & -7'220 & -22'053 & -62'247 \\
+		\bottomrule
 		\textbf{ Total} & \textbf{53'336} & \textbf{ 27'363} & \textbf{ -14'880} & 
 		\textbf{ -8'128} & \textbf{ -29'167} & \textbf{ -24'812} \\
 	\end{tabular}%
-	\label{stocostdb1dev}%
+	\begin{tablenotes}
+		\tiny
+		\item Anmerkung Die letzten Spalte kalkuliert die Summe von MeS, ME, PA und IS.
+	\end{tablenotes}
+	\label{tab:stocostdb1dev}%
+	\end{threeparttable}
 \end{table}%
-Die Aufschlüsselung der Kostenabweichung der Tabelle \ref{stocostdb1dev} zeigt, dass die Installationsphase sowohl der erfolgreichen als auch der nicht-erfolgreich Projekte mit Mehrkosten verbunden ist. Die negative Kostenabweichung der Fail-Projekte kann zu einem Drittel auf die IS- und zu einem weiteren Drittel auf die MS-Kosten zurückgeführt werden. Bei den Success-Projekten kann ein gewisser 'Verlust'-Kompensationseffekt durch die positive Kostenabweichung der MS-Kosten festgestellt werden. Die Kostendifferenz zwischen Act und Bud der Fail-Projekte kann fast vollständig durch Summe der Kostenabweichungen der vier Projektphasen MS, ME, PA und IS erklärt werden. Der Unterschied zu 'Total Cost' ist auf fehlende Abbildung der anderen Kostenarten der Projektstruktur zurückzuführen. Dieser Effekt ist bei den Success-Projekten ebenfalls sichtbar und kann zu einem Teil auf die Realisation des Kostenpuffers zurückgeführt werden.
-\newline
-Als Ergänzung wurde versucht zu eruieren, von welchem Projekttyp in Bezug auf das Umsatzvolumen die Margeneinbusse der Fail-Projekte stammt. Dazu wurde die Häufigkeit und der DB1 Abweichung pro Umsatzkategorie ausgewertet.
+%%
+%%Projektgrösse
+%%
+Die Einteilung der Projekte in Umsatzkategorien erlaubt die Analyse, der Anzahl Projekte und -volumen, welche für den Verlust der Projektmarge verantwortlich sind. Die DB1 Einbussen können zu einem Viertel auf 23 Projekte mit Projektvolumen zwischen 5 Mio. und 10. Mio TCHF zurückgeführt werden, wie der Tabelle \ref{tab:ftobudcat}. Die Kategorie mit den höchsten Anteil gescheiterte Projekte, hat einen kumulierten DB1 Verlust gegenüber dem Budget von 6 Mio. TCHF.
 % Table generated by Excel2LaTeX from sheet 'TOBud_cat'
-\begin{table}[htpb]
+\begin{table}[H]
 	\centering
 	\caption{DB1 und Häufigkeit pro Umsatzkategorie (TOBud\_Cat) [TCHF]}
 	\begin{tabular}{lrcrrrr}
-		\multicolumn{1}{l}{\textbf{Kat.}} & \multicolumn{1}{l}{\textbf{TOBud\_Cat}} & \multicolumn{1}{c}{\textbf{ Anz.}} & \multicolumn{1}{l}{\textbf{DB1 Act}} & \multicolumn{1}{l}{\textbf{DB1 Bud }} & \multicolumn{1}{l}{\textbf{DB1BudDevabs}} &  \multicolumn{1}{c}{\textbf{\%}}\\\hline
+		\toprule
+		\multicolumn{1}{l}{\textbf{Kat.}} & \multicolumn{1}{l}{\textbf{TOBud\_Cat}} & \multicolumn{1}{c}{\textbf{ Anz.}} & \multicolumn{1}{l}{\textbf{DB1 Act}} & \multicolumn{1}{l}{\textbf{DB1 Bud }} & \multicolumn{1}{l}{\textbf{DB1BudDevabs}} &  \multicolumn{1}{c}{\textbf{\%}}\\
+		\midrule
 		\multicolumn{1}{r}{1} & \multicolumn{1}{l}{[13.2,500)} & 54    & 4'508 & 6'181 & -1'672 & -27\% \\
 		\multicolumn{1}{r}{2} & \multicolumn{1}{l}{[500,1e+03)} & 87    & 11'956 & 18'167 & -6'210 & -34\% \\
 		\multicolumn{1}{r}{3} & \multicolumn{1}{l}{[1e+03,1.5e+03)} & 54    & 13'510 & 17'476 & -3'966 & -23\% \\
@@ -327,64 +364,56 @@ Als Ergänzung wurde versucht zu eruieren, von welchem Projekttyp in Bezug auf d
 		\multicolumn{1}{r}{9} & \multicolumn{1}{l}{[4e+03,4.5e+03)} & 4     & 3'191 & 4'551 & -1'360 & -30\% \\
 		\multicolumn{1}{r}{10} & \multicolumn{1}{l}{[4.5e+03,5e+03)} & 6     & 2'686 & 4'349 & -1'662 & -38\% \\
 		\multicolumn{1}{r}{11} & \multicolumn{1}{l}{[5e+03,1e+04)} & 23    & 23'602 & 35'644 & -12'043 & -34\% \\
-		\multicolumn{1}{r}{12} & \multicolumn{1}{l}{[1e+04,3.42e+04)} & 7     & 11'155 & 20'706 & -9'551 & -46\% \\\hline
+		\multicolumn{1}{r}{12} & \multicolumn{1}{l}{[1e+04,3.42e+04)} & 7     & 11'155 & 20'706 & -9'551 & -46\% \\
+		\bottomrule
 		\textbf{Total} &       &    \textbf{312}   & \textbf{104'746} & \textbf{152'947} & \textbf{-48'202} & \textbf{-32\%} \\
 	\end{tabular}%
 	\label{tab:ftobudcat}%
 \end{table}%
-In der Tabelle \ref{tab:ftobudcat} wird ersichtlich, dass ein Viertel des der DB1-Abweichung auf 23 Projekte mit einem Umsatzvolumen zwischen 5 und 10 Mio. CHF und 20\% auf 7 Projekte mit einem Umsatzvolumen von mehr als 10 Mio. CHF zurückzuführen ist. Die drittgrösste Abweichung stammt von der Umsatzkategorie mit den meisten Projekten.
-
-
-\paragraph{Kosten} Das Umsatzvolumen (TOBud) soll Aufschluss über die Grösse und Wichtigkeit eines Projekts geben. Die zugrundeliegende Prämisse postuliert, dass Projekte mit höherem Umsatzvolumen risikoreicher sind und deshalb eher unter Budget beendet werden. Die Gegenhypothese unterstellt, dass grössere Projekte (hoher TOBud) relativ mehr Beachtung erhalten, da sie den Erfolg eines Geschäftsbereich respektive einer Region mehr beeinflussen als kleinere Projekte. Deshalb liege der Fokus auf der Einhaltung der Budgetvorgaben.
+%%
+%%
+%%
+\textit{Umsatzvolumen: }Das Histogramm der Abbildung \ref{fig:htobudcat} zeigt eine linksschiefe Verteilung der Umsatzvolumen für die erfolgreiche und nicht erfolgreichen Projekte. Die Mehrheit der Projekte ist in den ersten drei Umsatzvolumenkategorien, konzentriert.
 %
 %Histogram of TOBud_cat
 %
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{test.pdf}
-	\caption{Histogram Umsatzkategorie}
-	\label{fig: htobudcat}
+	\includegraphics[width=5cm]{tocat.pdf}
+	\caption{Histogramm der Umsatzkategorie}
+	\label{fig:htobudcat}
+	\tiny
+	\text{Erklärung der Umsatzkategorien}
 	\text{1	= [13.2,500), 2 = [500,1e+03), 3 = [1e+03,1.5e+03), 4 = [1.5e+03,2e+03), 5 = [2e+03,2.5e+03)}
 	\text{6 =	[2.5e+03,3e+03), 7 = [3e+03,3.5e+03), 8 = [3.5e+03,4e+03), 9 = [4e+03,4.5e+03)}
 	\text{10 = [4.5e+03,5e+03), 11 = [5e+03,1e+04), 12 = [1e+04,3.42e+04)}
 \end{figure}
-Die Verteilung Umsatzvolumen mit Hilfe der Umsatzkategorie ist linksschief und zeigt dass der Grossteil der Projekte ein Umsatzvolumen von weniger als 10 Mio. CHF haben. Die Anzahl Fail-Projekte konzentriert sich folglich in den vier untersten Kategorien (vgl. auch Tabelle \ref{tab:ftobudcat}).
 %%
 %%Relative und Asolute Kostenabweichung
 %%
-\newline\newline\textit{Absolute und relative Kostenabweichung (CostActBud):} Die absoluten und relativen Abweichungen zwischen den aktuellen und den budgetierten Kosten sind direkt mit dem Erfolgskriterium korreliert und sind erwartungsgemäss für Fail-Projekte höher. 
-% Mean absolute Kostenabweichungen
-\begin{table}[htbp]
-	\centering
-	\caption{Arithmetisches Mittel der relativen Anteile am Gesamtkostenbudget je Kostenart [\%]}
-	\begin{tabular}{lrrrr}
-		\textbf{Success} & \multicolumn{1}{l}{\textbf{BudMSTot}} & \multicolumn{1}{l}{\textbf{BudMETot}} & \multicolumn{1}{l}{\textbf{BudPATot}} & \multicolumn{1}{l}{\textbf{BudISTot}} \\\hline
-		FALSE & 67.1  & 6.2   & 5.9   & 7.7 \\
-		TRUE  & 67.9  & 5.4   & 5.1   & 6.8 \\
-	\end{tabular}%
-	\label{mbudtot}%
-\end{table}%
-Die dargestellten Mittelwerte in der Tabelle \ref{mbudtot} liegen für nicht-erfolgreiche Projekte bei ME, PA und IS etwas höher. In der vorherigen Auswertung der durchschnittlichen Kostenabweichung wurde exakt bei diesen Projektphasen für Fail-Projekte deutlich höhere Werte festgestellt.
-%
-%Auswertung Nachlieferung
-%
-\newline\newline\textit{Nachlieferung SUCostTO:} Nachlieferungen verursachen zusätzliche Kosten, die aufgrund der zeitlichen Verzögerung bei der Fabrikation der Maschine oder Installation entstehen können. Es wird spekuliert, dass der Anteil der Kosten aus Nachlieferungen im Verhältnis zum Umsatzbudget bei Fail-Projekten höher ist als bei Success-Projekten.
+\textit{Absolute und relative Kostenabweichung: } Die Werte der Tabelle \ref{tab:stocostdb1dev} implizieren bereits, dass die durchschnittlich absoluten und relativen Kostenabweichungen bei den gescheiterten Projekten grösser sind. ist als bei den erfolgreichen Projekten.
+%%
+%%Auswertung Nachlieferung
+%%
+\newline\newline\textit{Kosten infolge Nachlieferung SUCostTO:} Nachlieferungen verursachen zusätzliche Kosten, die aufgrund der zeitlichen Verzögerung bei der Fabrikation der Maschine oder Installation entstehen können. Die nicht erfolgreichen Projekte hatten durchschnittlich höhere Kosten aus Nachlieferung in Relation zum Umsatz, wie der Tabelle \ref{tab:msu} zu entnehmen ist.
 %Mean SU Cost
 \begin{table}[H]
 	\centering
 	\caption{Arithmetisches Mittel der SUCostTO [\%]}
 	\begin{tabular}{lr}
-		\textbf{Success} & \multicolumn{1}{l}{\textbf{SUCostTO}} \\\hline
+		\toprule
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{SUCostTO}} \\
+		\midrule
 		FALSE & -0.81 \\
 		TRUE  & -0.36 \\
+		\bottomrule
 	\end{tabular}%
-	\label{msu}%
+	\label{tab:msu}%
 \end{table}%
-
 %
 %Auswertung DeltaLastFCAct
 %
-\textit{Abweichung zwischen dem letzten FC und Act DeltaLastFCAct:} Tendenziell wird die Anpassung des Forecast für die Projektkosten bei erwarteten Mehrkosten möglichst lange hinausgezögert. Einerseits kann mit diesem Vorgehen, die Erklärungsdirektive umgangen werden und anderseits besteht wahrscheinlich die Hoffnung, dass die Projektkosten sich wieder normalisieren. Deshalb wird erwartet, dass die Differenz zwischen der letzten FC-Anpassung und den tatsächlichen Kosten bei Fail-Projekten höher war. 
+\textit{Abweichung zwischen dem letzten FC und Act DeltaLastFCAct:} Tendenziell wird die Anpassung des Forecast für die Projektkosten bei erwarteten Mehrkosten möglichst lange hinausgezögert. Das arithmetische Mittel der Differenzen zwischen dem FC und Act war für gescheitere Projekte vor allem bei IS deutlich höher als bei erfolgreichen Projekten.
 %Tabelle Mean DeltaLastFCAct  
 \begin{table}[H]
 	\centering
@@ -395,41 +424,44 @@ Die dargestellten Mittelwerte in der Tabelle \ref{mbudtot} liegen für nicht-erf
 		FALSE & -490.54 & -445.53 & 7.48 & -12.87 & -14.52 \\
 		TRUE  & -436.41 & -454.24 & 7.93 & -13.41 & -6.49\\
 	\end{tabular}%
-	\label{mdeltalastfcact}%
+	\label{tab:mdeltalastfcact}%
 \end{table}%
-Die Ergebnisse der Tabelle \ref{mdeltalastfcact} bestätigen diese Vermutung. Die durchschnittliche Differenz bei den IS-Kosten war für Fail-Projekte doppelt so hoch.
-
+\newpage
 %%
 %%Zeit
 %%
 \section{Zeit}
-Die Beurteilung des Zeitmanagement hängt von der Einhaltung des vereinbarten Liefertermins ab. Mehrkosten und Zeitverzug gehen oftmals einher, weshalb unterstellt wird, dass Fail-Projekte den vereinbarten Projektabschluss nicht einhalten konnten. Ferner soll ergründet werden, ab welchem Zeitpunkt respektive Milestone der Zeitverzug üblicherweise eintritt.
+Die Beurteilung des Zeitmanagement hängt von der Einhaltung des vereinbarten Liefertermins ab. Sowohl die gescheiterten als auch die erfolgreichen Projekte hielten den Liefertermin nicht ein, wie in der Tabelle \ref{tab:mtime} zu sehen ist. Der Zeitverzug ist im Durchschnitt für gescheiterte Projekte um zwei Monate höher und entsteht während der Übergabe des Projekts  an den Kunden und dem Projektabschluss
 %Table durchschnittlicher PrTimeDelay und pro MS
 \begin{table}[H]
 	\centering
 	\caption{Arithmetisches Mittel der Projektlaufzeit und Zeitverzögerung [Monate]}
 	\begin{tabular}{lrrrrrrr}
-		\textbf{Success} & \multicolumn{1}{l}{\textbf{Base}} & \multicolumn{1}{l}{\textbf{Act}} & \multicolumn{1}{l}{\textbf{Delay}} & \multicolumn{1}{l}{\textbf{MS2}} & \multicolumn{1}{l}{\textbf{MS8}} & \multicolumn{1}{l}{\textbf{MS10}} & \multicolumn{1}{l}{\textbf{MS11}} \\ \hline
+		\toprule
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{Base}} & \multicolumn{1}{l}{\textbf{Act}} & \multicolumn{1}{l}{\textbf{Delay}} & \multicolumn{1}{l}{\textbf{MS2}} & \multicolumn{1}{l}{\textbf{MS8}} & \multicolumn{1}{l}{\textbf{MS10}} & \multicolumn{1}{l}{\textbf{MS11}} \\ 
+		\midrule
 		TRUE  & 11.9  & 17.3  & -5.4  & -0.1  & -2.0  & -5.0  & -5.5 \\
 		FALSE & 11.4  & 18.7  & -7.2  & -0.2  & -1.7  & -5.7  & -7.3 \\
+		\bottomrule
 	\end{tabular}%
-	\label{mtime}%
+	\label{tab:mtime}%
 \end{table}%
-Die durchschnittliche budgetierte Projektlaufzeit unterscheidet sich zwischen erfolgreichen und  nicht-erfolgreichen Projekten kaum wohingegen die effektive Projektlaufzeit der Fail-Projekte einen Monat mehr betrug (s. Tabelle \ref{mtime}). Beide Projektgruppen konnten im Durchschnitt den Liefertermin nicht einhalten, wobei die Success-Projekte ca. zwei Monate weniger zeitverzögert waren. Die Termineinhaltung beim MS2 Concept approved bewegt sich im vernachlässigbaren Bereich. Demgegenüber steigt der durchschnittliche Zeitverzug nach MS8 Documented auf zwei, nach MS10 Takeover auf fünf bis sechs Monate und liegt bei Projektabschluss (MS11) zwischen gerundet sechs und sieben Monaten. 
+%%
+%%
+%%
+Die Tabelle \ref{tab:fdelayms} liegt die Mehrheit der Projekte bei MS2 noch im Zeitplan, während sie nach MS8 hinter dem vereinbarten Liefertermin lag.
 %Table Häufigkeit Delay pro MS
 \begin{table}[H]
 	\centering
 	\caption{Absolute Häufigkeitsverteilung zeitverzögerter Projekte pro Milestone}
 	\begin{tabular}{lrrrr}
-		\textbf{Success} & \multicolumn{1}{l}{\textbf{DelayMS2}} & \multicolumn{1}{l}{\textbf{DelayMS8}} & \multicolumn{1}{l}{\textbf{DelayMS10}} & \multicolumn{1}{l}{\textbf{DelayMS11}} \\\hline
+		\toprule
+		\textbf{Success} & \multicolumn{1}{l}{\textbf{DelayMS2}} & \multicolumn{1}{l}{\textbf{DelayMS8}} & \multicolumn{1}{l}{\textbf{DelayMS10}} & \multicolumn{1}{l}{\textbf{DelayMS11}} \\
+		\midrule
 		FALSE & 43    & 209   & 275   & 270 \\
-		TRUE  & 75    & 408   & 532   & 516 \\\hline
+		TRUE  & 75    & 408   & 532   & 516 \\
+		\bottomrule
 		\textbf{Total} & \textbf{118} & \textbf{717} & \textbf{807} &  \textbf{786}
 	\end{tabular}%
 	\label{fdelayms}%
 \end{table}
-Die Tabelle \ref{fdelayms} zeigt, dass die Mehrheit der Projekte bei MS2 noch im Zeitplan agierte und nach MS8 bereits hinter dem vereinbarten Liefertermin lag. Mittels Dummyvariablen pro Milestone wurde ausgewertet, ob sich ein anfängliche Verspätung durch die Projektlaufzeit durchzieht.
-% Table generated by Excel2LaTeX from sheet 'time_sukz'
-
-
-
